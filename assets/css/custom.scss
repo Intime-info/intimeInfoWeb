@@ -1,18 +1,71 @@
 @import "scss/bootstrap";
-
+@import "style.css";
 $corporateBlue: #00A0AF;
 $corporateDarkBlue: #021D49;
 
 
-body{
+body {
   font-family: 'Montserrat', sans-serif;
 }
 
-button, input,textarea,select{
-  &:focus{
-    outline: 0!important;
-    box-shadow: none!important;
-    border-color: inherit!important;
+button, input, textarea, select {
+  &:focus {
+    outline: 0 !important;
+    box-shadow: none !important;
+    border-color: inherit !important;
+  }
+}
+
+.mainBlog {
+  .blogTitle {
+    margin: 20px 0;
+
+    h2 {
+      text-align: center;
+    }
+
+    p {
+      text-align: center;
+    }
+  }
+
+  .blogCard {
+    position: relative;
+    margin: 20px 0;
+    box-shadow: 0 1px 5px 3px rgba(0, 0, 0, 0.12);
+
+    .blogCardTitle {
+      figure {
+        margin: 0;
+
+        img {
+          height: 100%;
+          width: 100%;
+        }
+      }
+      span{
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(-50%,-50%);
+      }
+    }
+
+    .blogCardBody {
+      margin-top: 20px;
+      h3 {
+        text-align: center;
+      }
+
+      p {
+        padding: 10px;
+        text-align: left;
+      }
+      a{
+        margin: 10px;
+        text-decoration: none;
+      }
+    }
   }
 }
 

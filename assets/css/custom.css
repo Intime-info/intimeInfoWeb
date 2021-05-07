@@ -5,6 +5,7 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+@import "style.css";
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -9936,6 +9937,48 @@ button:focus, input:focus, textarea:focus, select:focus {
   outline: 0 !important;
   box-shadow: none !important;
   border-color: inherit !important;
+}
+
+.mainBlog .blogTitle {
+  margin: 20px 0;
+}
+.mainBlog .blogTitle h2 {
+  text-align: center;
+}
+.mainBlog .blogTitle p {
+  text-align: center;
+}
+.mainBlog .blogCard {
+  position: relative;
+  margin: 20px 0;
+  box-shadow: 0 1px 5px 3px rgba(0, 0, 0, 0.12);
+}
+.mainBlog .blogCard .blogCardTitle figure {
+  margin: 0;
+}
+.mainBlog .blogCard .blogCardTitle figure img {
+  height: 100%;
+  width: 100%;
+}
+.mainBlog .blogCard .blogCardTitle span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+}
+.mainBlog .blogCard .blogCardBody {
+  margin-top: 20px;
+}
+.mainBlog .blogCard .blogCardBody h3 {
+  text-align: center;
+}
+.mainBlog .blogCard .blogCardBody p {
+  padding: 10px;
+  text-align: left;
+}
+.mainBlog .blogCard .blogCardBody a {
+  margin: 10px;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=custom.css.map */
