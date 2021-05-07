@@ -5,6 +5,7 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+@import "style.css";
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -9936,6 +9937,58 @@ button:focus, input:focus, textarea:focus, select:focus {
   outline: 0 !important;
   box-shadow: none !important;
   border-color: inherit !important;
+}
+
+.mainProduct {
+  font-family: "Montserrat", sans-serif !important;
+}
+.mainProduct .container .row .product-title h1 {
+  font-size: 40px;
+}
+.mainProduct .container .row .product-title p {
+  display: block;
+  max-width: 750px;
+  text-align: center;
+  margin: auto;
+  font-size: 16px;
+  line-height: 1.8;
+  font-weight: 400;
+}
+.mainProduct .container .colhover .single-item {
+  margin-bottom: 30px;
+  padding: 35px;
+  border-radius: 5px;
+  border: 1px solid #eeeeee;
+  text-align: center;
+  height: 100%;
+}
+.mainProduct .container .colhover .single-item h2 {
+  text-shadow: 3px 3px blanchedalmond;
+  font-size: 25px;
+}
+.mainProduct .container .colhover .single-item p {
+  font-size: 15px;
+  margin-bottom: 15px;
+  line-height: 1.8;
+  font-weight: 400;
+}
+@keyframes dondur {
+  /* from{transform: rotateY(0deg) rotateX(0deg); width: 70px;}
+   to{transform: rotateY(360deg) rotateX(360deg);width: 80px;}*/
+}
+.mainProduct .container .colhover:hover .single-item .icon i {
+  /* animation-name: dondur;*/
+  display: inline-block;
+  animation: heartBeat;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+}
+.mainProduct .container .colhover:hover .single-item {
+  display: inline-block;
+  animation: bounce;
+  animation-timing-function: linear;
+  animation-duration: 0.7s;
+  box-shadow: 2px 2px 3px 3px #b7e1dd;
 }
 
 /*# sourceMappingURL=custom.css.map */

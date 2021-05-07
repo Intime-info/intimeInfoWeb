@@ -1,5 +1,5 @@
 @import "scss/bootstrap";
-
+@import "style.css";
 $corporateBlue: #00A0AF;
 $corporateDarkBlue: #021D49;
 
@@ -16,3 +16,70 @@ button, input,textarea,select{
   }
 }
 
+.mainProduct {
+  font-family: 'Montserrat', sans-serif !important;
+  .container{
+    .row{
+      .product-title{
+        h1{
+          font-size: 40px;
+        }
+        p{
+          display:block;
+          max-width: 750px;
+          text-align: center;
+          margin: auto;
+          font-size: 16px;
+          line-height: 1.8;
+          font-weight: 400;
+        }
+      }
+    }
+    .colhover{
+
+      .single-item{
+
+        margin-bottom: 30px;
+        padding: 35px;
+        border-radius: 5px;
+        border: 1px solid #eeeeee;
+        text-align: center;
+        height: 100%;
+
+        h2{
+          text-shadow: 3px 3px blanchedalmond;
+          font-size: 25px;
+        }
+        p{
+          font-size: 15px;
+          margin-bottom: 15px;
+          line-height: 1.8;
+          font-weight: 400;
+        }
+      }
+      @keyframes dondur {
+       /* from{transform: rotateY(0deg) rotateX(0deg); width: 70px;}
+        to{transform: rotateY(360deg) rotateX(360deg);width: 80px;}*/
+
+      }
+      &:hover .single-item .icon i{
+
+      /* animation-name: dondur;*/
+        display: inline-block;
+        animation: heartBeat;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+      }
+      &:hover .single-item{
+        display: inline-block;
+        animation: bounce;
+        animation-timing-function: linear;
+        animation-duration: .7s;
+        box-shadow: 2px 2px 3px 3px #b7e1dd  ;
+
+      }
+
+    }
+
+  }
+}
