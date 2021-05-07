@@ -9998,9 +9998,11 @@ button:focus, input:focus, textarea:focus, select:focus {
 .mainProduct .container .row .btn-2:hover,
 .mainProduct .container .row .btn-2:active,
 .mainProduct .container .row .btn2 i {
+  /* Sultan ablaya sor ok işareti de beyaz olmalı*/
   color: #ff8879;
   background-color: #fff;
   letter-spacing: 1px;
+  margin-left: 20px;
 }
 .mainProduct .container .row .btn-2:after,
 .mainProduct .container .row .btn-2:before {
@@ -10009,9 +10011,9 @@ button:focus, input:focus, textarea:focus, select:focus {
   bottom: 0px;
   content: " ";
   display: block;
-  margin: 0 auto;
+  margin: 1px auto;
   position: relative;
-  transition: all 280ms ease-in-out;
+  transition: all 300ms ease-in-out;
   width: 0;
 }
 .mainProduct .container .row .btn-2:hover:after,
@@ -10019,12 +10021,12 @@ button:focus, input:focus, textarea:focus, select:focus {
   backface-visibility: hidden;
   border-color: #FF8879;
   transition: width 350ms ease-in-out;
-  width: 70%;
+  width: 50%;
 }
 .mainProduct .container .row .btn-2:hover:before {
   bottom: auto;
   top: 0;
-  width: 70%;
+  width: 75%;
 }
 .mainProduct .container i {
   color: #fff8ff;
