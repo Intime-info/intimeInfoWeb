@@ -1,4 +1,7 @@
 
+new WOW().init();
+
+
 var contactMap = function(){
     if($("#map").length > 0){
         var map;
