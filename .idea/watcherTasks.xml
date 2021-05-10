@@ -5,6 +5,7 @@
       <option value="SCSS" />
       <option value="SCSS-min" />
       <option value="SCSS Min" />
+      <option value="Sass" />
     </enabled-global>
   </component>
 </project>

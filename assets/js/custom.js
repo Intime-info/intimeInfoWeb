@@ -73,4 +73,32 @@ $(document).ready(function (){
     contactMap();
     $('.collapse').collapse()
     partners_carousel();
+
+    $(".owl-carousel").owlCarousel({
+        items:4,
+        loop:true,
+        margin:10,
+        responsiveClass:true,
+        autoplay:true,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: true,
+        animateOut: 'slideOutDown',
+        animateIn: 'slideInDown',
+
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:3
+            },
+            960:{
+                items:4
+            },
+            1200:{
+                items:5
+            }
+        }
+
+    });
 });
