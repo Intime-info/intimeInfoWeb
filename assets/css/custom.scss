@@ -18,22 +18,24 @@ button, input,textarea,select{
 
 .mainProduct {
   font-family: 'Montserrat', sans-serif !important;
-  .container{
 
-    .row{
-      #particles-js{
-        position:absolute;
+  .container {
+
+    .row {
+      #particles-js {
+        position: absolute;
         max-width: 100%;
         height: 100%;
-
       }
-      .product-title{
-        h1{
+
+      .product-title {
+        h1 {
           font-size: 40px;
 
         }
-        p{
-          display:block;
+
+        p {
+          display: block;
           max-width: 750px;
           text-align: center;
           margin: auto;
@@ -42,111 +44,116 @@ button, input,textarea,select{
           font-weight: 400;
         }
       }
+
+
+      /*
+
+            &:hover .single-item .icon i{
+
+              display: inline-block;
+              animation: heartBeat;
+              animation-duration: 2s;
+              animation-timing-function: linear;
+            }
+            &:hover .single-item{
+              display: inline-block;
+              animation: bounce;
+              animation-timing-function: linear;
+              animation-duration: .7s;
+              box-shadow: 10px 10px 12px 12px #EEEEEE ;
+
+            }*/
+
     }
-    .colhover{
+  }
 
-      .single-item{
-
-        margin-bottom: 30px;
-        padding: 35px;
-        border-radius: 5px;
-        border: 1px solid #eeeeee;
-        text-align: center;
+  #fliplerr {
+    .card-flip {
+      div {
+        backface-visibility: hidden;
+        transition: transform 300ms;
+        transition-timing-function: linear;
+        width: 100%;
         height: 100%;
-
-        h2{
-          text-shadow: 3px 3px blanchedalmond;
-          font-size: 25px;
-        }
-        p{
-          font-size: 15px;
-          margin-bottom: 15px;
-          line-height: 1.8;
-          font-weight: 400;
-        }
-      }
-      @keyframes dondur {
-       /* from{transform: rotateY(0deg) rotateX(0deg); width: 70px;}
-        to{transform: rotateY(360deg) rotateX(360deg);width: 80px;}*/
+        margin: 0;
 
       }
-      &:hover .single-item .icon i{
 
-      /* animation-name: dondur;*/
-        display: inline-block;
-        animation: heartBeat;
-        animation-duration: 2s;
-        animation-timing-function: linear;
+      .card-front {
+        transform: rotateY(0deg);
       }
-      &:hover .single-item{
-        display: inline-block;
-        animation: bounce;
-        animation-timing-function: linear;
-        animation-duration: .7s;
-        box-shadow: 10px 10px 12px 12px #EEEEEE ;
 
+      .card-back {
+        transform: rotateY(180deg);
+        position: absolute;
+        top: 0;
       }
+
+      &:hover .card-front {
+        transform: rotateY(-180deg);
+      }
+
+      &:hover .card-back {
+        transform: rotateY(0deg);
+      }
+    }
+
+    .btn-2 {
+      background-color: #FF8879;
+      color: #FFF8FF;
+      letter-spacing: 0;
+    }
+
+    .btn-2:hover,
+    .btn-2:active,
+    .btn2 i { /* Sultan ablaya sor ok işareti de beyaz olmalı*/
+      color: #ff8879;
+      background-color: #fff;
+      letter-spacing: 1px;
+      margin-left: 20px;
+      border: 1px solid #9fcdff;
+    }
+
+    .btn-2:after,
+    .btn-2:before {
+      backface-visibility: hidden;
+      border: 1px solid rgba(#FF8879, 0);
+      bottom: 0px;
+      content: " ";
+      display: block;
+      margin: 1px auto;
+      position: relative;
+      transition: all 300ms ease-in-out;
+      width: 0;
 
     }
-    .row{
+
+    .btn-2:hover:after,
+    .btn-2:hover:before {
+      backface-visibility: hidden;
+      border-color: #FF8879;
+      transition: width 350ms ease-in-out;
+      width: 50%;
+
+    }
+
+    .btn-2:hover:before {
+      bottom: auto;
+      top: 0;
+      width: 75%;
+
+    }
 
 
+      }
 
-        .btn-2{
-          background-color:#FF8879 ;
-          color: #FFF8FF;
-          letter-spacing: 0;
-        }
-
-        .btn-2:hover,
-        .btn-2:active,
-        .btn2 i{ /* Sultan ablaya sor ok işareti de beyaz olmalı*/
-          color:#ff8879;
-          background-color: #fff;
-          letter-spacing: 1px;
-          margin-left: 20px;
-          border: 1px solid #9fcdff;
-        }
-
-        .btn-2:after,
-        .btn-2:before {
-          backface-visibility: hidden;
-          border: 1px solid rgba(#FF8879, 0);
-          bottom: 0px;
-          content: " ";
-          display: block;
-          margin: 1px auto;
-          position: relative;
-          transition: all 300ms ease-in-out;
-          width: 0;
-
-        }
-
-        .btn-2:hover:after,
-        .btn-2:hover:before {
-          backface-visibility: hidden;
-          border-color: #FF8879;
-          transition: width 350ms ease-in-out;
-          width: 50%;
-
-        }
-
-        .btn-2:hover:before {
-          bottom: auto;
-          top: 0;
-          width: 75%;
-
-        }
-
-
-
-        }
-      i{
+      i {
         color: #fff8ff;
 
       }
-      }
     }
+
+
   .mainPartner{
     margin-top: 60px;
     .container{
