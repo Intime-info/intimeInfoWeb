@@ -44,13 +44,16 @@ var contactMap = function(){
         createMarkerNew(40.92033506644141, 29.31415561581492);
     }
 };
-var partners_carousel= function () {
-    if ($(".products_carousel").length > 0)
+
+var owl_carousel= function () {
+    if ($(".owl-carousel").length > 0)
     {
-        $('.products_carousel').owlCarousel({
+        $('.owl-carousel').owlCarousel({
             loop:true,
             margin:10,
             nav:false,
+            autoHeight: true,
+            autoplay:true,
             dots: true,
             responsive:{
                 0:{
@@ -72,25 +75,26 @@ var partners_carousel= function () {
 $(document).ready(function (){
     contactMap();
     $('.collapse').collapse()
-    partners_carousel();
+    owl_carousel();
 
-    $(".owl-carousel").owlCarousel({
-        items:4,
+    /*$(".owl-carousel").owlCarousel({
+
         loop:true,
-        margin:10,
-        responsiveClass:true,
+        dots: false,
+
         autoplay:true,
         autoplayTimeout: 2000,
         autoplayHoverPause: true,
         animateOut: 'slideOutDown',
-        animateIn: 'slideInDown',
+        center:true,
 
         responsive:{
             0:{
-                items:1
+                items:1,
+                margin: 10
             },
             600:{
-                items:3
+                items:2
             },
             960:{
                 items:4
@@ -100,5 +104,5 @@ $(document).ready(function (){
             }
         }
 
-    });
+    });*/
 });
