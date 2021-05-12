@@ -69,8 +69,38 @@ var partners_carousel= function () {
         })
     }
 };
+var blog_carousel= function () {
+    if ($("#blog_carousel").length > 0)
+    {
+        $('#blog_carousel').owlCarousel({
+            loop: true,
+            autoPlay : true,
+            stopOnHover : true,
+            margin: 20,
+            responsive:{
+                0:{
+                    items:1,
+                },
+                500:{
+                    items:1,
+                },
+                600:{
+                    items:2,
+                },
+                1000:{
+                    items:3,
+                },
+                1200:{
+                    items:3,
+                }
+            }
+        });
+    }
+};
 $(document).ready(function (){
     contactMap();
     $('.collapse').collapse()
     partners_carousel();
+    blog_carousel();
+
 });

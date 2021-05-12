@@ -1,5 +1,6 @@
 @import "scss/bootstrap";
 @import "style.css";
+
 $corporateBlue: #00A0AF;
 $corporateDarkBlue: #021D49;
 
@@ -17,55 +18,59 @@ button, input, textarea, select {
 }
 
 .mainBlog {
+  /*.card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }*/
   .blogTitle {
-    margin: 20px 0;
-
-    h2 {
-      text-align: center;
-    }
-
-    p {
-      text-align: center;
+    hr {
+      width: 10%;
+      border-style: solid;
+      border-color: #da2929;
+      border-width: 1px;
     }
   }
-
-  .blogCard {
+  .line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .btnc{
+    margin: 5px auto;
+    border: none;
+    padding: 10px 5px;
+    font-size: 15px;
     position: relative;
-    margin: 20px 0;
-    box-shadow: 0 1px 5px 3px rgba(0, 0, 0, 0.12);
-
-    .blogCardTitle {
-      figure {
-        margin: 0;
-
-        img {
-          height: 100%;
-          width: 100%;
-        }
-      }
-      span{
-        position: absolute;
-        top: 0;
-        left: 0;
-        transform: translate(-50%,-50%);
+    text-decoration: none;
+    &:before{
+      transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      content: '';
+      width: 0;
+      height: 100%;
+      background: black;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    & .btnc-text{
+      color: white;
+      // check out mdn docs for different types of blend modes.
+      mix-blend-mode: difference;
+      &:hover{
+        border-bottom: 1px solid white;
       }
     }
 
-    .blogCardBody {
-      margin-top: 20px;
-      h3 {
-        text-align: center;
-      }
-
-      p {
-        padding: 10px;
-        text-align: left;
-      }
-      a{
-        margin: 10px;
-        text-decoration: none;
+    &:hover {
+      &:before {
+        background: black;
+        width: 100%;
+        border-bottom: 1px solid white;
       }
     }
   }
+
 }
+
+
 

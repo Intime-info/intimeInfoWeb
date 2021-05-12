@@ -9939,46 +9939,52 @@ button:focus, input:focus, textarea:focus, select:focus {
   border-color: inherit !important;
 }
 
-.mainBlog .blogTitle {
-  margin: 20px 0;
+.mainBlog {
+  /*.card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }*/
 }
-.mainBlog .blogTitle h2 {
-  text-align: center;
+.mainBlog .blogTitle hr {
+  width: 10%;
+  border-style: solid;
+  border-color: #da2929;
+  border-width: 1px;
 }
-.mainBlog .blogTitle p {
-  text-align: center;
+.mainBlog .line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
-.mainBlog .blogCard {
+.mainBlog .btnc {
+  margin: 5px auto;
+  border: none;
+  padding: 10px 5px;
+  font-size: 15px;
   position: relative;
-  margin: 20px 0;
-  box-shadow: 0 1px 5px 3px rgba(0, 0, 0, 0.12);
+  text-decoration: none;
 }
-.mainBlog .blogCard .blogCardTitle figure {
-  margin: 0;
-}
-.mainBlog .blogCard .blogCardTitle figure img {
+.mainBlog .btnc:before {
+  transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  content: "";
+  width: 0;
   height: 100%;
-  width: 100%;
-}
-.mainBlog .blogCard .blogCardTitle span {
+  background: black;
   position: absolute;
   top: 0;
   left: 0;
-  transform: translate(-50%, -50%);
 }
-.mainBlog .blogCard .blogCardBody {
-  margin-top: 20px;
+.mainBlog .btnc .btnc-text {
+  color: white;
+  mix-blend-mode: difference;
 }
-.mainBlog .blogCard .blogCardBody h3 {
-  text-align: center;
+.mainBlog .btnc .btnc-text:hover {
+  border-bottom: 1px solid white;
 }
-.mainBlog .blogCard .blogCardBody p {
-  padding: 10px;
-  text-align: left;
-}
-.mainBlog .blogCard .blogCardBody a {
-  margin: 10px;
-  text-decoration: none;
+.mainBlog .btnc:hover:before {
+  background: black;
+  width: 100%;
+  border-bottom: 1px solid white;
 }
 
 /*# sourceMappingURL=custom.css.map */
