@@ -29,20 +29,40 @@ button, input, textarea, select {
       border-width: 1px;
     }
   }
+
+  .owl-prev {
+    position: absolute;
+    top: 50%;
+    left: -5%;
+    font-size: 40px !important;
+    color: #ccc !important;
+  }
+
+  .owl-next {
+    position: absolute;
+    top: 50%;
+    right: -5%;
+    font-size: 40px !important;
+    color: #ccc !important;
+
+  }
+
   .line-clamp {
     display: -webkit-box;
     -webkit-line-clamp: 5;
     -webkit-box-orient: vertical;
     overflow: hidden;
   }
-  .btnc{
+
+  .btnc {
     margin: 5px auto;
     border: none;
     padding: 10px 5px;
     font-size: 15px;
     position: relative;
     text-decoration: none;
-    &:before{
+
+    &:before {
       transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);
       content: '';
       width: 0;
@@ -52,11 +72,13 @@ button, input, textarea, select {
       top: 0;
       left: 0;
     }
-    & .btnc-text{
+
+    & .btnc-text {
       color: white;
       // check out mdn docs for different types of blend modes.
       mix-blend-mode: difference;
-      &:hover{
+
+      &:hover {
         border-bottom: 1px solid white;
       }
     }

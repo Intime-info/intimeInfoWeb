@@ -77,6 +77,9 @@ var blog_carousel= function () {
             autoPlay : true,
             stopOnHover : true,
             margin: 20,
+            nav: true,
+            navText:["<span class=\"intimeinfo intimeinfoleft-arrow\"></span>","<span class=\"intimeinfo intimeinforight-angle\"></span>"],
+
             responsive:{
                 0:{
                     items:1,

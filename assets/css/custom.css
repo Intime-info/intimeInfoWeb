@@ -9950,6 +9950,20 @@ button:focus, input:focus, textarea:focus, select:focus {
   border-color: #da2929;
   border-width: 1px;
 }
+.mainBlog .owl-prev {
+  position: absolute;
+  top: 50%;
+  left: -5%;
+  font-size: 40px !important;
+  color: #ccc !important;
+}
+.mainBlog .owl-next {
+  position: absolute;
+  top: 50%;
+  right: -5%;
+  font-size: 40px !important;
+  color: #ccc !important;
+}
 .mainBlog .line-clamp {
   display: -webkit-box;
   -webkit-line-clamp: 5;
