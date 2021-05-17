@@ -63,7 +63,7 @@ button, input, textarea, select {
     border-radius: 100px 0 0 0;
   }
   .card{
-    border-radius: 100px 0 100px 30px
+    border-radius: 100px 0 100px 0
   }
 
   .next-btn {
@@ -81,7 +81,7 @@ button, input, textarea, select {
       bottom: 5px;
       left: 0;
       width: 0;
-      background-color: black;
+      background-color: #021423;
       transition: width .5s ease-in-out;
     }
 

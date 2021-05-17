@@ -9980,7 +9980,7 @@ button:focus, input:focus, textarea:focus, select:focus {
   border-radius: 100px 0 0 0;
 }
 .mainBlog .card {
-  border-radius: 100px 0 100px 30px;
+  border-radius: 100px 0 100px 0;
 }
 .mainBlog .next-btn {
   padding: 10px 0 10px 0;
@@ -10009,7 +10009,7 @@ button:focus, input:focus, textarea:focus, select:focus {
   bottom: 5px;
   left: 0;
   width: 0;
-  background-color: black;
+  background-color: #021423;
   transition: width 0.5s ease-in-out;
 }
 .mainBlog .next-btn:hover {
