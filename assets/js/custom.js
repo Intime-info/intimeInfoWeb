@@ -100,10 +100,42 @@ var blog_carousel= function () {
         });
     }
 };
+var customer_carousel= function () {
+    if ($("#customer_carousel").length > 0)
+    {
+        $('#customer_carousel').owlCarousel({
+            loop: true,
+            autoPlay : true,
+            stopOnHover : true,
+            margin: 20,
+            nav: true,
+            navText:["<span class=\"intimeinfo intimeinfoleft-arrow\"></span>","<span class=\"intimeinfo intimeinforight-angle\"></span>"],
+
+            responsive:{
+                0:{
+                    items:1,
+                },
+                500:{
+                    items:1,
+                },
+                600:{
+                    items:1,
+                },
+                1000:{
+                    items:1,
+                },
+                1200:{
+                    items:1,
+                }
+            }
+        });
+    }
+};
 $(document).ready(function (){
     contactMap();
     $('.collapse').collapse()
     partners_carousel();
     blog_carousel();
+    customer_carousel();
 
 });

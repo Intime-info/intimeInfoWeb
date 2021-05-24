@@ -17,6 +17,41 @@ button, input, textarea, select {
   }
 }
 
+.mainCustomer {
+
+  .customerBody{
+    position: relative;
+    width: 100%;
+    background: #efef00;
+    clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 85%);
+    .customerTitle {
+      position: absolute;
+      top: 15%;
+      left: 10%;
+      span{
+        font-weight: 800;
+        font-size: 25px;
+      }
+    }
+    .double-quotes{
+      font-size: 50px;
+      font-weight: 700;
+      transform: rotate(180deg);
+    }
+    .card{
+      background: transparent;
+      border: 0;
+      margin: 170px 120px;
+      .customer-img{
+        width: 125px;
+        height: 125px;
+        justify-content: center;
+      }
+    }
+
+  }
+}
+
 .mainBlog {
   /*.card{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -29,9 +64,11 @@ button, input, textarea, select {
       border-width: 1px;
     }
   }
-  .owl-stage{
+
+  .owl-stage {
     padding: 10px 0;
   }
+
   .owl-prev {
     position: absolute;
     top: 50%;
@@ -59,10 +96,12 @@ button, input, textarea, select {
   .card-title {
     font-size: 25px !important;
   }
-  .card-img-top{
+
+  .card-img-top {
     border-radius: 100px 0 0 0;
   }
-  .card{
+
+  .card {
     border-radius: 100px 0 100px 0
   }
 

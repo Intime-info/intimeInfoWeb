@@ -9939,6 +9939,37 @@ button:focus, input:focus, textarea:focus, select:focus {
   border-color: inherit !important;
 }
 
+.mainCustomer .customerBody {
+  position: relative;
+  width: 100%;
+  background: #efef00;
+  clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 85%);
+}
+.mainCustomer .customerBody .customerTitle {
+  position: absolute;
+  top: 15%;
+  left: 10%;
+}
+.mainCustomer .customerBody .customerTitle span {
+  font-weight: 800;
+  font-size: 25px;
+}
+.mainCustomer .customerBody .double-quotes {
+  font-size: 50px;
+  font-weight: 700;
+  transform: rotate(180deg);
+}
+.mainCustomer .customerBody .card {
+  background: transparent;
+  border: 0;
+  margin: 170px 120px;
+}
+.mainCustomer .customerBody .card .customer-img {
+  width: 125px;
+  height: 125px;
+  justify-content: center;
+}
+
 .mainBlog {
   /*.card{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
