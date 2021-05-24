@@ -18,7 +18,6 @@ button, input, textarea, select {
 }
 
 .mainCustomer {
-
   .customerBody{
     position: relative;
     width: 100%;
@@ -42,13 +41,18 @@ button, input, textarea, select {
       background: transparent;
       border: 0;
       margin: 170px 120px;
-      .customer-img{
+      .customer-img {
         width: 125px;
         height: 125px;
         justify-content: center;
       }
     }
-
+  }
+  .fz-20{
+    font-size: 20px;
+  }
+  .fz-18{
+    font-size: 18px;
   }
 }
 

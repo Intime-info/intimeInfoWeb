@@ -9969,6 +9969,12 @@ button:focus, input:focus, textarea:focus, select:focus {
   height: 125px;
   justify-content: center;
 }
+.mainCustomer .fz-20 {
+  font-size: 20px;
+}
+.mainCustomer .fz-18 {
+  font-size: 18px;
+}
 
 .mainBlog {
   /*.card{
