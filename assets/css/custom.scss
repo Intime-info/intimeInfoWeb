@@ -52,22 +52,6 @@ button, input,textarea,select{
 
   }
 
-  // .box {
-  //   position: relative;
-  //   top: -600px;
-  //   transform: rotate( 45deg );
-  //   right: -1300px;
-  // }
-
-  // .wave {
-  //   position: fixed;
-  //   top: 400px;
-  //   right: -120px;
-  //   opacity: 0.2;
-  //   background: #00A0AF;
-  //   width: 1100px;
-  //   height: 1100px;
-  // }
   .slider-thumb::before {
     position: absolute;
     content: "";
@@ -120,8 +104,8 @@ button, input,textarea,select{
   background-attachment: fixed;
   z-index: -1;
   opacity: 1;
-  
 
+  
   overflow: hidden;
   &-box {
     box-shadow: 0 0 40px #0a0b0712;
