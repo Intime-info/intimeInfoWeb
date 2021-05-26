@@ -5,6 +5,7 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+@import "style.css";
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -9936,6 +9937,77 @@ button:focus, input:focus, textarea:focus, select:focus {
   outline: 0 !important;
   box-shadow: none !important;
   border-color: inherit !important;
+}
+
+.intimeInfo-header {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  border-radius: 0;
+  border: none;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.intimeInfo-header nav > .container {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+.intimeInfo-header.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 0px 13px 35px -12px rgba(0, 0, 0, 0.15);
+  animation: menu_sticky 0.7s ease-in-out;
+  background: #fff;
+}
+.intimeInfo-header .navbar {
+  padding: 0;
+}
+.intimeInfo-header .navbar-light .navbar-toggler {
+  border-color: #fff;
+  outline: none;
+}
+.intimeInfo-header .navbar .navbar-nav .nav-item > .nav-link {
+  color: #00A0AF;
+  font-weight: 500;
+  position: relative;
+  padding: 20px;
+}
+.intimeInfo-header .navbar .navbar-nav .nav-item > .nav-link:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0%;
+  height: 3px;
+  background-color: #021D49;
+  transform: translateX(-50%);
+  -webkit-transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -o-transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.intimeInfo-header .navbar .navbar-nav .nav-item > .nav-link:hover:before, .intimeInfo-header .navbar .navbar-nav .nav-item > .nav-link.active:before {
+  width: 100%;
+}
+
+@keyframes menu_sticky {
+  0% {
+    margin-top: -120px;
+    opacity: 0;
+  }
+  50% {
+    margin-top: -64px;
+    opacity: 0;
+  }
+  100% {
+    margin-top: 0;
+    opacity: 1;
+  }
 }
 
 /*# sourceMappingURL=custom.css.map */
