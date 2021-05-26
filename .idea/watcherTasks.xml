@@ -4,6 +4,7 @@
     <enabled-global>
       <option value="SCSS" />
 <<<<<<< HEAD
+<<<<<<< HEAD
       <option value="SCSS-min" />
       <option value="SCSS Min" />
       <option value="Sass" />
@@ -11,6 +12,10 @@
       <option value="Sass" />
       <option value="SCSS Min" />
 >>>>>>> cagri
+=======
+      <option value="SCSS-min" />
+      <option value="SCSS Min" />
+>>>>>>> abdulkerim
     </enabled-global>
   </component>
 </project>

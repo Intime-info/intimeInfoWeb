@@ -5,7 +5,11 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+<<<<<<< HEAD
 @import url(c:\Users\intime\Desktop\intimeInfoWeb\assets\css\style.css);
+=======
+@import "style.css";
+>>>>>>> abdulkerim
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -10863,6 +10867,7 @@ button:focus, input:focus, textarea:focus, select:focus {
   border-color: inherit !important;
 }
 
+<<<<<<< HEAD
 .intimeInfo-header {
   top: 50px;
   left: 0;
@@ -11305,3 +11310,127 @@ button:focus, input:focus, textarea:focus, select:focus {
   border-radius: 5px;
 }
 /*# sourceMappingURL=custom.css.map */
+=======
+.mainCustomer .customerBody {
+  position: relative;
+  width: 100%;
+  background: #efef00;
+  clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 85%);
+}
+.mainCustomer .customerBody .customerTitle {
+  position: absolute;
+  top: 15%;
+  left: 10%;
+}
+.mainCustomer .customerBody .customerTitle span {
+  font-weight: 800;
+  font-size: 25px;
+}
+.mainCustomer .customerBody .double-quotes {
+  font-size: 50px;
+  font-weight: 700;
+  transform: rotate(180deg);
+}
+.mainCustomer .customerBody .card {
+  background: transparent;
+  border: 0;
+  margin: 170px 120px;
+}
+.mainCustomer .customerBody .card .customer-img {
+  width: 125px;
+  height: 125px;
+  justify-content: center;
+}
+.mainCustomer .fz-20 {
+  font-size: 20px;
+}
+.mainCustomer .fz-18 {
+  font-size: 18px;
+}
+
+.mainBlog {
+  /*.card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }*/
+}
+.mainBlog .blogTitle hr {
+  width: 10%;
+  border-style: solid;
+  border-color: #da2929;
+  border-width: 1px;
+}
+.mainBlog .owl-stage {
+  padding: 10px 0;
+}
+.mainBlog .owl-prev {
+  position: absolute;
+  top: 50%;
+  left: -5%;
+  font-size: 40px !important;
+  color: #ccc !important;
+}
+.mainBlog .owl-next {
+  position: absolute;
+  top: 50%;
+  right: -5%;
+  font-size: 40px !important;
+  color: #ccc !important;
+}
+.mainBlog .line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.mainBlog .card-title {
+  font-size: 25px !important;
+}
+.mainBlog .card-img-top {
+  border-radius: 100px 0 0 0;
+}
+.mainBlog .card {
+  border-radius: 100px 0 100px 0;
+}
+.mainBlog .next-btn {
+  padding: 10px 0 10px 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: black;
+  text-decoration: none;
+  position: relative;
+  /* &:before {
+     content: "";
+     position: absolute;
+     width: 100%;
+     height: 2px;
+     bottom: 5px;
+     left: 0;
+     background-color: black;
+     visibility: hidden;
+     transform: scaleX(1);
+     transition: all 0.5s ease-in-out;
+   }*/
+}
+.mainBlog .next-btn:before {
+  position: absolute;
+  content: "";
+  height: 2px;
+  bottom: 5px;
+  left: 0;
+  width: 0;
+  background-color: #021423;
+  transition: width 0.5s ease-in-out;
+}
+.mainBlog .next-btn:hover {
+  /* &:before {
+     width: 0;
+     visibility: visible;
+     transform: scaleX(0);
+   }*/
+}
+.mainBlog .next-btn:hover:before {
+  width: 100%;
+}
+
+/*# sourceMappingURL=custom.css.map */
+>>>>>>> abdulkerim

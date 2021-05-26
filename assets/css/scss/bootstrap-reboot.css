@@ -8,8 +8,12 @@
 *,
 *::before,
 *::after {
+<<<<<<< HEAD
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+=======
+  box-sizing: border-box;
+>>>>>>> abdulkerim
 }
 
 html {
@@ -39,8 +43,12 @@ body {
 }
 
 hr {
+<<<<<<< HEAD
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
+=======
+  box-sizing: content-box;
+>>>>>>> abdulkerim
   height: 0;
   overflow: visible;
 }
@@ -58,8 +66,12 @@ p {
 abbr[title],
 abbr[data-original-title] {
   text-decoration: underline;
+<<<<<<< HEAD
   -webkit-text-decoration: underline dotted;
           text-decoration: underline dotted;
+=======
+  text-decoration: underline dotted;
+>>>>>>> abdulkerim
   cursor: help;
   border-bottom: 0;
   text-decoration-skip-ink: none;
@@ -90,7 +102,11 @@ dt {
 }
 
 dd {
+<<<<<<< HEAD
   margin-bottom: .5rem;
+=======
+  margin-bottom: 0.5rem;
+>>>>>>> abdulkerim
   margin-left: 0;
 }
 
@@ -116,11 +132,19 @@ sup {
 }
 
 sub {
+<<<<<<< HEAD
   bottom: -.25em;
 }
 
 sup {
   top: -.5em;
+=======
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+>>>>>>> abdulkerim
 }
 
 a {
@@ -128,7 +152,10 @@ a {
   text-decoration: none;
   background-color: transparent;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> abdulkerim
 a:hover {
   color: #0056b3;
   text-decoration: underline;
@@ -138,7 +165,10 @@ a:not([href]):not([class]) {
   color: inherit;
   text-decoration: none;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> abdulkerim
 a:not([href]):not([class]):hover {
   color: inherit;
   text-decoration: none;
@@ -224,7 +254,11 @@ select {
   text-transform: none;
 }
 
+<<<<<<< HEAD
 [role="button"] {
+=======
+[role=button] {
+>>>>>>> abdulkerim
   cursor: pointer;
 }
 
@@ -233,31 +267,55 @@ select {
 }
 
 button,
+<<<<<<< HEAD
 [type="button"],
 [type="reset"],
 [type="submit"] {
+=======
+[type=button],
+[type=reset],
+[type=submit] {
+>>>>>>> abdulkerim
   -webkit-appearance: button;
 }
 
 button:not(:disabled),
+<<<<<<< HEAD
 [type="button"]:not(:disabled),
 [type="reset"]:not(:disabled),
 [type="submit"]:not(:disabled) {
+=======
+[type=button]:not(:disabled),
+[type=reset]:not(:disabled),
+[type=submit]:not(:disabled) {
+>>>>>>> abdulkerim
   cursor: pointer;
 }
 
 button::-moz-focus-inner,
+<<<<<<< HEAD
 [type="button"]::-moz-focus-inner,
 [type="reset"]::-moz-focus-inner,
 [type="submit"]::-moz-focus-inner {
+=======
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+>>>>>>> abdulkerim
   padding: 0;
   border-style: none;
 }
 
+<<<<<<< HEAD
 input[type="radio"],
 input[type="checkbox"] {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+=======
+input[type=radio],
+input[type=checkbox] {
+  box-sizing: border-box;
+>>>>>>> abdulkerim
   padding: 0;
 }
 
@@ -278,7 +336,11 @@ legend {
   width: 100%;
   max-width: 100%;
   padding: 0;
+<<<<<<< HEAD
   margin-bottom: .5rem;
+=======
+  margin-bottom: 0.5rem;
+>>>>>>> abdulkerim
   font-size: 1.5rem;
   line-height: inherit;
   color: inherit;
@@ -289,17 +351,30 @@ progress {
   vertical-align: baseline;
 }
 
+<<<<<<< HEAD
 [type="number"]::-webkit-inner-spin-button,
 [type="number"]::-webkit-outer-spin-button {
   height: auto;
 }
 
 [type="search"] {
+=======
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type=search] {
+>>>>>>> abdulkerim
   outline-offset: -2px;
   -webkit-appearance: none;
 }
 
+<<<<<<< HEAD
 [type="search"]::-webkit-search-decoration {
+=======
+[type=search]::-webkit-search-decoration {
+>>>>>>> abdulkerim
   -webkit-appearance: none;
 }
 
@@ -324,4 +399,9 @@ template {
 [hidden] {
   display: none !important;
 }
+<<<<<<< HEAD
 /*# sourceMappingURL=bootstrap-reboot.css.map */
+=======
+
+/*# sourceMappingURL=bootstrap-reboot.css.map */
+>>>>>>> abdulkerim
