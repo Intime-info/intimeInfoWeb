@@ -9930,7 +9930,11 @@ h3 {
   }
 }
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif !important;
+}
+
+.font-shadow {
+  text-shadow: 2px 2px #bcdae1;
 }
 
 button:focus, input:focus, textarea:focus, select:focus {
@@ -9939,6 +9943,7 @@ button:focus, input:focus, textarea:focus, select:focus {
   border-color: inherit !important;
 }
 
+<<<<<<< HEAD
 .intimeInfo-header {
   position: absolute;
   top: 50px;
@@ -10009,5 +10014,147 @@ button:focus, input:focus, textarea:focus, select:focus {
     opacity: 1;
   }
 }
+=======
+.mainProduct {
+  font-family: "Montserrat", sans-serif !important;
+}
+.mainProduct .container .row {
+  /*
+
+        &:hover .single-item .icon i{
+
+          display: inline-block;
+          animation: heartBeat;
+          animation-duration: 2s;
+          animation-timing-function: linear;
+        }
+        &:hover .single-item{
+          display: inline-block;
+          animation: bounce;
+          animation-timing-function: linear;
+          animation-duration: .7s;
+          box-shadow: 10px 10px 12px 12px #EEEEEE ;
+
+        }*/
+}
+.mainProduct .container .row #particles-js {
+  position: absolute;
+  max-width: 100%;
+  height: 100%;
+}
+.mainProduct .container .row .product-title h1 {
+  font-size: 40px;
+}
+.mainProduct .container .row .product-title p {
+  display: block;
+  max-width: 750px;
+  text-align: center;
+  margin: auto;
+  font-size: 16px;
+  line-height: 1.8;
+  font-weight: 400;
+}
+.mainProduct #fliplerr .animasyonyap {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 19px;
+  left: 19px;
+  z-index: 5353;
+  animation-name: aniad;
+  animation-duration: 15s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+}
+@keyframes aniad {
+  0% {
+    transform: rotateY(130deg);
+  }
+  50% {
+    transform: rotateX(310deg);
+  }
+  100% {
+    transform: rotateY(130deg);
+  }
+}
+.mainProduct #fliplerr .card-flip div {
+  backface-visibility: hidden;
+  transition: transform 300ms;
+  transition-timing-function: linear;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+.mainProduct #fliplerr .card-flip .card-front {
+  transform: rotateY(0deg);
+  display: grid;
+  align-content: center;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+.mainProduct #fliplerr .card-flip .card-back {
+  transform: rotateY(180deg);
+  position: absolute;
+  top: 0;
+  border: 1px solid #eeeeee;
+  display: grid;
+  align-content: center;
+}
+.mainProduct #fliplerr .card-flip:hover .card-front {
+  transform: rotateY(-180deg);
+  box-shadow: 10px 10px 12px 12px #EEEEEE;
+}
+.mainProduct #fliplerr .card-flip:hover .card-back {
+  transform: rotateY(0deg);
+  box-shadow: 10px 10px 12px 12px #EEEEEE;
+}
+.mainProduct #fliplerr .btn-2 {
+  background-color: #FF8879;
+  color: #FFF8FF;
+  letter-spacing: 0;
+}
+.mainProduct #fliplerr .btn-2:hover,
+.mainProduct #fliplerr .btn-2:active,
+.mainProduct #fliplerr .btn2 i {
+  /* Sultan ablaya sor ok işareti de beyaz olmalı*/
+  color: #ff8879;
+  background-color: #fff;
+  letter-spacing: 1px;
+  margin-left: 20px;
+  border: 1px solid #9fcdff;
+}
+.mainProduct #fliplerr .btn-2:after,
+.mainProduct #fliplerr .btn-2:before {
+  backface-visibility: hidden;
+  border: 1px solid rgba(255, 136, 121, 0);
+  bottom: 0px;
+  content: " ";
+  display: block;
+  margin: 1px auto;
+  position: relative;
+  transition: all 300ms ease-in-out;
+  width: 0;
+}
+.mainProduct #fliplerr .btn-2:hover:after,
+.mainProduct #fliplerr .btn-2:hover:before {
+  backface-visibility: hidden;
+  border-color: #FF8879;
+  transition: width 350ms ease-in-out;
+  width: 50%;
+}
+.mainProduct #fliplerr .btn-2:hover:before {
+  bottom: auto;
+  top: 0;
+  width: 75%;
+}
+.mainProduct i {
+  color: #fff8ff;
+}
+
+.mainPartner {
+  margin-top: 60px;
+}
+>>>>>>> mert
 
 /*# sourceMappingURL=custom.css.map */

@@ -71,6 +71,10 @@
   content: "\e90a";
 }
 .intimeinfo-target:before {
+<<<<<<< HEAD
+=======
+
+>>>>>>> mert
   content: "\e90b";
 }
 .intimeinfo-right-arrow:before {
@@ -82,13 +86,21 @@
 .intimeinfo-workers:before {
   content: "\e90e";
 }
+<<<<<<< HEAD
 .intimeinfo-user:before {
+=======
+.intimeinf-ouser:before {
+>>>>>>> mert
   content: "\e90f";
 }
 .intimeinfo-right-angle:before {
   content: "\e910";
 }
+<<<<<<< HEAD
 .intimeinfo-email:before {
+=======
+.intimeinf-oemail:before {
+>>>>>>> mert
   content: "\e911";
 }
 .intimeinfo-headphones:before {

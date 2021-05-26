@@ -44,17 +44,29 @@ var contactMap = function(){
         createMarkerNew(40.92033506644141, 29.31415561581492);
     }
 };
+<<<<<<< HEAD
 /*var partners_carousel= function () {
     if ($(".products_carousel").length > 0)
+=======
+
+var owl_carousel= function () {
+    if ($(".owl-carousel").length > 0)
+>>>>>>> mert
     {
-        $('.products_carousel').owlCarousel({
+        $('.owl-carousel').owlCarousel({
             loop:true,
             margin:10,
-            nav:false,
+            nav:true,
+            animateOut: 'fadeOut',
+            autoHeight: true,
+            autoplay:true,
+            autoplayHoverPause: true,
             dots: true,
             responsive:{
                 0:{
-                    items:2
+                    items:1,
+                    center:true,
+                    margin: 10,
                 },
                 600:{
                     items:3
@@ -94,7 +106,40 @@ var sticky_navbar= function (){
 $(document).ready(function (){
     contactMap();
     $('.collapse').collapse()
+<<<<<<< HEAD
  /*   partners_carousel();*/
     sticky_navbar();
 
+=======
+    owl_carousel();
+
+    /*$(".owl-carousel").owlCarousel({
+
+        loop:true,
+        dots: false,
+
+        autoplay:true,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: true,
+        animateOut: 'slideOutDown',
+        center:true,
+
+        responsive:{
+            0:{
+                items:1,
+                margin: 10
+            },
+            600:{
+                items:2
+            },
+            960:{
+                items:4
+            },
+            1200:{
+                items:5
+            }
+        }
+
+    });*/
+>>>>>>> mert
 });
