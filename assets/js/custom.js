@@ -51,13 +51,17 @@ var owl_carousel= function () {
         $('.owl-carousel').owlCarousel({
             loop:true,
             margin:10,
-            nav:false,
+            nav:true,
+            animateOut: 'fadeOut',
             autoHeight: true,
             autoplay:true,
+            autoplayHoverPause: true,
             dots: true,
             responsive:{
                 0:{
-                    items:2
+                    items:1,
+                    center:true,
+                    margin: 10,
                 },
                 600:{
                     items:3

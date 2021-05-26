@@ -5,9 +5,11 @@ $corporateDarkBlue: #021D49;
 
 
 body{
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif !important;
 }
-
+.font-shadow{
+  text-shadow: 2px 2px #bcdae1;
+}
 button, input,textarea,select{
   &:focus{
     outline: 0!important;
@@ -68,6 +70,25 @@ button, input,textarea,select{
   }
 
   #fliplerr {
+    .animasyonyap{
+      width:80px;
+      height: 80px;
+      position: absolute;
+      top:19px;
+      left: 19px;
+      z-index: 5353;
+      @keyframes aniad {
+        0%{transform: rotateY(130deg)}
+        50%{transform:rotateX(310deg)}
+        100%{transform: rotateY(130deg);}
+      }
+      animation-name:aniad;
+      animation-duration: 15s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      animation-fill-mode: forwards;
+
+    }
     .card-flip {
       div {
         backface-visibility: hidden;
@@ -81,20 +102,30 @@ button, input,textarea,select{
 
       .card-front {
         transform: rotateY(0deg);
+        display: grid;
+        align-content: center;
+        margin-bottom: 30px;
+        cursor:pointer;
+
       }
 
       .card-back {
         transform: rotateY(180deg);
         position: absolute;
         top: 0;
+        border: 1px solid #eeeeee;
+        display: grid;
+        align-content: center;
       }
 
       &:hover .card-front {
         transform: rotateY(-180deg);
+        box-shadow: 10px 10px 12px 12px #EEEEEE ;
       }
 
       &:hover .card-back {
         transform: rotateY(0deg);
+        box-shadow: 10px 10px 12px 12px #EEEEEE ;
       }
     }
 
