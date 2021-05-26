@@ -44,7 +44,7 @@ var contactMap = function(){
         createMarkerNew(40.92033506644141, 29.31415561581492);
     }
 };
-var partners_carousel= function () {
+/*var partners_carousel= function () {
     if ($(".products_carousel").length > 0)
     {
         $('.products_carousel').owlCarousel({
@@ -68,9 +68,33 @@ var partners_carousel= function () {
             }
         })
     }
+};*/
+var sticky_navbar= function (){
+    var $window = $(window);
+    var  $body = $('body');
+    var  $intimeInfoMenu = $('.intimeInfo-header');
+    $('a.anchor').on('click', function (e) {
+        var anchor = $(this);
+        var ancAtt = $(anchor.attr('href'));
+        $('html, body').stop().animate({
+            scrollTop: ancAtt.offset().top
+        }, 1000);
+        e.preventDefault();
+    });
+
+    $window.scroll(function () {
+        var currentLink = $(this);
+        if ($(currentLink).scrollTop() > 100) {
+            $intimeInfoMenu.addClass("sticky");
+        } else {
+            $intimeInfoMenu.removeClass("sticky");
+        }
+    });
 };
 $(document).ready(function (){
     contactMap();
     $('.collapse').collapse()
-    partners_carousel();
+ /*   partners_carousel();*/
+    sticky_navbar();
+
 });
