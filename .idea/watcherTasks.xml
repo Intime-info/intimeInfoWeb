@@ -3,9 +3,14 @@
   <component name="ProjectTasksOptions">
     <enabled-global>
       <option value="SCSS" />
+<<<<<<< HEAD
       <option value="SCSS-min" />
       <option value="SCSS Min" />
       <option value="Sass" />
+=======
+      <option value="Sass" />
+      <option value="SCSS Min" />
+>>>>>>> cagri
     </enabled-global>
   </component>
 </project>

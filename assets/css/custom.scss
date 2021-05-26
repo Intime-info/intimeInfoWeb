@@ -1,11 +1,20 @@
 @import "scss/bootstrap";
 @import "style.css";
+
 $corporateBlue: #00A0AF;
 $corporateDarkBlue: #021D49;
 
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none!important;
+  list-style: none;
+}
+
 
 body{
-  font-family: 'Montserrat', sans-serif !important;
+  font-family: 'Montserrat', sans-serif ;
 }
 .font-shadow{
   text-shadow: 2px 2px #bcdae1;
@@ -267,19 +276,129 @@ button, input,textarea,select{
     }
 
 
-  .mainPartner{
-    margin-top: 60px;
-    .container{
+  
 
-      .owl-carousel{
-        .item{
-          img{
-
-
-          }
-        }
-
+.mainAbout {
+  padding-bottom: 90px;
+  padding-top: 50px;
+  overflow: hidden;
+  &-photo {
+    img {
+      transition: .5s all;
+      &:hover {
+        transform: scale(1.2);
       }
     }
   }
 
+
+  .count-box {
+    display: flex;
+    margin-right: 30px;
+    color: #ff5d22;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0 0 0 7px #edf1fe;
+    font-size: 30px;
+    font-weight: 800;
+    font-style: italic;
+    padding: 20px;
+
+  }
+
+  .slider-thumb::before {
+    position: absolute;
+    content: "";
+    left: 5%;
+    top: 5%;
+    width: 100%;
+    height: 100%;
+    background: #17141d;
+    border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
+    will-change: border-radius, transform, opacity;
+    animation: sliderShape 5s linear infinite;
+    display: block;
+    z-index: -1;
+    -webkit-animation: sliderShape 5s linear infinite;
+  }
+  @keyframes sliderShape{
+    0%,100%{
+    border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+      transform: translate3d(0,0,0) rotateZ(0.01deg);
+      background: #ffc10761;
+    }
+    34%{
+        border-radius: 70% 30% 46% 54% / 30% 29% 71% 70%;
+      transform:  translate3d(0,5px,0) rotateZ(0.01deg);
+      background: #17a2b880;
+    }
+    50%{
+      transform: translate3d(0,0,0) rotateZ(0.01deg);
+      background: #007bff40;
+    }
+    67%{
+      border-radius: 100% 60% 60% 100% / 100% 100% 60% 60% ;
+      transform: translate3d(0,-3px,0) rotateZ(0.01deg);
+      background: #28a74540;
+    }
+  }
+}
+
+
+
+
+.mainServices {
+  padding-top: 50px;
+  padding-bottom: 90px;
+  background: url("../img/domain.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: transparent;
+  background-attachment: fixed;
+  z-index: -1;
+  opacity: 1;
+
+  
+  overflow: hidden;
+  &-box {
+    box-shadow: 0 0 40px #0a0b0712;
+    background-color: #fff;
+    text-align: center;
+    margin-bottom: 30px;
+    transition: 0.6s;
+    border: 1px solid #E6EDF6;
+    padding: 35px 22px;
+    position: relative;
+    z-index: 1;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 475px;
+
+    &:hover {
+
+      h3, a, p {
+        color: white;
+      }
+
+      &::before { 
+        height: 100%;
+      }
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 0;
+      background: linear-gradient(to right, $corporateDarkBlue 0%, $corporateBlue 100%);
+      z-index: -1;
+      transition: 0.6s;
+      border-radius: 5px;
+    }
+  }
+
+
+}

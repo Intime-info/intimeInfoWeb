@@ -1,6 +1,10 @@
 {
     "version": 3,
+<<<<<<< HEAD
     "mappings": "",
+=======
+    "mappings": "AAwCA,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,KAAK;EACjC,AAAA,IAAI,CAAC;IACH,OAAO,EAAE,IAAI;GACd",
+>>>>>>> cagri
     "sources": [
         "responsive.scss"
     ],

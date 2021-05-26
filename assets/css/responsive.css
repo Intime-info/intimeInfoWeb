@@ -1,1 +1,10 @@
+<<<<<<< HEAD
 /* No CSS *//*# sourceMappingURL=responsive.css.map */
+=======
+@media screen and (max-width: 575px) {
+  .box {
+    display: none;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */
+>>>>>>> cagri

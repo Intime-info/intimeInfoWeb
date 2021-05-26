@@ -10839,8 +10839,17 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none !important;
+  list-style: none;
+}
+
 body {
-  font-family: 'Montserrat', sans-serif !important;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .font-shadow {
@@ -11142,7 +11151,157 @@ button:focus, input:focus, textarea:focus, select:focus {
   color: #fff8ff;
 }
 
-.mainPartner {
-  margin-top: 60px;
+.mainAbout {
+  padding-bottom: 90px;
+  padding-top: 50px;
+  overflow: hidden;
+}
+
+.mainAbout-photo img {
+  -webkit-transition: .5s all;
+  transition: .5s all;
+}
+
+.mainAbout-photo img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.mainAbout .count-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 30px;
+  color: #ff5d22;
+  border-radius: 50%;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 0 7px #edf1fe;
+          box-shadow: 0 0 0 7px #edf1fe;
+  font-size: 30px;
+  font-weight: 800;
+  font-style: italic;
+  padding: 20px;
+}
+
+.mainAbout .slider-thumb::before {
+  position: absolute;
+  content: "";
+  left: 5%;
+  top: 5%;
+  width: 100%;
+  height: 100%;
+  background: #17141d;
+  border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
+  will-change: border-radius, transform, opacity;
+  animation: sliderShape 5s linear infinite;
+  display: block;
+  z-index: -1;
+  -webkit-animation: sliderShape 5s linear infinite;
+}
+
+@-webkit-keyframes sliderShape {
+  0%, 100% {
+    border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+    -webkit-transform: translate3d(0, 0, 0) rotateZ(0.01deg);
+            transform: translate3d(0, 0, 0) rotateZ(0.01deg);
+    background: #ffc10761;
+  }
+  34% {
+    border-radius: 70% 30% 46% 54% / 30% 29% 71% 70%;
+    -webkit-transform: translate3d(0, 5px, 0) rotateZ(0.01deg);
+            transform: translate3d(0, 5px, 0) rotateZ(0.01deg);
+    background: #17a2b880;
+  }
+  50% {
+    -webkit-transform: translate3d(0, 0, 0) rotateZ(0.01deg);
+            transform: translate3d(0, 0, 0) rotateZ(0.01deg);
+    background: #007bff40;
+  }
+  67% {
+    border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
+    -webkit-transform: translate3d(0, -3px, 0) rotateZ(0.01deg);
+            transform: translate3d(0, -3px, 0) rotateZ(0.01deg);
+    background: #28a74540;
+  }
+}
+
+@keyframes sliderShape {
+  0%, 100% {
+    border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+    -webkit-transform: translate3d(0, 0, 0) rotateZ(0.01deg);
+            transform: translate3d(0, 0, 0) rotateZ(0.01deg);
+    background: #ffc10761;
+  }
+  34% {
+    border-radius: 70% 30% 46% 54% / 30% 29% 71% 70%;
+    -webkit-transform: translate3d(0, 5px, 0) rotateZ(0.01deg);
+            transform: translate3d(0, 5px, 0) rotateZ(0.01deg);
+    background: #17a2b880;
+  }
+  50% {
+    -webkit-transform: translate3d(0, 0, 0) rotateZ(0.01deg);
+            transform: translate3d(0, 0, 0) rotateZ(0.01deg);
+    background: #007bff40;
+  }
+  67% {
+    border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
+    -webkit-transform: translate3d(0, -3px, 0) rotateZ(0.01deg);
+            transform: translate3d(0, -3px, 0) rotateZ(0.01deg);
+    background: #28a74540;
+  }
+}
+
+.mainServices {
+  padding-top: 50px;
+  padding-bottom: 90px;
+  background: url("../img/domain.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: transparent;
+  background-attachment: fixed;
+  z-index: -1;
+  opacity: 1;
+  overflow: hidden;
+}
+
+.mainServices-box {
+  -webkit-box-shadow: 0 0 40px #0a0b0712;
+          box-shadow: 0 0 40px #0a0b0712;
+  background-color: #fff;
+  text-align: center;
+  margin-bottom: 30px;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  border: 1px solid #E6EDF6;
+  padding: 35px 22px;
+  position: relative;
+  z-index: 1;
+  border-radius: 5px;
+  overflow: hidden;
+  height: 475px;
+}
+
+.mainServices-box:hover h3, .mainServices-box:hover a, .mainServices-box:hover p {
+  color: white;
+}
+
+.mainServices-box:hover::before {
+  height: 100%;
+}
+
+.mainServices-box:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 0;
+  background: -webkit-gradient(linear, left top, right top, from(#021D49), to(#00A0AF));
+  background: linear-gradient(to right, #021D49 0%, #00A0AF 100%);
+  z-index: -1;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  border-radius: 5px;
 }
 /*# sourceMappingURL=custom.css.map */
