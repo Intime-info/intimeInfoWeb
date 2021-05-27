@@ -1,18 +1,10 @@
 @font-face {
   font-family: 'intimeinfo';
-<<<<<<< HEAD
   src:  url('../fonts/intimeinfo.eot?4u2g82');
   src:  url('../fonts/intimeinfo.eot?4u2g82#iefix') format('embedded-opentype'),
     url('../fonts/intimeinfo.ttf?4u2g82') format('truetype'),
     url('../fonts/intimeinfo.woff?4u2g82') format('woff'),
     url('../fonts/intimeinfo.svg?4u2g82#intimeinfo') format('svg');
-=======
-  src:  url('../fonts/intimeinfo.eot?f5w6wj');
-  src:  url('../fonts/intimeinfo.eot?f5w6wj#iefix') format('embedded-opentype'),
-    url('../fonts/intimeinfo.ttf?f5w6wj') format('truetype'),
-    url('../fonts/intimeinfo.woff?f5w6wj') format('woff'),
-    url('../fonts/intimeinfo.svg?f5w6wj#intimeinfo') format('svg');
->>>>>>> abdulkerim
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -21,10 +13,6 @@
 .intimeinfo {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'intimeinfo' !important;
-<<<<<<< HEAD
-=======
-  speak: never;
->>>>>>> abdulkerim
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -36,7 +24,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-<<<<<<< HEAD
 .intimeinfo-linkedin:before {
   content: "\e900";
 }
@@ -48,54 +35,25 @@
   color: rgb(113, 30, 140);
 }
 .intimeinfo-kariyernet .path2:before {
-=======
-.intimeinfoleft-arrow:before {
-  content: "\e916";
-}
-.intimeinfolinkedin:before {
-  content: "\e900";
-}
-.intimeinfoinstagram:before {
-  content: "\e901";
-}
-.intimeinfokariyernet .path1:before {
-  content: "\e902";
-  color: rgb(113, 30, 140);
-}
-.intimeinfokariyernet .path2:before {
->>>>>>> abdulkerim
   content: "\e903";
   margin-left: -1em;
   color: rgb(245, 129, 19);
 }
-<<<<<<< HEAD
 .intimeinfo-kariyernet .path3:before {
-=======
-.intimeinfokariyernet .path3:before {
->>>>>>> abdulkerim
   content: "\e904";
   margin-left: -1em;
   color: rgb(113, 30, 140);
 }
-<<<<<<< HEAD
 .intimeinfo-kariyernet .path4:before {
-=======
-.intimeinfokariyernet .path4:before {
->>>>>>> abdulkerim
   content: "\e905";
   margin-left: -1em;
   color: rgb(113, 30, 140);
 }
-<<<<<<< HEAD
 .intimeinfo-kariyernet .path5:before {
-=======
-.intimeinfokariyernet .path5:before {
->>>>>>> abdulkerim
   content: "\e906";
   margin-left: -1em;
   color: rgb(113, 30, 140);
 }
-<<<<<<< HEAD
 .intimeinfo-lightbulb-line:before {
   content: "\e907";
 
@@ -142,53 +100,5 @@
   content: "\e914";
 }
 .intimeinfo-minus:before {
-=======
-.intimeinfolightbulb-line:before {
-  content: "\e907";
-  color: rgba(255, 160, 73, 0.99);
-}
-.intimeinfopie-chart-line:before {
-  content: "\e908";
-  color: #6ef2a9;
-}
-.intimeinfoquill-pen-line:before {
-  content: "\e909";
-  color: #69b8f1;
-}
-.intimeinfofeedback:before {
-  content: "\e90a";
-}
-.intimeinfotarget:before {
-  content: "\e90b";
-}
-.intimeinforight-arrow:before {
-  content: "\e90c";
-}
-.intimeinfodown-angle:before {
-  content: "\e90d";
-}
-.intimeinfoworkers:before {
-  content: "\e90e";
-}
-.intimeinfouser:before {
-  content: "\e90f";
-}
-.intimeinforight-angle:before {
-  content: "\e910";
-}
-.intimeinfoemail:before {
-  content: "\e911";
-}
-.intimeinfoheadphones:before {
-  content: "\e912";
-}
-.intimeinfopin:before {
-  content: "\e913";
-}
-.intimeinfosearch:before {
-  content: "\e914";
-}
-.intimeinfominus:before {
->>>>>>> abdulkerim
   content: "\e915";
 }

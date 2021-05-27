@@ -13,7 +13,6 @@ $corporateDarkBlue: #021D49;
 }
 
 
-<<<<<<< HEAD
 body{
   font-family: 'Montserrat', sans-serif ;
 }
@@ -30,9 +29,10 @@ button, input,textarea,select{
 
 
 .intimeInfo-header {
-  top: 50px;
+  top: 0;
   left: 0;
   right: 0;
+  padding: 10px;
   z-index: 999;
   border-radius: 0;
   border: none;
@@ -43,13 +43,14 @@ button, input,textarea,select{
   nav{
     &>.container{
       background: #fff;
-      padding: 20px;
       border-radius: 10px;
     }
   }
 
   &.sticky {
     position: fixed;
+    margin: 0 auto;
+    border-radius: 10px;
     top: 0;
     left: 0;
     box-shadow: 0px 13px 35px -12px rgba(0, 0, 0, 0.15);
@@ -60,6 +61,16 @@ button, input,textarea,select{
 
   .navbar {
     padding: 0;
+
+    &-brand {
+      img {
+        width: 200px;
+      }
+    }
+    &-toggler {
+      border: none;
+      outline: none;
+    }
   }
 
   .navbar-light {
@@ -400,65 +411,163 @@ button, input,textarea,select{
       border-radius: 5px;
     }
   }
-
-
-}
-=======
-body {
-  font-family: 'Montserrat', sans-serif;
 }
 
-button, input, textarea, select {
-  &:focus {
-    outline: 0 !important;
-    box-shadow: none !important;
-    border-color: inherit !important;
-  }
-}
+
 
 .mainCustomer {
-  .customerBody{
-    position: relative;
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  &:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
     width: 100%;
-    background: #efef00;
-    clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 85%);
+    height: 60vh;
+    background: $corporateBlue;
+    // clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 85%);
+  }
+  .customerBody {
+    position: relative;
+    display: flex;
     .customerTitle {
-      position: absolute;
-      top: 15%;
-      left: 10%;
-      span{
-        font-weight: 800;
-        font-size: 25px;
+      z-index: 1;
+      font-size: 5em;
+      font-weight: 600;
+      span {
+        color: white;
       }
     }
-    .double-quotes{
-      font-size: 50px;
-      font-weight: 700;
-      transform: rotate(180deg);
-    }
-    .card{
+    .card {
       background: transparent;
       border: 0;
-      margin: 170px 120px;
-      .customer-img {
+      color: white;
+      p{
+        font-size: 1.2em;
+      }
+      .double-quotes{
+        font-weight: 700;
+        font-size: 1.5em;
+        transform: rotate(180deg);
+      }
+      img {
         width: 125px;
         height: 125px;
-        justify-content: center;
       }
     }
-  }
-  .fz-20{
-    font-size: 20px;
-  }
-  .fz-18{
-    font-size: 18px;
+/*    .owl-prev {
+      position: absolute;
+      top: 50%;
+      left: -5%;
+      font-size: 40px !important;
+      color: #ccc !important;
+    }
+    .owl-next {
+      position: absolute;
+      top: 50%;
+      right: -5%;
+      font-size: 40px !important;
+      color: #ccc !important;
+    }*/
+    #customer_carousel {
+      top: 30%;
+    }
   }
 }
-
 .mainBlog {
   /*.card{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }*/
+  .blogTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    hr {
+      content: "";
+      width: 10%;
+      border-style: solid;
+      border-color: #da2929;
+      border-width: 1px;
+    }
+  }
+  .owl-stage {
+    padding: 10px 0;
+  }
+/*  .owl-prev {
+    position: absolute;
+    top: 50%;
+    left: -5%;
+    font-size: 40px !important;
+    color: #ccc !important;
+  }
+  .owl-next {
+    position: absolute;
+    top: 50%;
+    right: -5%;
+    font-size: 40px !important;
+    color: #ccc !important;
+  }*/
+  .line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .card-title {
+    font-size: 25px !important;
+  }
+  .card-img-top {
+    border-radius: 100px 0 0 0;
+  }
+  .card {
+    border-radius: 100px 0 100px 0
+  }
+  .next-btn {
+    padding: 10px 0 10px 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+    text-decoration: none;
+    position: relative;
+    &:before {
+      position: absolute;
+      content: "";
+      height: 2px;
+      bottom: 5px;
+      left: 0;
+      width: 0;
+      background-color: #021423;
+      transition: width .5s ease-in-out;
+    }
+    &:hover {
+      &:before {
+        width: 100%;
+      }
+      /* &:before {
+         width: 0;
+         visibility: visible;
+         transform: scaleX(0);
+       }*/
+    }
+    /* &:before {
+       content: "";
+       position: absolute;
+       width: 100%;
+       height: 2px;
+       bottom: 5px;
+       left: 0;
+       background-color: black;
+       visibility: hidden;
+       transform: scaleX(1);
+       transition: all 0.5s ease-in-out;
+     }*/
+  }
+}
+.mainBlog {
+  
   .blogTitle {
     hr {
       width: 10%;
@@ -553,6 +662,3 @@ button, input, textarea, select {
      }*/
   }
 }
-
-
->>>>>>> abdulkerim

@@ -1,6 +1,28 @@
 
 new WOW().init();
 
+var sticky_navbar= function (){
+    var $window = $(window);
+    var  $body = $('body');
+    var  $intimeInfoMenu = $('.intimeInfo-header');
+    $('a.anchor').on('click', function (e) {
+        var anchor = $(this);
+        var ancAtt = $(anchor.attr('href'));
+        $('html, body').stop().animate({
+            scrollTop: ancAtt.offset().top
+        }, 1000);
+        e.preventDefault();
+    });
+
+    $window.scroll(function () {
+        var currentLink = $(this);
+        if ($(currentLink).scrollTop() > 50) {
+            $intimeInfoMenu.addClass("sticky");
+        } else {
+            $intimeInfoMenu.removeClass("sticky");
+        }
+    });
+};
 
 var contactMap = function(){
     if($("#map").length > 0){
@@ -47,29 +69,17 @@ var contactMap = function(){
         createMarkerNew(40.92033506644141, 29.31415561581492);
     }
 };
-<<<<<<< HEAD
-/*var partners_carousel= function () {
+var partners_carousel= function () {
     if ($(".products_carousel").length > 0)
-=======
-
-var owl_carousel= function () {
-    if ($(".owl-carousel").length > 0)
->>>>>>> mert
     {
-        $('.owl-carousel').owlCarousel({
+        $('.products_carousel').owlCarousel({
             loop:true,
             margin:10,
-            nav:true,
-            animateOut: 'fadeOut',
-            autoHeight: true,
-            autoplay:true,
-            autoplayHoverPause: true,
+            nav:false,
             dots: true,
             responsive:{
                 0:{
-                    items:1,
-                    center:true,
-                    margin: 10,
+                    items:2
                 },
                 600:{
                     items:3
@@ -83,28 +93,6 @@ var owl_carousel= function () {
             }
         })
     }
-};*/
-var sticky_navbar= function (){
-    var $window = $(window);
-    var  $body = $('body');
-    var  $intimeInfoMenu = $('.intimeInfo-header');
-    $('a.anchor').on('click', function (e) {
-        var anchor = $(this);
-        var ancAtt = $(anchor.attr('href'));
-        $('html, body').stop().animate({
-            scrollTop: ancAtt.offset().top
-        }, 1000);
-        e.preventDefault();
-    });
-
-    $window.scroll(function () {
-        var currentLink = $(this);
-        if ($(currentLink).scrollTop() > 100) {
-            $intimeInfoMenu.addClass("sticky");
-        } else {
-            $intimeInfoMenu.removeClass("sticky");
-        }
-    });
 };
 var blog_carousel= function () {
     if ($("#blog_carousel").length > 0)
@@ -171,47 +159,9 @@ var customer_carousel= function () {
 $(document).ready(function (){
     contactMap();
     $('.collapse').collapse()
-<<<<<<< HEAD
-<<<<<<< HEAD
- /*   partners_carousel();*/
-    sticky_navbar();
-
-=======
-    owl_carousel();
-
-    /*$(".owl-carousel").owlCarousel({
-
-        loop:true,
-        dots: false,
-
-        autoplay:true,
-        autoplayTimeout: 2000,
-        autoplayHoverPause: true,
-        animateOut: 'slideOutDown',
-        center:true,
-
-        responsive:{
-            0:{
-                items:1,
-                margin: 10
-            },
-            600:{
-                items:2
-            },
-            960:{
-                items:4
-            },
-            1200:{
-                items:5
-            }
-        }
-
-    });*/
->>>>>>> mert
-=======
     partners_carousel();
     blog_carousel();
     customer_carousel();
+    sticky_navbar();
 
->>>>>>> abdulkerim
 });
