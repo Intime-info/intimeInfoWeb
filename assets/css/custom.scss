@@ -124,11 +124,14 @@ button, input,textarea,select{
 .mainProduct {
   font-family: 'Montserrat', sans-serif !important;
 
+
+
   .container {
 
     .row {
       #particles-js {
         position: absolute;
+        left: 0;
         max-width: 100%;
         height: 100%;
       }
@@ -192,7 +195,48 @@ button, input,textarea,select{
       animation-fill-mode: forwards;
 
     }
+
+    .card {
+      border: 0;
+      box-shadow: 10px 10px 12px 12px #EEEEEE;
+    
+      .card-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        margin-top: 40px;
+        
+        a {
+          position: absolute;
+          bottom: 40px;
+          color: #fff;
+          background-color: #2c2c2c;
+          transition: 0.2s linear;
+          &:hover {
+            transform: scale(1.2);
+          }
+        }
+
+        .intimeinfo {
+          position: absolute;
+          left: 35%;
+          top: -10%;
+          background-color: #2c2c2c;
+          padding: 20px;
+          border-radius: 20px;
+          transition: 0.3s linear;
+
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+      }
+  
+    }
+
     .card-flip {
+      
       div {
         backface-visibility: hidden;
         transition: transform 300ms;
@@ -203,37 +247,42 @@ button, input,textarea,select{
 
       }
 
+
       .card-front {
-        transform: rotateY(0deg);
-        display: grid;
-        align-content: center;
-        margin-bottom: 30px;
+        color: #2c2c2c;
+        // transform: rotateY(0deg);
+        // display: grid;
+        // align-content: center;
         cursor:pointer;
-
+        background-color: #fff;
+        opacity: 0.85;
       }
+      
 
-      .card-back {
-        transform: rotateY(180deg);
-        position: absolute;
-        top: 0;
-        border: 1px solid #eeeeee;
-        display: grid;
-        align-content: center;
-      }
+      // .card-back {
+      //   color: #fff;
+      //   background-color: #3738a0;
+      //   transform: rotateY(180deg);
+      //   position: absolute;
+      //   top: 0;
+      //   border: 1px solid #eeeeee;
+      //   display: grid;
+      //   align-content: center;
+      // }
 
-      &:hover .card-front {
-        transform: rotateY(-180deg);
-        box-shadow: 10px 10px 12px 12px #EEEEEE ;
-      }
+      // &:hover .card-front {
+      //   transform: rotateY(-180deg);
+      //   box-shadow: 10px 10px 12px 12px #EEEEEE ;
+      // }
 
-      &:hover .card-back {
-        transform: rotateY(0deg);
-        box-shadow: 10px 10px 12px 12px #EEEEEE ;
-      }
+      // &:hover .card-back {
+      //   transform: rotateY(0deg);
+      //   box-shadow: 10px 10px 12px 12px #EEEEEE ;
+      // }
     }
 
     .btn-2 {
-      background-color: #FF8879;
+      background-color: $corporateDarkBlue;
       color: #FFF8FF;
       letter-spacing: 0;
     }
@@ -241,17 +290,15 @@ button, input,textarea,select{
     .btn-2:hover,
     .btn-2:active,
     .btn2 i { /* Sultan ablaya sor ok işareti de beyaz olmalı*/
-      color: #ff8879;
-      background-color: #fff;
-      letter-spacing: 1px;
-      margin-left: 20px;
+      color: #ffff;
+      background-color: #2b2c80;
       border: 1px solid #9fcdff;
     }
 
     .btn-2:after,
     .btn-2:before {
       backface-visibility: hidden;
-      border: 1px solid rgba(#FF8879, 0);
+      border: 1px solid rgba(#14158f, 0);
       bottom: 0px;
       content: " ";
       display: block;
@@ -265,7 +312,7 @@ button, input,textarea,select{
     .btn-2:hover:after,
     .btn-2:hover:before {
       backface-visibility: hidden;
-      border-color: #FF8879;
+      border-color: #ffff;
       transition: width 350ms ease-in-out;
       width: 50%;
 
@@ -425,7 +472,7 @@ button, input,textarea,select{
     left: 0;
     content: "";
     width: 100%;
-    height: 60vh;
+    height: 100%;
     background: $corporateBlue;
     // clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 85%);
   }
@@ -433,13 +480,25 @@ button, input,textarea,select{
     position: relative;
     display: flex;
     .customerTitle {
+      letter-spacing: 1.5px;
       z-index: 1;
-      font-size: 5em;
-      font-weight: 600;
+      font-size: 4em;
+      font-weight: 900;
+      margin-bottom: 50px;
       span {
         color: white;
       }
     }
+    .customerName {
+      font-size: 20px;
+      font-weight: 500;
+      letter-spacing: 1.2px;
+    }
+    .customerExplanation {
+      color: #fff;
+      font-size: 20px;
+    }
+
     .card {
       background: transparent;
       border: 0;
@@ -449,7 +508,6 @@ button, input,textarea,select{
       }
       .double-quotes{
         font-weight: 700;
-        font-size: 1.5em;
         transform: rotate(180deg);
       }
       img {
@@ -477,9 +535,18 @@ button, input,textarea,select{
   }
 }
 .mainBlog {
-  /*.card{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }*/
+  .card {
+    background-color: rgb(245, 245, 245);
+    border: 1px solid #ccc;
+    transition: 0.3s linear;
+    &:hover {
+      box-shadow: -10px 10px rgb(177, 175, 175);
+      transform: scale(0.99);
+    }
+    img {
+      padding: 15px;
+    }
+  }
   .blogTitle {
     display: flex;
     flex-direction: column;
@@ -519,12 +586,8 @@ button, input,textarea,select{
   .card-title {
     font-size: 25px !important;
   }
-  .card-img-top {
-    border-radius: 100px 0 0 0;
-  }
-  .card {
-    border-radius: 100px 0 100px 0
-  }
+
+
   .next-btn {
     padding: 10px 0 10px 0;
     font-size: 18px;
@@ -552,102 +615,6 @@ button, input,textarea,select{
          transform: scaleX(0);
        }*/
     }
-    /* &:before {
-       content: "";
-       position: absolute;
-       width: 100%;
-       height: 2px;
-       bottom: 5px;
-       left: 0;
-       background-color: black;
-       visibility: hidden;
-       transform: scaleX(1);
-       transition: all 0.5s ease-in-out;
-     }*/
-  }
-}
-.mainBlog {
-  
-  .blogTitle {
-    hr {
-      width: 10%;
-      border-style: solid;
-      border-color: #da2929;
-      border-width: 1px;
-    }
-  }
-
-  .owl-stage {
-    padding: 10px 0;
-  }
-
-  .owl-prev {
-    position: absolute;
-    top: 50%;
-    left: -5%;
-    font-size: 40px !important;
-    color: #ccc !important;
-  }
-
-  .owl-next {
-    position: absolute;
-    top: 50%;
-    right: -5%;
-    font-size: 40px !important;
-    color: #ccc !important;
-
-  }
-
-  .line-clamp {
-    display: -webkit-box;
-    -webkit-line-clamp: 5;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-  }
-
-  .card-title {
-    font-size: 25px !important;
-  }
-
-  .card-img-top {
-    border-radius: 100px 0 0 0;
-  }
-
-  .card {
-    border-radius: 100px 0 100px 0
-  }
-
-  .next-btn {
-    padding: 10px 0 10px 0;
-    font-size: 18px;
-    font-weight: 600;
-    color: black;
-    text-decoration: none;
-    position: relative;
-
-    &:before {
-      position: absolute;
-      content: "";
-      height: 2px;
-      bottom: 5px;
-      left: 0;
-      width: 0;
-      background-color: #021423;
-      transition: width .5s ease-in-out;
-    }
-
-    &:hover {
-      &:before {
-        width: 100%;
-      }
-
-      /* &:before {
-         width: 0;
-         visibility: visible;
-         transform: scaleX(0);
-       }*/
-    }
-
     /* &:before {
        content: "";
        position: absolute;

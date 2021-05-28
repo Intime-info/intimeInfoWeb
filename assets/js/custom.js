@@ -156,6 +156,18 @@ var customer_carousel= function () {
         });
     }
 };
+var databg_color = function () {
+    if ($("[data-bg]").length > 0){
+        $("[data-bg]").each(function (){
+            $(this).css("background-color",$(this).data("bg"));
+        });
+    }
+    if ($("[data-color]").length > 0){
+        $("[data-color]").each(function (){
+            $(this).css("color",$(this).data("color"));
+        });
+    }
+}
 $(document).ready(function (){
     contactMap();
     $('.collapse').collapse()
@@ -163,5 +175,6 @@ $(document).ready(function (){
     blog_carousel();
     customer_carousel();
     sticky_navbar();
+    databg_color();
 
 });
