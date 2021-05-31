@@ -176,5 +176,7 @@ $(document).ready(function (){
     customer_carousel();
     sticky_navbar();
     databg_color();
-
+    $('#nav-icon3').click(function(){
+        $(this).toggleClass('open');
+    });
 });
