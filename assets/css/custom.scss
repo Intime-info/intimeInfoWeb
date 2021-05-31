@@ -1,9 +1,15 @@
 @import "scss/bootstrap";
 
-@import "style.css";
 
 $corporateBlue: #00A0AF;
 $corporateDarkBlue: #021D49;
+
+.intimeColor {
+  color: $corporateDarkBlue;
+}
+.infoColor {
+  color: $corporateBlue;
+}
 
 *{
   padding: 0;
@@ -177,25 +183,6 @@ button, input,textarea,select{
   }
 
   #fliplerr {
-    .animasyonyap{
-      width:80px;
-      height: 80px;
-      position: absolute;
-      top:19px;
-      left: 19px;
-      z-index: 5353;
-      @keyframes aniad {
-        0%{transform: rotateY(130deg)}
-        50%{transform:rotateX(310deg)}
-        100%{transform: rotateY(130deg);}
-      }
-      animation-name:aniad;
-      animation-duration: 15s;
-      animation-timing-function: linear;
-      animation-iteration-count: infinite;
-      animation-fill-mode: forwards;
-
-    }
 
     .card {
       border: 0;
@@ -229,7 +216,7 @@ button, input,textarea,select{
           transition: 0.3s linear;
 
           &:hover {
-            transform: scale(1.1);
+            transform: scale(1.1) rotate(10deg);
           }
         }
       }
@@ -536,33 +523,63 @@ button, input,textarea,select{
   }
 }
 .mainBlog {
-  .card {
-    background-color: rgb(245, 245, 245);
-    border: 1px solid #ccc;
+  .item {
+    // display: flex;
+    // flex-direction: column;
+    // align-items: flex-start;
+    // padding: 20px;
+    box-shadow: -10px 10px  #EEEEEE;
     transition: 0.3s linear;
+    border: transparent;
+    // border-radius: 20px;
     &:hover {
-      box-shadow: -10px 10px rgb(177, 175, 175);
+      // box-shadow: -10px 10px rgb(177, 175, 175);
+      box-shadow: 10px 10px 12px 12px #EEEEEE;
       transform: scale(0.99);
     }
-    img {
-      padding: 15px;
+    // img {
+    //   // padding: 20px;
+    //   // border-radius: 10px;
+    //   width: 100%;
+    // }
+
+    figure {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+
+      &:hover {
+        h5 {
+          transition: 0.3s linear;
+          color: $corporateBlue;
+        }
+      }
+    }
+
+    .card-header {
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+    }
+    .card-body {
+      
+      padding: 20px;
     }
   }
   .blogTitle {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     hr {
       content: "";
-      width: 10%;
+      width: 30%;
       border-style: solid;
-      border-color: #da2929;
+      border-color: #2c2c2c;
       border-width: 1px;
     }
   }
   .owl-stage {
-    padding: 10px 0;
+    padding: 10px;
   }
 /*  .owl-prev {
     position: absolute;
@@ -580,7 +597,7 @@ button, input,textarea,select{
   }*/
   .line-clamp {
     display: -webkit-box;
-    -webkit-line-clamp: 5;
+    -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
   }

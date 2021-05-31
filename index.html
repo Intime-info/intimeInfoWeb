@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
@@ -180,11 +181,12 @@
 </section>
 
 <section class="mainProduct mt-5">
+    
     <div class="container ">
-
+        
         <!--ÜRÜNLER BAŞLIK KISMI-->
-        <div class="row d-flex mb-4" >
-            <div id="particles-js" ></div>
+        <div class="row d-flex align-items-center justify-content-center mb-4" >
+            <div id="particles-js"></div>
             <div class="product-title text-center">
                 <h2 class="text-center mt-4   wow bounceInRight  data-wow-duration='2s' data-wow-delay='2s'"   id="urunlerimizh1">Ürünlerimiz</h2>
                 <p id="urunlerimizp " class="text-center wow bounceInLeft data-wow-duration='2s' data-wow-delay='2s'">Geniş ürün ve hizmet yelpazemiz ile sektörünüze özel tüm ihtiyaçlarınızı karşılıyoruz!
@@ -351,7 +353,8 @@
                         <img class="rounded-circle customer-img" src="https://picsum.photos/200" alt="Card image cap">
                     </div>
                     <div class="customerName text-center text-white mt-2 ">lorem ipsum</div>
-                </div><div class="card">
+                </div>
+                <div class="card">
                 <p class="text-center text-white double-quotes">"</p>
                 <p class="text-center text-white">
                     Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
@@ -363,7 +366,7 @@
                     <img class="rounded-circle customer-img" src="https://picsum.photos/200" alt="Card image cap">
                 </div>
                 <div class="customerName text-center text-white mt-2 ">lorem ipsum</div>
-            </div>
+                </div>
             </div>
        </div>
     </div>
@@ -371,9 +374,15 @@
 <section class="mainBlog">
     <div class="container">
         <div class="row">
-            <div class="blogTitle mt-5">
-                <h2 class="text-center">Lorem Ipsum</h2>
-                <hr>
+            <div class="mt-5">
+                <div class="d-flex justify-content-between align-items-end mb-4 px-3">
+                    <div class="blogTitle">
+                        <h2 class="text-center font-weight-bold"> <span class="intimeColor">Intime</span><span class="infoColor">Info</span>  Blog</h2>
+                        
+                        <hr>
+                    </div>
+                    <a href="#" class="font-weight-bold infoColor">Bütün makaleler > </a>
+                </div>
                 <p class="text-center p-3">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
                     cubilia curae; In fermentum imperdiet odio sit amet finibus. Fusce lacinia tristique tortor, ac
                     tristique est luctus quis. Donec faucibus sit amet leo a gravida. Praesent a ipsum posuere nulla
@@ -381,95 +390,86 @@
             </div>
         </div>
         <div id="blog_carousel" class="owl-carousel mt-3">
-            <div class="card">
-                <img class="card-img-top" src="https://picsum.photos/200" width="350" height="350" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title text-left mb-3">Pellentesque vel vestibulum est, sit.</h5>
-                    <p class="card-text line-clamp">Integer elementum purus commodo, convallis nibh at, pretium felis.
-                        Phasellus malesuada augue vitae dui molestie tempus. Fusce blandit placerat massa sit amet
-                        condimentum. Ut volutpat nisi non massa auctor, sit amet blandit ante placerat. Nunc non
-                        fringilla leo, eget lacinia eros. Nulla tempor gravida iaculis. Curabitur molestie, quam eu
-                        commodo.</p>
-                    <a href="#" class="next-btn">Devamı için <i class="intimeinfo intimeinforight-arrow"></i></a>
-                </div>
+            <div class="item">
+                <!-- <div class="card-header w-100 d-flex align-items-center justify-content-center" data-bg="#fbcfcf">
+                    <img class="card-img-top img-fluid" src="https://picsum.photos/id/204/200/200"  alt="Card image cap">
+                </div> -->
+                <!-- <a href="">
+                    <figure class="mb-0">
+                        <img class="card-img-top img-fluid" src="https://picsum.photos/id/204/200/200"  alt="Card image cap">
+                    </figure>
+                </a> -->
+                <figure class="mb-0" >
+                    <a href="#" data-bg="#d3e3ff">
+                       <img class="card-img-top img-fluid" src="https://fabrx.co/muze/assets/img/templates/article2.svg"  alt="Card image cap">
+                    </a>
+                    <div class="card-body">
+                        <a href="#" class="text-dark">
+                            <h5 class="card-title text-left mb-3">Pellentesque vel vestibulum est, sit.</h5>
+                        </a>
+                        <p class="card-text line-clamp">Integer elementum purus commodo, convallis nibh at, pretium felis.
+                            Phasellus malesuada augue vitae dui molestie tempus. Fusce blandit placerat massa sit amet
+                            condimentum. Ut volutpat nisi non massa auctor, sit amet blandit ante placerat. Nunc non
+                            fringilla leo, eget lacinia eros. Nulla tempor gravida iaculis. Curabitur molestie, quam eu
+                            commodo.</p>
+                        <a href="#" class="next-btn">Devamı için <i class="intimeinfo intimeinforight-arrow"></i></a>
+                    </div>
+                 </figure>
             </div>
-            <div class="card">
-                <img class="card-img-top" src="https://picsum.photos/seed/picsum/200/300" width="350" height="350"
-                     alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title text-left mb-3">Suspendisse id lacus tellus. Mauris id dolor.</h5>
-                    <p class="card-text line-clamp">Quisque sagittis ligula arcu, quis dapibus leo gravida ac. Curabitur
-                        id ipsum condimentum nunc dapibus viverra vel a mi. Lorem ipsum dolor sit amet, consectetur
-                        adipiscing elit. Proin eget nunc ac nisi mattis lacinia ut at dolor. Sed congue luctus mollis.
-                        Ut aliquam mattis turpis, a pulvinar diam fermentum a.</p>
-                    <a href="#" class="next-btn">Devamı için <i class="intimeinfo intimeinforight-arrow"></i></a>
-                </div>
+            <div class="item">
+                <!-- <div class="card-header w-100 d-flex align-items-center justify-content-center" data-bg="#d3e3ff">
+                    <img class="card-img-top" src="https://picsum.photos/id/203/200/200"  alt="Card image cap">
+                </div> -->
+                <!-- <a href="">
+                    <figure>
+                        <img class="card-img-top img-fluid" src="https://fabrx.co/muze/assets/img/templates/article2.svg"  alt="Card image cap">
+                    </figure>
+                </a> -->
+                <figure class="mb-0" >
+                   <a href="#" data-bg="#d3e3ff">
+                      <img class="card-img-top img-fluid" src="https://fabrx.co/muze/assets/img/templates/article2.svg"  alt="Card image cap">
+                   </a>
+                   <div class="card-body">
+                       <a href="#" class="text-dark">
+                        <h5 class="card-title text-left mb-3">Suspendisse id lacus tellus. Mauris id.</h5>
+                       </a>
+                       <p class="card-text line-clamp">Quisque sagittis ligula arcu, quis dapibus leo gravida ac. Curabitur
+                           id ipsum condimentum nunc dapibus viverra vel a mi. Lorem ipsum dolor sit amet, consectetur
+                           adipiscing elit. Proin eget nunc ac nisi mattis lacinia ut at dolor. Sed congue luctus mollis.
+                           Ut aliquam mattis turpis, a pulvinar diam fermentum a.</p>
+                       <a href="#" class="next-btn">Devamı için <i class="intimeinfo intimeinforight-arrow"></i></a>
+                   </div>
+                </figure>
             </div>
-            <div class="card">
-                <img class="card-img-top" src="https://picsum.photos/id/202/200/200" width="350" height="350"
-                     alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title text-left mb-3">Proin rutrum arcu dui, at faucibus mi sagittis in.</h5>
-                    <p class="card-text line-clamp">Sed ut ornare eros, in auctor libero. Vestibulum et vulputate
-                        ligula, eget tincidunt tortor. Pellentesque semper euismod leo at sollicitudin. Sed venenatis
-                        dui ac posuere suscipit. Curabitur rutrum aliquam commodo. Pellentesque aliquet rhoncus
-                        elementum. Donec egestas condimentum mi vel imperdiet. Vestibulum aliquet in odio eget dictum.
-                        Cras iaculis congue tellus.</p>
-                    <a href="#" class="next-btn">Devamı için <i class="intimeinfo intimeinforight-arrow"></i></a>
-                </div>
+            <div class="item">
+                <!-- <div class="card-header w-100 d-flex align-items-center justify-content-center" data-bg="#ffeccb">
+                    <img class="card-img-top" src="https://picsum.photos/id/202/200/200"  alt="Card image cap">
+                </div> -->
+                <!-- <a href="">
+                    <figure>
+                        <img class="card-img-top img-fluid" src="https://fabrx.co/muze/assets/img/templates/article2.svg"  alt="Card image cap">
+                    </figure>
+                </a> -->
+                <figure class="mb-0" >
+                    <a href="#" data-bg="#d3e3ff">
+                       <img class="card-img-top img-fluid" src="https://fabrx.co/muze/assets/img/templates/article2.svg"  alt="Card image cap">
+                    </a>
+
+                    <div class="card-body">
+                        <a href="" class="text-dark">
+                            <h5 class="card-title text-left mb-3">Proin rutrum arcu dui, at faucibus mi in.</h5>
+                        </a>
+                        <p class="card-text line-clamp">Sed ut ornare eros, in auctor libero. Vestibulum et vulputate
+                            ligula, eget tincidunt tortor. Pellentesque semper euismod leo at sollicitudin. Sed venenatis
+                            dui ac posuere suscipit. Curabitur rutrum aliquam commodo. Pellentesque aliquet rhoncus
+                            elementum. Donec egestas condimentum mi vel imperdiet. Vestibulum aliquet in odio eget dictum.
+                            Cras iaculis congue tellus.</p>
+                        <a href="#" class="next-btn">Devamı için <i class="intimeinfo intimeinforight-arrow"></i></a>
+                    </div>
+                 </figure>
+
             </div>
-            <div class="card">
-                <img class="card-img-top" src="https://picsum.photos/id/203/200/200" width="350" height="350"
-                     alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title text-left mb-3">Nulla id elit ex. Morbi arcu dolor, convallis sit.</h5>
-                    <p class="card-text line-clamp">Aenean volutpat tincidunt condimentum. Vivamus mattis ullamcorper
-                        placerat. Nulla auctor lorem fermentum neque egestas blandit. Sed volutpat vel libero sit amet
-                        ultricies. Duis non eros maximus, sollicitudin velit id, ornare justo. Pellentesque est massa,
-                        eleifend ac pretium eget, consectetur iaculis felis. Morbi pretium finibus eleifend. Sed sed
-                        pretium nibh, a.</p>
-                    <a href="#" class="next-btn">Devamı için <i class="intimeinfo intimeinforight-arrow"></i></a>
-                </div>
-            </div>
-            <div class="card">
-                <img class="card-img-top" src="https://picsum.photos/id/203/200/200" width="350" height="350"
-                     alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title text-left mb-3">Nulla id elit ex. Morbi arcu dolor, convallis sit.</h5>
-                    <p class="card-text line-clamp">Aenean volutpat tincidunt condimentum. Vivamus mattis ullamcorper
-                        placerat. Nulla auctor lorem fermentum neque egestas blandit. Sed volutpat vel libero sit amet
-                        ultricies. Duis non eros maximus, sollicitudin velit id, ornare justo. Pellentesque est massa,
-                        eleifend ac pretium eget, consectetur iaculis felis. Morbi pretium finibus eleifend. Sed sed
-                        pretium nibh, a.</p>
-                    <a href="#" class="next-btn">Devamı için <i class="intimeinfo intimeinforight-arrow"></i></a>
-                </div>
-            </div>
-            <div class="card">
-                <img class="card-img-top" src="https://picsum.photos/id/203/200/200" width="350" height="350"
-                     alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title text-left mb-3">Nulla id elit ex. Morbi arcu dolor, convallis sit.</h5>
-                    <p class="card-text line-clamp">Aenean volutpat tincidunt condimentum. Vivamus mattis ullamcorper
-                        placerat. Nulla auctor lorem fermentum neque egestas blandit. Sed volutpat vel libero sit amet
-                        ultricies. Duis non eros maximus, sollicitudin velit id, ornare justo. Pellentesque est massa,
-                        eleifend ac pretium eget, consectetur iaculis felis. Morbi pretium finibus eleifend. Sed sed
-                        pretium nibh, a.</p>
-                    <a href="#" class="next-btn">Devamı için <i class="intimeinfo intimeinforight-arrow"></i></a>
-                </div>
-            </div>
-            <div class="card">
-                <img class="card-img-top" src="https://picsum.photos/id/203/200/200" width="350" height="350"
-                     alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title text-left mb-3">Nulla id elit ex. Morbi arcu dolor, convallis sit.</h5>
-                    <p class="card-text line-clamp">Aenean volutpat tincidunt condimentum. Vivamus mattis ullamcorper
-                        placerat. Nulla auctor lorem fermentum neque egestas blandit. Sed volutpat vel libero sit amet
-                        ultricies. Duis non eros maximus, sollicitudin velit id, ornare justo. Pellentesque est massa,
-                        eleifend ac pretium eget, consectetur iaculis felis. Morbi pretium finibus eleifend. Sed sed
-                        pretium nibh, a.</p>
-                    <a href="#" class="next-btn">Devamı için <i class="intimeinfo intimeinforight-arrow"></i></a>
-                </div>
-            </div>
+
         </div>
     </div>
 </section>
