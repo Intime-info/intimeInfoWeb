@@ -1,4 +1,4 @@
-
+"use strict";
 new WOW().init();
 
 var sticky_navbar= function (){
