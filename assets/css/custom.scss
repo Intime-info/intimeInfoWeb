@@ -523,6 +523,14 @@ button, input,textarea,select{
   }
 }
 .mainBlog {
+
+  .allArticles {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    
+  }
+
   .item {
     // display: flex;
     // flex-direction: column;
