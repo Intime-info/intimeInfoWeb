@@ -1,6 +1,28 @@
-
+"use strict";
 new WOW().init();
 
+var sticky_navbar= function (){
+    var $window = $(window);
+    var  $body = $('body');
+    var  $intimeInfoMenu = $('.intimeInfo-header');
+    $('a.anchor').on('click', function (e) {
+        var anchor = $(this);
+        var ancAtt = $(anchor.attr('href'));
+        $('html, body').stop().animate({
+            scrollTop: ancAtt.offset().top
+        }, 1000);
+        e.preventDefault();
+    });
+
+    $window.scroll(function () {
+        var currentLink = $(this);
+        if ($(currentLink).scrollTop() > 50) {
+            $intimeInfoMenu.addClass("sticky");
+        } else {
+            $intimeInfoMenu.removeClass("sticky");
+        }
+    });
+};
 
 var contactMap = function(){
     if($("#map").length > 0){
@@ -72,8 +94,89 @@ var partners_carousel= function () {
         })
     }
 };
+var blog_carousel= function () {
+    if ($("#blog_carousel").length > 0)
+    {
+        $('#blog_carousel').owlCarousel({
+            loop: true,
+            autoPlay : true,
+            stopOnHover : true,
+            margin: 20,
+            nav: true,
+            navText:["<span class=\"intimeinfo intimeinfoleft-arrow\"></span>","<span class=\"intimeinfo intimeinforight-angle\"></span>"],
+
+            responsive:{
+                0:{
+                    items:1,
+                },
+                500:{
+                    items:1,
+                },
+                600:{
+                    items:2,
+                },
+                1000:{
+                    items:3,
+                },
+                1200:{
+                    items:3,
+                }
+            }
+        });
+    }
+};
+var customer_carousel= function () {
+    if ($("#customer_carousel").length > 0)
+    {
+        $('#customer_carousel').owlCarousel({
+            loop: true,
+            autoPlay : true,
+            stopOnHover : true,
+            margin: 20,
+            nav: true,
+            navText:["<span class=\"intimeinfo intimeinfoleft-arrow\"></span>","<span class=\"intimeinfo intimeinforight-angle\"></span>"],
+
+            responsive:{
+                0:{
+                    items:1,
+                },
+                500:{
+                    items:1,
+                },
+                600:{
+                    items:1,
+                },
+                1000:{
+                    items:1,
+                },
+                1200:{
+                    items:1,
+                }
+            }
+        });
+    }
+};
+var databg_color = function () {
+    if ($("[data-bg]").length > 0){
+        $("[data-bg]").each(function (){
+            $(this).css("background-color",$(this).data("bg"));
+        });
+    }
+    if ($("[data-color]").length > 0){
+        $("[data-color]").each(function (){
+            $(this).css("color",$(this).data("color"));
+        });
+    }
+}
 $(document).ready(function (){
     contactMap();
     $('.collapse').collapse()
     partners_carousel();
+    blog_carousel();
+    customer_carousel();
+    sticky_navbar();
+    databg_color();
+    $('#nav-icon3').click(function(){
+        $(this).toggleClass('open');
+    });
 });
