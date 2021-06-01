@@ -12,13 +12,18 @@ $corporateDarkBlue: #021D49;
   text-decoration: none!important;
   list-style: none;
 }
-
-
 body{
   font-family: 'Montserrat', sans-serif ;
 }
 .font-shadow{
   text-shadow: 2px 2px #bcdae1;
+}
+
+.section-title{
+  font-family: 'Nunito', sans-serif;
+  font-weight: 900;
+  font-size: 35px;
+  color: #484b59;
 }
 button, input,textarea,select{
   &:focus{
@@ -27,8 +32,6 @@ button, input,textarea,select{
     border-color: inherit!important;
   }
 }
-
-
 .intimeInfo-header {
   top: 0;
   left: 0;
@@ -47,7 +50,6 @@ button, input,textarea,select{
       border-radius: 10px;
     }
   }
-
   &.sticky {
     position: fixed;
     margin: 0 auto;
@@ -57,9 +59,7 @@ button, input,textarea,select{
     box-shadow: 0px 13px 35px -12px rgba(0, 0, 0, 0.15);
     animation: menu_sticky 0.7s ease-in-out;
     background: #fff;
-
   }
-
   .navbar {
     padding: 0;
 
@@ -73,15 +73,12 @@ button, input,textarea,select{
       outline: none;
     }
   }
-
   .navbar-light {
     .navbar-toggler {
       border-color: #fff;
       outline: none;
     }
-
   }
-
   .navbar .navbar-nav .nav-item > .nav-link {
     color: #00A0AF;
     font-weight: 500;
@@ -100,7 +97,6 @@ button, input,textarea,select{
       -o-transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
       transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     }
-
     &:hover:before, &.active:before {
       width: 100%;
     }
@@ -124,9 +120,6 @@ button, input,textarea,select{
 }
 .mainProduct {
   font-family: 'Montserrat', sans-serif !important;
-
-
-
   .container {
 
     .row {
@@ -175,42 +168,19 @@ button, input,textarea,select{
 
     }
   }
-
-  #fliplerr {
-    .animasyonyap{
-      width:80px;
-      height: 80px;
-      position: absolute;
-      top:19px;
-      left: 19px;
-      z-index: 5353;
-      @keyframes aniad {
-        0%{transform: rotateY(130deg)}
-        50%{transform:rotateX(310deg)}
-        100%{transform: rotateY(130deg);}
-      }
-      animation-name:aniad;
-      animation-duration: 15s;
-      animation-timing-function: linear;
-      animation-iteration-count: infinite;
-      animation-fill-mode: forwards;
-
-    }
-
+  .product-box{
+margin-bottom: 200px;
     .card {
       border: 0;
       box-shadow: 10px 10px 12px 12px #EEEEEE;
-    
+
       .card-body {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
         margin-top: 40px;
-        
         a {
-          position: absolute;
-          bottom: 40px;
           color: #fff;
           background-color: #2c2c2c;
           transition: 0.2s linear;
@@ -218,37 +188,29 @@ button, input,textarea,select{
             transform: scale(1.2);
           }
         }
-
         .intimeinfo {
           position: absolute;
-          left: 35%;
+          left: 50%;
           top: -10%;
+          transform: translateX(-50%);
           background-color: #2c2c2c;
           padding: 20px;
           border-radius: 20px;
-          transition: 0.3s linear;
 
-          &:hover {
-            transform: scale(1.1);
-          }
+
         }
       }
-  
-    }
 
+    }
     .card-flip {
-      
       div {
         backface-visibility: hidden;
         transition: transform 300ms;
         transition-timing-function: linear;
-        width: 100%;
-        height: 100%;
+        /*  width: 100%;
+          height: 100%;*/
         margin: 0;
-
       }
-
-
       .card-front {
         color: #2c2c2c;
         // transform: rotateY(0deg);
@@ -258,7 +220,7 @@ button, input,textarea,select{
         background-color: #fff;
         opacity: 0.85;
       }
-      
+
 
       // .card-back {
       //   color: #fff;
@@ -282,52 +244,28 @@ button, input,textarea,select{
       // }
     }
 
+    .card{
+      &:first-child{
+        top: 0;
+      }
+      &:nth-child(2){
+        top: 100px;
+      }
+      &:nth-child(3){
+        top: 100px;
+      }
+      &:nth-child(4){
+        top: 200px;
+      }
+    }
+  }
+
+
+
     .btn-2 {
       background-color: $corporateDarkBlue;
       color: #FFF8FF;
       letter-spacing: 0;
-    }
-
-    .btn-2:hover,
-    .btn-2:active,
-    .btn2 i { /* Sultan ablaya sor ok işareti de beyaz olmalı*/
-      color: #ffff;
-      background-color: #2b2c80;
-      border: 1px solid #9fcdff;
-    }
-
-    .btn-2:after,
-    .btn-2:before {
-      backface-visibility: hidden;
-      border: 1px solid rgba(#14158f, 0);
-      bottom: 0px;
-      content: " ";
-      display: block;
-      margin: 1px auto;
-      position: relative;
-      transition: all 300ms ease-in-out;
-      width: 0;
-
-    }
-
-    .btn-2:hover:after,
-    .btn-2:hover:before {
-      backface-visibility: hidden;
-      border-color: #ffff;
-      transition: width 350ms ease-in-out;
-      width: 50%;
-
-    }
-
-    .btn-2:hover:before {
-      bottom: auto;
-      top: 0;
-      width: 75%;
-
-    }
-
-
-      }
 
       i {
         color: #fff8ff;
@@ -336,7 +274,8 @@ button, input,textarea,select{
     }
 
 
-  
+
+    }
 
 .mainAbout {
   padding-bottom: 90px;
@@ -700,3 +639,5 @@ button, input,textarea,select{
   -o-transition: .25s ease-in-out;
   transition: .25s ease-in-out;
 }
+
+

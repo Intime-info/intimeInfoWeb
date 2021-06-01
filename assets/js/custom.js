@@ -3,7 +3,7 @@ new WOW().init();
 
 var sticky_navbar= function (){
     var $window = $(window);
-    var  $body = $('body');
+
     var  $intimeInfoMenu = $('.intimeInfo-header');
     $('a.anchor').on('click', function (e) {
         var anchor = $(this);
@@ -170,7 +170,7 @@ var databg_color = function () {
 }
 $(document).ready(function (){
     contactMap();
-    $('.collapse').collapse()
+
     partners_carousel();
     blog_carousel();
     customer_carousel();
@@ -179,4 +179,5 @@ $(document).ready(function (){
     $('#nav-icon3').click(function(){
         $(this).toggleClass('open');
     });
+
 });

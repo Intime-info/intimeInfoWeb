@@ -7,6 +7,7 @@
     <title>Anasayfa | Intime Info Yazılım Çözümleri</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap"
           rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/animate.min.css">
     <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
@@ -37,7 +38,7 @@
             </div>
 
             <div class="collapse navbar-collapse" id="main_menu">
-                <ul class="navbar-nav mr-auto d-flex align-items-center">
+                <ul class="navbar-nav mr-auto d-flex align-items-start align-items-lg-center align-items-xl-center">
                     <li class="nav-item active ml-2">
                         <a class="nav-link" href="#">Anasayfa <span class="sr-only">(current)</span></a>
                     </li>
@@ -83,7 +84,7 @@
     <div class="container">
         <div class="row align-items-center ">
             <div class="col-12 col-md-6">
-                <h2>Biz Kimiz ?</h2>
+                <h2 class="section-title">Biz Kimiz ?</h2>
                 <p>
                     Intime Info Yazılım Çözümleri A.Ş. Online Grup bünyesinde bulunan şirketlerden bir tanesidir.
                     Uzmanlık alanları; Süreç Yönetimi Yazılımları, IoT Çözümleri ve Sektörel Çözümlerdir.
@@ -136,7 +137,7 @@
     <div class="container">  
         <div class="row align-items-center">
             <div class="mainSevices-title mb-3 d-flex flex-column align-items-center justify-content-center">
-                <h2>Hizmetlerimiz</h2>
+                <h2 class="section-title">Hizmetlerimiz</h2>
                 <p class="text-center w-75">
                     Gelişen teknolojiyi yakından takip ederek alanında uzman ekibimiz ile
                     müşterilerimizin ihtiyaçlarını en kısa sürede karşılamayı vadediyoruz!
@@ -180,123 +181,91 @@
 </section>
 
 <section class="mainProduct mt-5">
-    <div class="container ">
+    <div class="container" id="fliplerr">
 
         <!--ÜRÜNLER BAŞLIK KISMI-->
         <div class="row d-flex mb-4" >
             <div id="particles-js" ></div>
+        <div class="col-12">
+
             <div class="product-title text-center">
-                <h2 class="text-center mt-4   wow bounceInRight  data-wow-duration='2s' data-wow-delay='2s'"   id="urunlerimizh1">Ürünlerimiz</h2>
+                <h2 class="text-center mt-4   wow bounceInRight section-title  data-wow-duration='2s' data-wow-delay='2s'"   id="urunlerimizh1">Ürünlerimiz</h2>
                 <p id="urunlerimizp " class="text-center wow bounceInLeft data-wow-duration='2s' data-wow-delay='2s'">Geniş ürün ve hizmet yelpazemiz ile sektörünüze özel tüm ihtiyaçlarınızı karşılıyoruz!
                     Ürünlerimizle ilgili tüm soru ve sorunlarınızı alanında uzman ekibimiz ile hızlıca yanıtlamayı vadediyoruz!</p>
             </div>
         </div>
-    </div>
-        <!--Ürünler slider-->
+        </div>
+        <div class="row product-box justify-content-around mt-5">
 
-    <div class="container" id="fliplerr">
-        <div class="row">
-            <div class="col-md-6 col-lg-6 col-xl-3 mt-5">
-                <div class="card card-flip h-100 mt-3" style="height: 450px!important;">
+                <div class="card card-flip mt-3 col-12 col-lg-5 col-xl-5">
                     <div class="card-front">
                         <div class="card-body text-center">
                             <i class="intimeinfo intimeinfo-quill-pen-line text-white"  data-bg="#7fc3f3"  style="font-size: 60px; color: #69b8f1"></i>
                             <h3 class="card-title text-center py-4 font-shadow ">Intime PMP</h3>
-                            <!-- <p class="card-text text-center"></p> -->
-                            <p class="card-text text-center ">İstediğiniz zaman istediğiniz yerden
+                            <p class="card-text text-center px-4">İstediğiniz zaman istediğiniz yerden
                                 şirket çalışanlarınızın yürüttükleri tüm süreçleri tek bir ekrandan kontrol etmek
                                 ve izleyebilmek artık mümkün<span style="opacity: 0.4">...</span></p>
-                            <a href="#" class="btn" data-bg="#113d5a">Siteyi ziyaret et.</a>
+                            <a href="#" class="btn my-4" data-bg="#113d5a">Siteyi ziyaret et.</a>
                         </div>
                     </div>
-                    <!-- <div class="card-back ">
-                        <div class="card-body text-center">
-                            <h3 class="card-title text-center py-4 font-shadow">Intime PMP</h3>
-                            <p class="card-text text-center ">İstediğiniz zaman istediğiniz yerden
-                                şirket çalışanlarınızın yürüttükleri tüm süreçleri tek bir ekrandan kontrol etmek
-                                ve izleyebilmek artık mümkün<span style="opacity: 0.4">...</span></p>
-                            <a href="#" class="btn text-primary">Siteyi ziyaret et.</a>
-
-                        </div>
-                    </div> -->
                 </div>
-            </div>
-            <div class="col-lg-6 col-md-6 col-xl-3  mt-5">
-                <div class="card card-flip h-100 mt-3" style="height: 450px!important;">
+                <div class="card card-flip  mt-3  col-12 col-lg-5 col-xl-5" >
                     <div class="card-front">
                         <div class="card-body text-center" >
                             <i id="b" class="intimeinfo intimeinfo-pie-chart-line text-white"  data-bg="#84f4b6" style="font-size: 60px;color:#6ef2a9"></i>
                             <h3 class="card-title  text-center py-4 font-shadow">Intime Track</h3>
-                            <!-- <p class="card-text  text-center "></p> -->
-                            <p class="card-text text-center">Şirketinizin kargo süreçlerini, ziyaretçi giriş-çıkış ve ziyaretçi yönlendirmelerini; personel
+
+                            <p class="card-text text-center px-4">Şirketinizin kargo süreçlerini, ziyaretçi giriş-çıkış ve ziyaretçi yönlendirmelerini; personel
                                 devamlılığının takibini, envanter takibini ve ağır vasıta araçlarını & taşımacılığını tek ekrandan kontrol edin ve verimliliğinizi arttırın!</p>
-                            <a href="#" class="btn" data-bg="#28734a" >Siteyi ziyaret et.</a>
+                            <a href="#" class="btn my-4" data-bg="#28734a" >Siteyi ziyaret et.</a>
                         </div>
                     </div>
-                    <!-- <div class="card-back ">
-                        <div class="card-body text-center">
-                            <h3 class="card-title text-center py-4 font-shadow">Intime Track</h3>
-                            <p class="card-text text-center">Şirketinizin kargo süreçlerini, ziyaretçi giriş-çıkış ve ziyaretçi yönlendirmelerini; personel
-                                devamlılığının takibini, envanter takibini ve ağır vasıta araçlarını & taşımacılığını tek ekrandan kontrol edin ve verimliliğinizi arttırın!</p>
 
-                        </div>
-                    </div> -->
                 </div>
-            </div>
-            <div class="col-lg-6 col-md-6 col-xl-3 mt-5">
-                <div class="card card-flip h-100 mt-3" style="height: 450px!important;">
+                <div class="card card-flip  col-12 col-lg-5 col-xl-5 mt-3">
                     <div class="card-front" >
                         <div class="card-body text-center" >
                             <i class="intimeinfo intimeinfo-lightbulb-line text-white" data-bg="#fdad64" style="font-size: 60px;color: rgba(255, 160, 73, 0.99)"></i>
                             <h3 class="card-title text-center py-4 font-shadow">Intime IoT</h3>
-                            <!-- <p class="card-text text-center "></p> -->
-                            <p class="card-text text-center">Enerji, atık ve güvenlik ihtiyaçlarınızı karşılarken aynı zamanda IntimeDT ile size ait olan ama fiziken ulaşamadığınız ofislerinizi/şirketlerinizi size yakınlaştırıyoruz!</p>
 
-                            <a href="#" class="btn" data-bg="#de7c23" >Siteyi ziyaret et.</a>
+                            <p class="card-text text-center px-4">Enerji, atık ve güvenlik ihtiyaçlarınızı karşılarken aynı zamanda IntimeDT ile size ait olan ama fiziken ulaşamadığınız ofislerinizi/şirketlerinizi size yakınlaştırıyoruz!</p>
+
+                            <a href="#" class="btn my-4" data-bg="#de7c23" >Siteyi ziyaret et.</a>
                         </div>
                     </div>
-                    <!-- <div class="card-back ">
-                        <div class="card-body  text-center">
-                            <h3 class="card-title text-center py-4 font-shadow">Intime IoT</h3>
-                            <p class="card-text text-center">Enerji, atık ve güvenlik ihtiyaçlarınızı karşılarken aynı zamanda IntimeDT ile size ait olan ama fiziken ulaşamadığınız ofislerinizi/şirketlerinizi size yakınlaştırıyoruz! </p>
 
-                        </div>
-                    </div> -->
                 </div>
-            </div>
-            <div class="col-lg-6 col-md-6 col-xl-3 mt-5">
-                <div class="card card-flip  mt-3" style="height: 450px!important;">
-                    <div class="card-front" >
+                <div class="card card-flip  col-12 col-lg-5 col-xl-5 mt-3 ">
+                    <div class="card-front text-center">
                         <div class="card-body" >
                             <i class="intimeinfo intimeinfo-headphones text-white" data-bg="#e53436c9" style="font-size: 60px;color:#e11113; "></i>
                             <h3 class="card-title text-center py-4 font-shadow">Intime MDM</h3>
-                            <!-- <p class="card-text text-center"></p> -->
-                            <p class="card-text text-center">Her gün kullandığınız mobil cihazlarınızdan neler yapabileceğinizi biliyor musunuz?
+                            <p class="card-text text-center px-4">Her gün kullandığınız mobil cihazlarınızdan neler yapabileceğinizi biliyor musunuz?
                                 Android/IOS yönetimi yapabilir, sahadaki personelinizi takip edebilir; çocuklarınızın nerede ve ne zamandır orada olduğunu takip edebilirsiniz</p>
-                            <a href="#" class="btn" data-bg="#ca1c1f">Siteyi ziyaret et.</a>
+                            <a href="#" class="btn my-4" data-bg="#ca1c1f">Siteyi ziyaret et.</a>
                         </div>
                     </div>
-                    <!-- <div class="card-back ">
-                        <div class="card-body text-center ">
-                            <h3 class="card-title text-center py-4 font-shadow">Intime MDM</h3>
-                            <p class="card-text text-center">Her gün kullandığınız mobil cihazlarınızdan neler yapabileceğinizi biliyor musunuz?
-                                Android/IOS yönetimi yapabilir, sahadaki personelinizi takip edebilir; çocuklarınızın nerede ve ne zamandır orada olduğunu takip edebilirsiniz</p>
 
-                        </div>
-                    </div> -->
                 </div>
-            </div>
-
 
         </div>
 
-            <div class="col-12 text-center mt-5 wow tada" >
+<div class="row">
 
-               <a href="#" class="btn btn-2" id="dahafazlabuton">
-                    Daha Fazla <i class="intimeinfo intimeinfo-right-arrow"></i>
-               </a>
+    <div class="col-12 text-center mt-5 wow tada" >
 
-            </div>
+        <a href="#" class="btn btn-2" id="dahafazlabuton">
+            Daha Fazla <i class="intimeinfo intimeinfo-right-arrow"></i>
+        </a>
+
+    </div>
+</div>
+
+    </div>
+        <!--Ürünler slider-->
+
+    <div class="container">
+
 </div>
    
 </section>

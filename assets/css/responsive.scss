@@ -23,6 +23,15 @@
     offset:unset;
     margin: 0 auto;
   }
+  .navbar{
+    .navbar-collapse{
+      .navbar-nav{
+        .nav-item:not(:last-child){
+          border-bottom: 1px solid #ccc;
+        }
+      }
+    }
+  }
 }
 @media screen and (max-width: 991px) and (min-width: 768px) {
 
