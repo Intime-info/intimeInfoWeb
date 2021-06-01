@@ -3,8 +3,227 @@
 <head>
     <meta charset="UTF-8">
     <title>Ürünler | Intime Info Yazılım Çözümleri</title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>Anasayfa | Intime Info Yazılım Çözümleri</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+          integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+    <style>
+        .product {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .productInner {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: flex-end;
+            justify-items: center;
+        }
+
+        .productInner figure img {
+            opacity: 1;
+            width: 300px;
+            height: 200px;
+            transform: translate3d(0, 0, 0);
+            transition: .5s ease;
+        }
+
+        .productInner .icons {
+            opacity: 0;
+        }
+
+        .productInner .icons a {
+            display: flex;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            background: #0f6674;
+            color: white;
+        }
+
+        .productInner .icons a:first-child {
+            position: relative;
+            bottom: -50px;
+            left: -50px;
+            opacity: 0;
+            border-radius: 5px 5px 0 0;
+        }
+
+        .productInner .icons a:last-child {
+            position: relative;
+            bottom: -50px;
+            left: -50px;
+            opacity: 0;
+            border-radius: 0 0 5px 5px;
+        }
+
+        .productInner:hover .icons {
+            opacity: 1;
+            transition: .5s ease;
+        }
+
+        .productInner:hover .icons a:first-child {
+            opacity: 1;
+            bottom: 10px;
+            left: 35px;
+            background: #088fa1;
+            transition: 0.5s ease;
+        }
+
+        .productInner:hover .icons a:last-child {
+            opacity: 1;
+            bottom: 10px;
+            left: 35px;
+            background: #088fa1;
+            transition: 0.2s ease;
+        }
+
+        .productInner .icons a:first-child:hover {
+            background: #459ead;
+        }
+
+        .productInner .icons a:last-child:hover {
+            background: #459ead;
+        }
+
+        .productInner:hover img {
+            opacity: 0.5;
+            transform: translate3d(40px, -10px, 0);
+            transition: .5s ease;
+        }
+        @media only screen and (max-width: 992px) {
+
+            .productInner .icons {
+                opacity: 1;
+            }
+
+            .productInner .icons a:first-child {
+                opacity: 1 !important;
+                bottom: 10px !important;
+                left: 35px !important;
+            }
+
+            .productInner .icons a:last-child {
+                opacity: 1 !important;
+                bottom: 10px !important;
+                left: 35px !important;
+            }
+            .productInner img {
+                opacity: 1 !important;
+                transform: translate3d(40px, 0, 0) !important;
+                transition: .5s ease  !important;
+            }
+
+            .productInner .icons a {
+                padding: 8px;
+            }
+            .mw-75{
+                width: 75% !important;
+            }
+            .mh-75{
+                height: 75% !important;
+            }
+
+        }
+    </style>
 </head>
 <body>
+<div class="container">
+    <div class="row mt-5">
+        <div class="col-xl-4 col-lg-6 col-md-6 col-12 p-3 product">
+            <div class="productInner">
+                <figure class="mb-0">
+                    <img class="img-fluid  w-100 w-100 mw-75 mh-75" src="assets/img/urunimg.png" alt="">
+                </figure>
+                <div class="icons">
+                    <a href="" target="_blank">
+                        <i class="intimeinfo intimeinfo-linkedin"></i>
+                    </a>
+                    <a href="" target="_blank">
+                        <i class="intimeinfo intimeinfo-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+            <p class="font-weight-light p-2 text-center">Morbi laoreet lectus ligula, sed ullamcorper nibh aliquet velu.</p>
+        </div>
+        <div class="col-xl-4 col-lg-6 col-md-6 col-12 p-3 product">
+            <div class="productInner">
+                <figure class="mb-0">
+                    <img class="img-fluid  w-100 w-100 mw-75 mh-75" src="assets/img/urunimg.png" alt="">
+                </figure>
+                <div class="icons">
+                    <a href="" target="_blank">
+                        <i class="intimeinfo intimeinfo-linkedin"></i>
+                    </a>
+                    <a href="" target="_blank">
+                        <i class="intimeinfo intimeinfo-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+            <p class="font-weight-light p-2 text-center">Morbi laoreet lectus ligula, sed ullamcorper nibh aliquet velu.</p>
+        </div>
+        <div class="col-xl-4 col-lg-6 col-md-6 col-12 p-3 product">
+            <div class="productInner">
+                <figure class="mb-0">
+                    <img class="img-fluid  w-100 w-100 mw-75 mh-75" src="assets/img/urunimg.png" alt="">
+                </figure>
+                <div class="icons">
+                    <a href="" target="_blank">
+                        <i class="intimeinfo intimeinfo-linkedin"></i>
+                    </a>
+                    <a href="" target="_blank">
+                        <i class="intimeinfo intimeinfo-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+            <p class="font-weight-light p-2 text-center">Morbi laoreet lectus ligula, sed ullamcorper nibh aliquet velu.</p>
+        </div>
+        <div class="col-xl-4 col-lg-6 col-md-6 col-12 p-3 product">
+            <div class="productInner">
+                <figure class="mb-0">
+                    <img class="img-fluid  w-100 w-100 mw-75 mh-75" src="assets/img/urunimg.png" alt="">
+                </figure>
+                <div class="icons">
+                    <a href="" target="_blank">
+                        <i class="intimeinfo intimeinfo-linkedin"></i>
+                    </a>
+                    <a href="" target="_blank">
+                        <i class="intimeinfo intimeinfo-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+            <p class="font-weight-light p-2 text-center">Morbi laoreet lectus ligula, sed ullamcorper nibh aliquet velu.</p>
+        </div>
+    </div>
+</div>
 
+
+<script src="assets/js/jquery-3.6.0.min.js"></script>
+<script src="assets/js/owl.carousel.min.js"></script>
+
+<script src="assets/js/owl.carousel.min.js"></script>
+<script src="assets/js/wow.min.js"></script>
+<script src="assets/js/particles.min.js"></script>
+<script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script>
+    new WOW().init();
+</script>
+<script src="assets/js/custom.js"></script>
+<script src="assets/js/part.js"></script>
 </body>
 </html>
