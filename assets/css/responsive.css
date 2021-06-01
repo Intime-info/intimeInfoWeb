@@ -3,35 +3,8 @@
     offset: unset;
     margin: 0 auto;
   }
-  .navbar .navbar-collapse {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .navbar .navbar-collapse .navbar-nav .nav-item {
+  .navbar .navbar-collapse .navbar-nav .nav-item:not(:last-child) {
     border-bottom: 1px solid #ccc;
-  }
-  .product-box .card:first-child {
-    top: 0;
-  }
-  .product-box .card:nth-child(2) {
-    top: 0;
-  }
-  .product-box .card:nth-child(3) {
-    top: 0;
-  }
-  .product-box .card:nth-child(4) {
-    top: 0;
   }
   .mainBlog .allArticles {
     display: -webkit-box;
