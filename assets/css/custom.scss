@@ -587,6 +587,9 @@ button, input,textarea,select{
   }
   .owl-stage {
     padding: 10px;
+    &-outer {
+      height: 550px;
+    }
   }
 /*  .owl-prev {
     position: absolute;
@@ -735,6 +738,49 @@ button, input,textarea,select{
         justify-content: center;
         height: 200px;
         padding: 50px 20px;
+      }
+    }
+  }
+}
+
+
+.mainInformed {
+  &-form {
+    z-index: 11;
+    top: 67%;
+    transform: translateY(50%);
+    left: 0;
+    right: 0;
+    
+    .contact-form {
+      border-radius: 15px;
+      box-shadow: 10px 10px 12px 12px #eeeeee;
+      padding: 15px 0;
+
+
+      input {
+        color: #8799a3;
+        font-size: 16px;
+        height: 40px;
+        border: 0;
+        border-bottom: 1px solid green;
+      }
+
+      .register {
+        font-weight: bold;
+        letter-spacing: 2px;
+        padding: 15px;
+        border-radius: 20px;
+      }
+
+      .form-control {
+        margin-bottom: 0;
+      }
+
+      .form-group {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0;
       }
     }
   }

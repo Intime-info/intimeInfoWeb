@@ -10213,6 +10213,10 @@ button:focus, input:focus, textarea:focus, select:focus {
   padding: 10px;
 }
 
+.mainBlog .owl-stage-outer {
+  height: 550px;
+}
+
 .mainBlog .line-clamp {
   display: -webkit-box;
   -webkit-line-clamp: 3;
@@ -10341,5 +10345,50 @@ button:focus, input:focus, textarea:focus, select:focus {
           justify-content: center;
   height: 200px;
   padding: 50px 20px;
+}
+
+.mainInformed-form {
+  z-index: 11;
+  top: 67%;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  left: 0;
+  right: 0;
+}
+
+.mainInformed-form .contact-form {
+  border-radius: 15px;
+  -webkit-box-shadow: 10px 10px 12px 12px #eeeeee;
+          box-shadow: 10px 10px 12px 12px #eeeeee;
+  padding: 15px 0;
+}
+
+.mainInformed-form .contact-form input {
+  color: #8799a3;
+  font-size: 16px;
+  height: 40px;
+  border: 0;
+  border-bottom: 1px solid green;
+}
+
+.mainInformed-form .contact-form .register {
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding: 15px;
+  border-radius: 20px;
+}
+
+.mainInformed-form .contact-form .form-control {
+  margin-bottom: 0;
+}
+
+.mainInformed-form .contact-form .form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0;
 }
 /*# sourceMappingURL=custom.css.map */
