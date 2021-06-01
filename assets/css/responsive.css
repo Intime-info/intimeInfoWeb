@@ -3,12 +3,32 @@
     offset: unset;
     margin: 0 auto;
   }
+<<<<<<< HEAD
+
+  .navbar .navbar-collapse .navbar-nav .nav-item:not(:last-child) {
+    border-bottom: 1px solid #ccc;
+=======
+  .mainBlog .allArticles {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start !important;
+        -ms-flex-align: start !important;
+            align-items: flex-start !important;
+>>>>>>> cagri
+  }
 }
+
 @media screen and (max-width: 575px) {
   .box {
     display: none;
   }
 }
+
 @media screen and (max-width: 575px) {
   .customerBody .customerTitle {
     top: 20% !important;
@@ -22,6 +42,7 @@
     height: 100px !important;
   }
 }
+
 @media screen and (max-width: 414px) {
   .customerBody .customerTitle {
     top: 20% !important;
@@ -38,6 +59,7 @@
     height: 100px !important;
   }
 }
+
 @media screen and (max-width: 320px) {
   .customerBody .customerTitle {
     top: 15% !important;
@@ -54,6 +76,7 @@
     height: 50px !important;
   }
 }
+
 @media screen and (max-width: 820px) {
   .mainCustomer:before {
     width: 100%;
@@ -65,5 +88,4 @@
     top: 35% !important;
   }
 }
-
 /*# sourceMappingURL=responsive.css.map */
