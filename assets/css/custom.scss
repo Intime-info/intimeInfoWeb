@@ -281,6 +281,48 @@ margin-bottom: 200px;
 
 
     }
+@keyframes sagok {
+  0%{
+    transform: translateY(0px);
+  }
+  25%{
+    transform: translateY(5px);
+  }
+  50%{
+    transform: translateY(0px);
+  }
+  75%{
+    transform: translateY(-5px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
+}
+.mainSlider{
+  height: 80vh;
+  h1{
+    font-weight: 800;
+    font-size: 50px;
+    color: #121C4D;
+    margin:0;
+    padding: 0;
+  }
+  h2{
+    a{
+      color: #00ADB5;
+      font-weight: bold;
+
+    }
+  }
+  #sagok{
+    animation-name: sagok;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+  }
+}
 
 .mainAbout {
   padding-bottom: 90px;
@@ -363,7 +405,7 @@ margin-bottom: 200px;
   z-index: -1;
   opacity: 1;
 
-  
+
   overflow: hidden;
   &-box {
     box-shadow: 0 0 40px #0a0b0712;
@@ -385,7 +427,7 @@ margin-bottom: 200px;
         color: white;
       }
 
-      &::before { 
+      &::before {
         height: 100%;
       }
     }
@@ -485,7 +527,7 @@ margin-bottom: 200px;
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    
+
   }
 
   .item {
@@ -526,7 +568,7 @@ margin-bottom: 200px;
       border-top-right-radius: 20px;
     }
     .card-body {
-      
+
       padding: 20px;
     }
   }
