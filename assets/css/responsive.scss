@@ -23,6 +23,7 @@
     offset:unset;
     margin: 0 auto;
   }
+<<<<<<< HEAD
   .navbar{
     .navbar-collapse{
       .navbar-nav{
@@ -30,6 +31,14 @@
           border-bottom: 1px solid #ccc;
         }
       }
+=======
+
+  .mainBlog {
+    .allArticles {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start!important;
+>>>>>>> cagri
     }
   }
 }
