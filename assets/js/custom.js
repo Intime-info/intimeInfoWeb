@@ -70,25 +70,28 @@ var contactMap = function(){
     }
 };
 var partners_carousel= function () {
-    if ($(".products_carousel").length > 0)
+    if ($('#partners_carousel').length > 0)
     {
-        $('.products_carousel').owlCarousel({
+        $('#partners_carousel').owlCarousel({
             loop:true,
             margin:10,
             nav:false,
             dots: true,
             responsive:{
                 0:{
-                    items:2
+                    items:1,
+                },
+                500:{
+                    items:1,
                 },
                 600:{
-                    items:3
+                    items:2,
                 },
                 1000:{
-                    items:5
+                    items:3,
                 },
                 1200:{
-                    items:5
+                    items:3,
                 }
             }
         })

@@ -66,7 +66,7 @@ button, input,textarea,select{
     animation: menu_sticky 0.7s ease-in-out;
     background: #fff;
   }
-  .navbar {
+  .navbar { 
     padding: 0;
 
     &-brand {
@@ -175,7 +175,7 @@ button, input,textarea,select{
     }
   }
   .product-box{
-margin-bottom: 200px;
+    margin-bottom: 200px;
     .card {
       border: 0;
       box-shadow: 10px 10px 12px 12px #EEEEEE;
@@ -684,3 +684,16 @@ margin-bottom: 200px;
 }
 
 
+.mainPartner {
+  #partners_carousel {
+    .item {
+      figure {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 200px;
+        padding: 50px 20px;
+      }
+    }
+  }
+}
