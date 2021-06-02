@@ -10013,7 +10013,7 @@ button:focus, input:focus, textarea:focus, select:focus {
   height: 475px;
 }
 
-.mainServices-box:hover h3, .mainServices-box:hover a, .mainServices-box:hover p {
+.mainServices-box:hover h3, .mainServices-box:hover h4, .mainServices-box:hover a, .mainServices-box:hover p {
   color: white;
 }
 
