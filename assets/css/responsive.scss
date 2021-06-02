@@ -41,8 +41,23 @@
     }
   }
 
+  .mainSlider{
+    #mainTitle {
+      font-size: 36px;
+    }
+    h2{
+      a{
+        font-size: 20px;
+  
+      }
+    }
+  }
+
   .mainInformed {
-    .contact-form {
+    &-form {
+      .contact-form {
+        background: none!important;
+      }
     }
   }
 }

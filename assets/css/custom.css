@@ -9847,7 +9847,7 @@ button:focus, input:focus, textarea:focus, select:focus {
 }
 
 .mainSlider {
-  height: 80vh;
+  height: 100vh;
 }
 
 .mainSlider h1 {
@@ -9861,6 +9861,12 @@ button:focus, input:focus, textarea:focus, select:focus {
 .mainSlider h2 a {
   color: #00ADB5;
   font-weight: bold;
+}
+
+.mainSlider img {
+  position: relative;
+  overflow: hidden;
+  z-index: -10;
 }
 
 .mainSlider #sagok {
@@ -10354,41 +10360,79 @@ button:focus, input:focus, textarea:focus, select:focus {
           transform: translateY(50%);
   left: 0;
   right: 0;
+  border: 1px solid #eef2fb;
+  background-color: #eef2fb;
 }
 
 .mainInformed-form .contact-form {
-  border-radius: 15px;
-  -webkit-box-shadow: 10px 10px 12px 12px #eeeeee;
-          box-shadow: 10px 10px 12px 12px #eeeeee;
-  padding: 15px 0;
+  background: #fff;
+  height: 100%;
+  margin: 20px 0;
+  border-radius: 5rem;
 }
 
-.mainInformed-form .contact-form input {
-  color: #8799a3;
-  font-size: 16px;
-  height: 40px;
-  border: 0;
-  border-bottom: 1px solid green;
+.mainInformed-form .contact-form .wrapper {
+  width: 100%;
+  background: #fff;
+  padding: 30px;
+  background: transparent;
+}
+
+.mainInformed-form .contact-form .wrapper .input-data {
+  height: 20px;
+  width: 100%;
+  position: relative;
+}
+
+.mainInformed-form .contact-form .wrapper .input-data input {
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  border: none;
+  font-size: 17px;
+  border-bottom: 2px solid silver;
+  color: #000;
+}
+
+.mainInformed-form .contact-form .input-data input:focus ~ label,
+.mainInformed-form .contact-form .input-data input:valid ~ label {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  font-size: 15px;
+  color: #000;
+}
+
+.mainInformed-form .contact-form .wrapper .input-data label {
+  font-weight: 600;
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  color: #000;
+  pointer-events: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.mainInformed-form .contact-form .input-data .underline {
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  bottom: 0;
 }
 
 .mainInformed-form .contact-form .register {
+  padding: 10px 20px;
+  border-radius: 5rem;
+  background-color: #021D49;
+  color: #fff;
   font-weight: bold;
-  letter-spacing: 2px;
-  padding: 15px;
-  border-radius: 20px;
+  letter-spacing: 1.5px;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
 }
 
-.mainInformed-form .contact-form .form-control {
-  margin-bottom: 0;
-}
-
-.mainInformed-form .contact-form .form-group {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 0;
+.mainInformed-form .contact-form .register:hover {
+  background: red;
+  color: #ffff;
 }
 /*# sourceMappingURL=custom.css.map */
