@@ -8831,6 +8831,49 @@ button:focus, input:focus, textarea:focus, select:focus {
   color: #fff8ff;
 }
 
+@keyframes sagok {
+  0% {
+    transform: translateY(0px);
+  }
+  25% {
+    transform: translateY(5px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  75% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+.mainSlider {
+  background-image: url("../img/sliderBg.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+  height: 80vh;
+}
+.mainSlider h1 {
+  font-weight: 800;
+  font-size: 50px;
+  color: #121C4D;
+  margin: 0;
+  padding: 0;
+}
+.mainSlider h2 a {
+  color: #00ADB5;
+  font-weight: bold;
+}
+.mainSlider #sagok {
+  animation-name: sagok;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+}
+
 .mainAbout {
   padding-bottom: 90px;
   padding-top: 50px;
@@ -9070,6 +9113,9 @@ button:focus, input:focus, textarea:focus, select:focus {
 .mainBlog .owl-stage {
   padding: 10px;
 }
+.mainBlog .owl-stage-outer {
+  height: 550px;
+}
 .mainBlog .line-clamp {
   display: -webkit-box;
   -webkit-line-clamp: 3;
@@ -9190,6 +9236,53 @@ button:focus, input:focus, textarea:focus, select:focus {
   -moz-transition: 0.25s ease-in-out;
   -o-transition: 0.25s ease-in-out;
   transition: 0.25s ease-in-out;
+}
+
+.mainPartner #partners_carousel .item figure {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  padding: 50px 20px;
+}
+
+.mainInformed-form {
+  z-index: 11;
+  top: 67%;
+  transform: translateY(50%);
+  left: 0;
+  right: 0;
+}
+.mainInformed-form .contact-form {
+  border-radius: 15px;
+  box-shadow: 10px 10px 12px 12px #eeeeee;
+  padding: 15px 0;
+}
+.mainInformed-form .contact-form input {
+  color: #8799a3;
+  font-size: 16px;
+  height: 40px;
+  border: 0;
+  border-bottom: 1px solid green;
+}
+.mainInformed-form .contact-form .register {
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding: 15px;
+  border-radius: 20px;
+}
+.mainInformed-form .contact-form .form-control {
+  margin-bottom: 0;
+}
+.mainInformed-form .contact-form .form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.mainPartner .owl-carousel .item .vertical-logo {
+  height: 100px;
+  width: auto;
 }
 
 /*# sourceMappingURL=custom.css.map */

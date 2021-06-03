@@ -70,25 +70,28 @@ var contactMap = function(){
     }
 };
 var partners_carousel= function () {
-    if ($(".products_carousel").length > 0)
+    if ($('#partners_carousel').length > 0)
     {
-        $('.products_carousel').owlCarousel({
+        $('#partners_carousel').owlCarousel({
             loop:true,
             margin:10,
             nav:false,
             dots: true,
             responsive:{
                 0:{
-                    items:2
+                    items:1,
+                },
+                500:{
+                    items:1,
                 },
                 600:{
-                    items:3
+                    items:2,
                 },
                 1000:{
-                    items:5
+                    items:5,
                 },
                 1200:{
-                    items:5
+                    items:5,
                 }
             }
         })
@@ -101,7 +104,8 @@ var blog_carousel= function () {
             loop: true,
             autoPlay : true,
             stopOnHover : true,
-            margin: 20,
+            margin: 10,
+
             nav: true,
             navText:["<span class=\"intimeinfo intimeinfoleft-arrow\"></span>","<span class=\"intimeinfo intimeinforight-angle\"></span>"],
 
@@ -124,6 +128,62 @@ var blog_carousel= function () {
             }
         });
     }
+};
+var TxtType = function(el, toRotate, period) {
+    this.toRotate = toRotate;
+    this.el = el;
+    this.loopNum = 0;
+    this.period = parseInt(period, 7) || 500;
+    this.txt = '';
+    this.tick();
+    this.isDeleting = false;
+};
+
+TxtType.prototype.tick = function() {
+    var i = this.loopNum % this.toRotate.length;
+    var fullTxt = this.toRotate[i];
+
+    if (this.isDeleting) {
+        this.txt = fullTxt.substring(0, this.txt.length - 1);
+    } else {
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
+    }
+
+    this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+    var that = this;
+    var delta = 150 - Math.random() * 100;
+
+    if (this.isDeleting) { delta /= 2; }
+
+    if (!this.isDeleting && this.txt === fullTxt) {
+        delta = this.period;
+        this.isDeleting = true;
+    } else if (this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+        this.loopNum++;
+        delta = 500;
+    }
+
+    setTimeout(function() {
+        that.tick();
+    }, delta);
+};
+
+window.onload = function() {
+    var elements = document.getElementsByClassName('typewrite');
+    for (var i=0; i<elements.length; i++) {
+        var toRotate = elements[i].getAttribute('data-type');
+        var period = elements[i].getAttribute('data-period');
+        if (toRotate) {
+            new TxtType(elements[i], JSON.parse(toRotate), period);
+        }
+    }
+    // INJECT CSS
+    let css = document.createElement("style");
+    css.type = "text/css";
+    css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #9fcdff}";
+    document.body.appendChild(css);
 };
 var customer_carousel= function () {
     if ($("#customer_carousel").length > 0)

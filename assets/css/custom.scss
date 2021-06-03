@@ -50,6 +50,7 @@ button, input,textarea,select{
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
+
   nav{
     &>.container{
       background: #fff;
@@ -66,7 +67,7 @@ button, input,textarea,select{
     animation: menu_sticky 0.7s ease-in-out;
     background: #fff;
   }
-  .navbar {
+  .navbar { 
     padding: 0;
 
     &-brand {
@@ -175,7 +176,7 @@ button, input,textarea,select{
     }
   }
   .product-box{
-margin-bottom: 200px;
+    margin-bottom: 200px;
     .card {
       border: 0;
       box-shadow: 10px 10px 12px 12px #EEEEEE;
@@ -281,7 +282,51 @@ margin-bottom: 200px;
 
 
     }
+@keyframes sagok {
+  0%{
+    transform: translateY(0px);
+  }
+  25%{
+    transform: translateY(5px);
+  }
+  50%{
+    transform: translateY(0px);
+  }
+  75%{
+    transform: translateY(-5px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
+}
+.mainSlider{
+  background-image: url("../img/sliderBg.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+  height: 80vh;
+  h1{
+    font-weight: 800;
+    font-size: 50px;
+    color: #121C4D;
+    margin:0;
+    padding: 0;
+  }
+  h2{
+    a{
+      color: #00ADB5;
+      font-weight: bold;
+    }
+  }
+  #sagok{
+    animation-name: sagok;
+    animation-duration: 4s;
+    animation-timing-function: linear;
 
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+  }
+}
 .mainAbout {
   padding-bottom: 90px;
   padding-top: 50px;
@@ -294,8 +339,6 @@ margin-bottom: 200px;
       }
     }
   }
-
-
   .count-box {
     display: flex;
     margin-right: 30px;
@@ -309,7 +352,6 @@ margin-bottom: 200px;
     padding: 20px;
 
   }
-
   .slider-thumb::before {
     position: absolute;
     content: "";
@@ -363,7 +405,7 @@ margin-bottom: 200px;
   z-index: -1;
   opacity: 1;
 
-  
+
   overflow: hidden;
   &-box {
     box-shadow: 0 0 40px #0a0b0712;
@@ -385,7 +427,7 @@ margin-bottom: 200px;
         color: white;
       }
 
-      &::before { 
+      &::before {
         height: 100%;
       }
     }
@@ -485,10 +527,13 @@ margin-bottom: 200px;
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    
+
   }
 
   .item {
+
+
+
     // display: flex;
     // flex-direction: column;
     // align-items: flex-start;
@@ -526,7 +571,7 @@ margin-bottom: 200px;
       border-top-right-radius: 20px;
     }
     .card-body {
-      
+
       padding: 20px;
     }
   }
@@ -545,6 +590,9 @@ margin-bottom: 200px;
   }
   .owl-stage {
     padding: 10px;
+    &-outer {
+      height: 550px;
+    }
   }
 /*  .owl-prev {
     position: absolute;
@@ -684,3 +732,70 @@ margin-bottom: 200px;
 }
 
 
+.mainPartner {
+  #partners_carousel {
+    .item {
+      figure {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 200px;
+        padding: 50px 20px;
+      }
+    }
+  }
+}
+
+
+.mainInformed {
+  &-form {
+    z-index: 11;
+    top: 67%;
+    transform: translateY(50%);
+    left: 0;
+    right: 0;
+    
+    .contact-form {
+      border-radius: 15px;
+      box-shadow: 10px 10px 12px 12px #eeeeee;
+      padding: 15px 0;
+
+
+      input {
+        color: #8799a3;
+        font-size: 16px;
+        height: 40px;
+        border: 0;
+        border-bottom: 1px solid green;
+      }
+
+      .register {
+        font-weight: bold;
+        letter-spacing: 2px;
+        padding: 15px;
+        border-radius: 20px;
+      }
+
+      .form-control {
+        margin-bottom: 0;
+      }
+
+      .form-group {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.mainPartner{
+  .owl-carousel{
+    .item{
+      .vertical-logo{
+        height: 100px;
+        width: auto;
+      }
+    }
+  }
+}
