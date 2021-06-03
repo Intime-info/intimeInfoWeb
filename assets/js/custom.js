@@ -263,5 +263,6 @@ $(document).ready(function (){
     }
     
     istek.open("GET", "insta.json", true);
+    istek.send()
     
 });
