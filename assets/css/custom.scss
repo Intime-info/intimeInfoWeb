@@ -300,7 +300,7 @@ button, input,textarea,select{
   }
 }
 .mainSlider{
-  background-image: url("../img/sliderBg.svg");
+  background-image: url("../img/sliderBg.png");
   background-repeat: no-repeat;
   background-position: right;
   background-size: cover;
@@ -322,7 +322,6 @@ button, input,textarea,select{
   img {
     position: relative;
     overflow: hidden;
-    z-index: -10;
   }
 
   #sagok{

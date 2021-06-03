@@ -9847,7 +9847,7 @@ button:focus, input:focus, textarea:focus, select:focus {
 }
 
 .mainSlider {
-  background-image: url("../img/sliderBg.svg");
+  background-image: url("../img/sliderBg.png");
   background-repeat: no-repeat;
   background-position: right;
   background-size: cover;
@@ -9870,7 +9870,6 @@ button:focus, input:focus, textarea:focus, select:focus {
 .mainSlider img {
   position: relative;
   overflow: hidden;
-  z-index: -10;
 }
 
 .mainSlider #sagok {
