@@ -9231,4 +9231,76 @@ button:focus, input:focus, textarea:focus, select:focus {
   transition: 0.25s ease-in-out;
 }
 
+footer {
+  background: #00ADB5;
+}
+footer a {
+  color: white;
+}
+footer p {
+  margin-bottom: 0 !important;
+}
+footer .socialiconfooter {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+footer .dlexcenterline {
+  justify-content: center;
+  line-height: 35px;
+}
+footer .linklerfooter ul li a:hover {
+  transform: scaleX(1.5) !important;
+  transition-duration: 2s;
+}
+footer .iletisimbilgileri p {
+  margin-top: 30px;
+}
+footer .iletisimbilgileri a:hover p {
+  color: black !important;
+  transition-duration: 2.5s;
+}
+footer .iletisimbilgileri a:hover span {
+  color: #121C4D !important;
+  transition-duration: 2s;
+}
+footer .socialiconlardivi {
+  margin-top: 30px;
+}
+footer .socialiconlardivi .sosyalicon {
+  font-size: 24px !important;
+  margin: 10px 20px;
+}
+footer h3 {
+  color: #121C4D;
+}
+footer h3 span {
+  color: #00ADB5;
+}
+footer .backgrblue {
+  background: #00ADB5;
+}
+footer #instagramicerik1 .gonderiler:hover {
+  opacity: 0.7 !important;
+}
+footer .gonderiler {
+  width: 120px;
+  height: 120px;
+  display: flex;
+}
+footer .followbutton:hover {
+  background: #121C4D !important;
+  border: 1px solid black;
+  transition-duration: 1.5s;
+  color: white;
+}
+footer .sosyaliconlar .sosyalicon {
+  color: #121C4D;
+}
+
+.copyright {
+  background-color: #00ADB5;
+  border-top: 0.5px solid;
+}
+
 /*# sourceMappingURL=custom.css.map */
