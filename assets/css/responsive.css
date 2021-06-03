@@ -1,34 +1,71 @@
+/*
+@media screen and (max-width: 1200px) and (min-width: 992px) {
+
+}
+*/
 @media screen and (max-width: 992px) {
   #customer_carousel {
     offset: unset;
     margin: 0 auto;
   }
-<<<<<<< HEAD
 
   .navbar .navbar-collapse .navbar-nav .nav-item:not(:last-child) {
     border-bottom: 1px solid #ccc;
-=======
-  .mainBlog .allArticles {
-    display: -webkit-box;
-    display: -ms-flexbox;
+  }
+  .navbar .navbar-collapse .mainBlog .allArticles {
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: start !important;
-        -ms-flex-align: start !important;
-            align-items: flex-start !important;
->>>>>>> cagri
+    flex-direction: column;
+    align-items: flex-start !important;
+  }
+
+  /*<-----------------Product Page Start----------------->*/
+  .productInner .icons {
+    opacity: 1;
+  }
+  .productInner .icons a {
+    padding: 8px;
+  }
+  .productInner .icons a:first-child {
+    opacity: 1;
+    bottom: 10px;
+    left: 35px;
+  }
+  .productInner .icons a:last-child {
+    opacity: 1;
+    bottom: 10px;
+    left: 35px;
+  }
+  .productInner img {
+    opacity: 1;
+    transform: translate3d(40px, 0, 0) !important;
+    transition: 0.5s ease;
+  }
+
+  .mw-75 {
+    width: 75% !important;
+  }
+
+  .mh-75 {
+    height: 75% !important;
+  }
+
+  .slide .content-bottom img {
+    max-width: 400px;
+  }
+
+  /*<-----------------Product Page Finish----------------->*/
+}
+@media (max-width: 768px) {
+  .slide .content-bottom h2 {
+    font-size: 40px;
+    line-height: 1.2;
   }
 }
-
 @media screen and (max-width: 575px) {
   .box {
     display: none;
   }
 }
-
 @media screen and (max-width: 575px) {
   .customerBody .customerTitle {
     top: 20% !important;
@@ -42,7 +79,6 @@
     height: 100px !important;
   }
 }
-
 @media screen and (max-width: 414px) {
   .customerBody .customerTitle {
     top: 20% !important;
@@ -59,7 +95,19 @@
     height: 100px !important;
   }
 }
+@media (max-width: 375px) {
+  /*<-----------------Product Page Start----------------->*/
+  .slide:after {
+    border-right: 261vw solid #fff;
+    border-top: 241px solid transparent;
+  }
 
+  .content-bottom .col-md-6 {
+    margin-top: 50px;
+  }
+
+  /*<-----------------Product Page Finish----------------->*/
+}
 @media screen and (max-width: 320px) {
   .customerBody .customerTitle {
     top: 15% !important;
@@ -76,7 +124,6 @@
     height: 50px !important;
   }
 }
-
 @media screen and (max-width: 820px) {
   .mainCustomer:before {
     width: 100%;
@@ -88,4 +135,5 @@
     top: 35% !important;
   }
 }
+
 /*# sourceMappingURL=responsive.css.map */
