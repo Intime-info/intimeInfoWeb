@@ -78,10 +78,10 @@
 <section class="mainSlider align-content-center  align-items-center justify-content-center d-flex">
 
     <div class="container">
-        <div class="row align-items-center text-left ">
+        <div class="row align-items-center text-left">
             <div class="col-12 col-md-6">
-                <div class="mt-5">
-                    <h1>Zamanında Bilgi</h1>
+                <div>
+                    <h1 id="mainTitle">Zamanında Bilgi</h1>
                 </div>
                 <div class="my-2 text-sm-center justify-content-sm-center justify-content-lg-start ">
                     
@@ -97,14 +97,8 @@
                     <button class="btn btn-primary" id="sagok">Daha Fazla..   <span class="intimeinfo intimeinfo-right-arrow " ></span> </button>
                 </div>
             </div>
-            <div class="col-12 col-md-6 mt-4 text-center justify-content-center ">
-
-
-
+            <div class="col-12 col-md-6 mt-4">
                     <img class="img-fluid" src="assets/img/116.3.png" alt="">
-
-
-
             </div>
 
 
@@ -187,9 +181,13 @@
 
             <div class="d-flex flex-column flex-lg-row flex-xl-row align-items-center justify-content-center">
                 <div data-wow-delay="0.2s" class="mainServices-box col-9 col-lg-4 col-md-6 wow fadeInLeft">
-                    <img class="w-75 " src="./assets/img/process-min.png" alt="image">
-                    <h4>
-                        <a href="">Süreç Yönetim Platformu</a>
+                    <a href="">
+                        <figure>
+                            <img class="w-75 " src="./assets/img/process-min.png" alt="image">
+                        </figure>
+                    </a>
+                    <h4 class="font-weight-bold">
+                        Süreç Yönetim Platformu
                     </h4>
                     <p>
                         Şirkette yürütülen tüm süreçleri tek ekrandan kontrol edebilir, yönetebilir ve
@@ -197,9 +195,13 @@
                     </p>
                 </div>
                 <div data-wow-delay="0.4s" class="mainServices-box mx-3 col-9 col-lg-4 col-md-6 wow fadeInUp">
-                    <img class="w-75" src="./assets/img/iot-min.png" alt="image">
-                    <h4>
-                        <a href="">IoT Çözümleri</a>
+                    <a href="">
+                        <figure>
+                            <img class="w-75" src="./assets/img/iot-min.png" alt="image">
+                        </figure>
+                    </a>
+                    <h4 class="font-weight-bold">
+                        IoT Çözümleri
                     </h4>
                     <p>
                         Gelişen ve değişen teknolojiyi yakından takip ederek, sizlerin ihtiyaçlarına
@@ -207,9 +209,13 @@
                     </p>
                 </div>
                 <div data-wow-delay="0.6s" class="mainServices-box col-9 col-lg-4 col-md-6 wow fadeInRight">
-                    <img class="w-75" src="./assets/img/sectoral-min.png" alt="image">
-                    <h4>
-                        <a href="">Sektörel Çözümler</a>
+                    <a href="">
+                        <figure>
+                            <img class="w-75" src="./assets/img/sectoral-min.png" alt="image">
+                        </figure>
+                    </a>
+                    <h4 class="font-weight-bold">
+                        Sektörel Çözümler
                     </h4>
                     <p>
                         İş verimliliğinizi artırmak için sektörel ihtiyaçlarınızı karşılamaya ne dersiniz? Sektörel
@@ -530,31 +536,45 @@
 </section>
 
 <section class="mainInformed">
-    <div class="mainInformed-form">
+    <div class="mainInformed-form container-fluid" >
         <div class="container">
-                <div class="row">
-    <!--                <div class="col-12" id="result"></div>-->
-                    <div class="col-12 wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
-                        <form class="row contact-form" >
-    
-                            <div class="col-12 my-3 col-lg-9 d-inline-block d-lg-flex align-items-center">
-                                <div class="form-group mx-5 my-1">
-                                    <input type="text" name="userName" placeholder="Full Name" class="form-control">
-                                </div>
-                                <div class="form-group mx-5 my-1">
-                                    <input type="email" name="userEmail" placeholder="Email Address *" class="form-control ">
+            <div class="row align-items-center justify-content-center mt-3">
+                <h3 class="section-title">HABERDAR OL</h3>
+                <p class="text-center mx-0 mx-sm-5">
+                    Teknolojiyi yakından takip ederek en güncel gelişmelere değindiğimiz haber 
+                    bültenimiz ile sizlere hem Intime Info ürün ailesindeki gelişmeleri hem de 
+                    tüm dünyada yaşanan teknoloji hareketlerini aktarıyoruz.
+                </p>
+                <div class="col-12 wow fadeIn d-flex flex-column justify-content-center" >
+                    <form class="row contact-form" >
+                        <div class="col-12 col-lg-9 d-inline-block d-lg-flex align-items-center">
+                            <div class="wrapper">
+                                <div class="input-data">
+                                    <input type="text" required>
+                                    <div class="underline"></div>
+                                    <label>Name</label>
                                 </div>
                             </div>
-                            <div class="col-12 col-lg-3 d-flex align-items-center justify-content-center">
-                                <a href="#" class="btn bg-success text-white register">
-                                    GET REGISTER NOW
-                                </a>
+                            <div class="wrapper">
+                                <div class="input-data">
+                                    <input type="text" required>
+                                    <div class="underline"></div>
+                                    <label>Email</label>
+                                </div>
                             </div>
-                        </form>
-                    </div>
+                        </div>
+                        <div class="col-12 col-lg-3 d-flex align-items-center justify-content-center">
+                            <a href="#" class="btn register">
+                                ABONE OL
+                            </a>
+                        </div>
+                    </form>
                 </div>
             </div>
+        </div>
     </div>
+
+
 </section>
 
 

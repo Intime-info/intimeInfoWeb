@@ -318,6 +318,13 @@ button, input,textarea,select{
       font-weight: bold;
     }
   }
+
+  img {
+    position: relative;
+    overflow: hidden;
+    z-index: -10;
+  }
+
   #sagok{
     animation-name: sagok;
     animation-duration: 4s;
@@ -423,7 +430,7 @@ button, input,textarea,select{
 
     &:hover {
 
-      h3, a, p {
+      h3,h4, a, p {
         color: white;
       }
 
@@ -754,36 +761,67 @@ button, input,textarea,select{
     transform: translateY(50%);
     left: 0;
     right: 0;
-    
+    border: 1px solid #eef2fb;
+    background-color: #eef2fb;
     .contact-form {
-      border-radius: 15px;
-      box-shadow: 10px 10px 12px 12px #eeeeee;
-      padding: 15px 0;
-
-
-      input {
-        color: #8799a3;
-        font-size: 16px;
-        height: 40px;
-        border: 0;
-        border-bottom: 1px solid green;
+      background: #fff;
+      height: 100%;
+      margin: 20px 0;
+      border-radius: 5rem;
+      .wrapper{
+        width: 100%;
+        background: #fff;
+        padding: 30px;
+        background: transparent;
+      }
+      .wrapper .input-data{
+        height: 20px;
+        width: 100%;
+        position: relative;
+      }
+      .wrapper .input-data input{
+        background: transparent;
+        height: 100%;
+        width: 100%;
+        border: none;
+        font-size: 17px;
+        border-bottom: 2px solid silver;
+        color: #000;
+      }
+      .input-data input:focus ~ label,
+      .input-data input:valid ~ label{
+        transform: translateY(-5px);
+        font-size: 15px;
+        color: #000;
+      }
+      .wrapper .input-data label{
+        font-weight: 600;
+        position: absolute;
+        bottom: 5px;
+        left: 0;
+        color: #000;
+        pointer-events: none;
+        transition: all 0.3s ease;
+      }
+      .input-data .underline{
+        position: absolute;
+        height: 2px;
+        width: 100%;
+        bottom: 0;
       }
 
       .register {
+        padding: 10px 20px;
+        border-radius: 5rem;
+        background-color: $corporateDarkBlue;
+        color: #fff;
         font-weight: bold;
-        letter-spacing: 2px;
-        padding: 15px;
-        border-radius: 20px;
-      }
-
-      .form-control {
-        margin-bottom: 0;
-      }
-
-      .form-group {
-        display: flex;
-        align-items: center;
-        margin-bottom: 0;
+        letter-spacing: 1.5px;
+        transition: 0.3s linear;
+        &:hover {
+          background: red;
+          color: #ffff;
+        }
       }
     }
   }
