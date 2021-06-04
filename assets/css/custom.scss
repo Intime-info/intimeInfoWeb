@@ -1,8 +1,7 @@
 @import "scss/bootstrap";
 
-
-$corporateBlue: #00A0AF;
-$corporateDarkBlue: #021D49;
+$corporateBlue: #00a0af;
+$corporateDarkBlue: #021d49;
 
 .intimeColor {
   color: $corporateDarkBlue;
@@ -21,7 +20,7 @@ $corporateDarkBlue: #021D49;
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .font-shadow {
@@ -29,13 +28,16 @@ body {
 }
 
 .section-title {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-weight: 900;
   font-size: 35px;
   color: #484b59;
 }
 
-button, input, textarea, select {
+button,
+input,
+textarea,
+select {
   &:focus {
     outline: 0 !important;
     box-shadow: none !important;
@@ -97,13 +99,13 @@ button, input, textarea, select {
   }
 
   .navbar .navbar-nav .nav-item > .nav-link {
-    color: #00A0AF;
+    color: #00a0af;
     font-weight: 500;
     position: relative;
     padding: 20px;
 
     &:before {
-      content: '';
+      content: "";
       position: absolute;
       left: 50%;
       bottom: 0;
@@ -116,7 +118,8 @@ button, input, textarea, select {
       transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     }
 
-    &:hover:before, &.active:before {
+    &:hover:before,
+    &.active:before {
       width: 100%;
     }
   }
@@ -140,10 +143,9 @@ button, input, textarea, select {
 }
 
 .mainProduct {
-  font-family: 'Montserrat', sans-serif !important;
+  font-family: "Montserrat", sans-serif !important;
 
   .container {
-
     .row {
       #particles-js {
         position: absolute;
@@ -155,7 +157,6 @@ button, input, textarea, select {
       .product-title {
         h1 {
           font-size: 40px;
-
         }
 
         p {
@@ -168,7 +169,6 @@ button, input, textarea, select {
           font-weight: 400;
         }
       }
-
 
       /*
 
@@ -187,7 +187,6 @@ button, input, textarea, select {
               box-shadow: 10px 10px 12px 12px #EEEEEE ;
 
             }*/
-
     }
   }
 
@@ -196,7 +195,7 @@ button, input, textarea, select {
 
     .card {
       border: 0;
-      box-shadow: 10px 10px 12px 12px #EEEEEE;
+      box-shadow: 10px 10px 12px 12px #eeeeee;
 
       .card-body {
         display: flex;
@@ -223,10 +222,8 @@ button, input, textarea, select {
           background-color: #2c2c2c;
           padding: 20px;
           border-radius: 20px;
-
         }
       }
-
     }
 
     .card-flip {
@@ -248,7 +245,6 @@ button, input, textarea, select {
         background-color: #fff;
         opacity: 0.85;
       }
-
 
       // .card-back {
       //   color: #fff;
@@ -291,19 +287,15 @@ button, input, textarea, select {
     }
   }
 
-
   .btn-2 {
     background-color: $corporateDarkBlue;
-    color: #FFF8FF;
+    color: #fff8ff;
     letter-spacing: 0;
 
     i {
       color: #fff8ff;
-
     }
   }
-
-
 }
 
 @keyframes sagok {
@@ -330,16 +322,15 @@ button, input, textarea, select {
   h1 {
     font-weight: 800;
     font-size: 50px;
-    color: #121C4D;
+    color: #121c4d;
     margin: 0;
     padding: 0;
   }
 
   h2 {
     a {
-      color: #00ADB5;
+      color: #00adb5;
       font-weight: bold;
-
     }
   }
 
@@ -360,14 +351,13 @@ button, input, textarea, select {
 
   &-photo {
     img {
-      transition: .5s all;
+      transition: 0.5s all;
 
       &:hover {
         transform: scale(1.2);
       }
     }
   }
-
 
   .count-box {
     display: flex;
@@ -380,7 +370,6 @@ button, input, textarea, select {
     font-weight: 800;
     font-style: italic;
     padding: 20px;
-
   }
 
   .slider-thumb::before {
@@ -400,7 +389,8 @@ button, input, textarea, select {
   }
 
   @keyframes sliderShape {
-    0%, 100% {
+    0%,
+    100% {
       border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
       transform: translate3d(0, 0, 0) rotateZ(0.01deg);
       background: #ffc10761;
@@ -422,7 +412,6 @@ button, input, textarea, select {
   }
 }
 
-
 .mainServices {
   padding-top: 50px;
   padding-bottom: 90px;
@@ -435,7 +424,6 @@ button, input, textarea, select {
   z-index: -1;
   opacity: 1;
 
-
   overflow: hidden;
 
   &-box {
@@ -444,7 +432,7 @@ button, input, textarea, select {
     text-align: center;
     margin-bottom: 30px;
     transition: 0.6s;
-    border: 1px solid #E6EDF6;
+    border: 1px solid #e6edf6;
     padding: 35px 22px;
     position: relative;
     z-index: 1;
@@ -453,8 +441,9 @@ button, input, textarea, select {
     height: 475px;
 
     &:hover {
-
-      h3, a, p {
+      h3,
+      a,
+      p {
         color: white;
       }
 
@@ -477,7 +466,6 @@ button, input, textarea, select {
     }
   }
 }
-
 
 .mainCustomer {
   position: relative;
@@ -563,12 +551,10 @@ button, input, textarea, select {
 }
 
 .mainBlog {
-
   .allArticles {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-
   }
 
   .item {
@@ -576,13 +562,13 @@ button, input, textarea, select {
     // flex-direction: column;
     // align-items: flex-start;
     // padding: 20px;
-    box-shadow: -10px 10px #EEEEEE;
+    box-shadow: -10px 10px #eeeeee;
     transition: 0.3s linear;
     border: transparent;
     // border-radius: 20px;
     &:hover {
       // box-shadow: -10px 10px rgb(177, 175, 175);
-      box-shadow: 10px 10px 12px 12px #EEEEEE;
+      box-shadow: 10px 10px 12px 12px #eeeeee;
       transform: scale(0.99);
     }
 
@@ -611,7 +597,6 @@ button, input, textarea, select {
     }
 
     .card-body {
-
       padding: 20px;
     }
   }
@@ -660,7 +645,6 @@ button, input, textarea, select {
     font-size: 25px !important;
   }
 
-
   .next-btn {
     padding: 10px 0 10px 0;
     font-size: 18px;
@@ -677,7 +661,7 @@ button, input, textarea, select {
       left: 0;
       width: 0;
       background-color: #021423;
-      transition: width .5s ease-in-out;
+      transition: width 0.5s ease-in-out;
     }
 
     &:hover {
@@ -711,7 +695,8 @@ button, input, textarea, select {
   top: 0px;
 }
 
-#nav-icon3 span:nth-child(2), #nav-icon3 span:nth-child(3) {
+#nav-icon3 span:nth-child(2),
+#nav-icon3 span:nth-child(3) {
   top: 10px;
 }
 
@@ -753,10 +738,10 @@ button, input, textarea, select {
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
   transform: rotate(0deg);
-  -webkit-transition: .5s ease-in-out;
-  -moz-transition: .5s ease-in-out;
-  -o-transition: .5s ease-in-out;
-  transition: .5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
   cursor: pointer;
 }
 
@@ -765,7 +750,7 @@ button, input, textarea, select {
   position: absolute;
   height: 5px;
   width: 35px;
-  background: #00A0AF;
+  background: #00a0af;
   border-radius: 9px;
   opacity: 1;
   left: 0;
@@ -773,12 +758,11 @@ button, input, textarea, select {
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
   transform: rotate(0deg);
-  -webkit-transition: .25s ease-in-out;
-  -moz-transition: .25s ease-in-out;
-  -o-transition: .25s ease-in-out;
-  transition: .25s ease-in-out;
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
 }
-
 
 /*<-------------------- Product Page Start------------------------>*/
 .product {
@@ -799,7 +783,7 @@ button, input, textarea, select {
       width: 300px;
       height: 200px;
       transform: translate3d(0, 0, 0);
-      transition: .5s ease;
+      transition: 0.5s ease;
     }
   }
 
@@ -848,7 +832,7 @@ button, input, textarea, select {
   &:hover {
     .icons {
       opacity: 1;
-      transition: .5s ease;
+      transition: 0.5s ease;
 
       a {
         &:first-child {
@@ -870,7 +854,7 @@ button, input, textarea, select {
     img {
       opacity: 0.5;
       transform: translate3d(40px, -10px, 0);
-      transition: .5s ease;
+      transition: 0.5s ease;
     }
   }
 }
@@ -919,7 +903,7 @@ button, input, textarea, select {
         border: 0;
         background: #fff;
         box-shadow: 0.5px 0.866px 10px 0px rgb(0, 0, 0);
-        color: #021D49;
+        color: #021d49;
         font-weight: 600;
       }
     }
@@ -928,7 +912,7 @@ button, input, textarea, select {
       font-size: 60px;
       font-weight: 900;
       color: #fff;
-      font-family: 'Roboto Slab', serif;
+      font-family: "Roboto Slab", serif;
       letter-spacing: 3px;
     }
 
@@ -948,13 +932,13 @@ button, input, textarea, select {
   width: 100%;
 }
 
-.form-block input:not([type='checkbox']) {
+.form-block input:not([type="checkbox"]) {
   color: #e6e6e6;
   background: #101010;
   border: 2px solid #1f1f1f;
 }
 
-.form-block input:not([type='checkbox']) {
+.form-block input:not([type="checkbox"]) {
   width: 100%;
   height: 50px;
   padding: 0 15px;
@@ -982,7 +966,7 @@ button, input, textarea, select {
 }
 
 .banner-btn {
-  background: #00A0AF;
+  background: #00a0af;
   border: 1px solid transparent;
   -webkit-box-shadow: 1px 3px 13px 0px #00a0af85;
   box-shadow: 1px 3px 13px 0px #00a0af85;
@@ -1003,13 +987,28 @@ button, input, textarea, select {
 }
 
 .banner-btn:hover {
-  color: #00A0AF;
+  color: #00a0af;
   background: #fff;
-  border-color: #00A0AF;
+  border-color: #00a0af;
   -webkit-box-shadow: none;
   box-shadow: none;
-  transition: all .5s;
+  transition: all 0.5s;
+}
+
+/*<-----------------Product Page Finish----------------->*/
+
+/*<-----------------Blog Page Start----------------->*/
+.card{
+  border-radius: 1em;
+  img{
+    border-radius: 1em 1em 0 0;
+  }
+  .card-body{
+    .card-title{
+      font-size: 1.8em;
+    }
+  }
 }
 
 
-/*<-----------------Product Page Finish----------------->*/
+/*<-----------------Blog Page Finish----------------->*/
