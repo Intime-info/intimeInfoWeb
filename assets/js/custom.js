@@ -252,9 +252,9 @@ $(document).ready(function (){
                 let isValue = mediaUrl.includes("video");
     
                 if (isValue === false) {
-                   document.getElementById("instagramicerik1").innerHTML += '<a href="' + dats.data[i].permalink + '" target="_blank"><div class="card m-1 gonderiler"><img class="card-img-top " src="' + dats.data[i].media_url + '" alt="Card image cap"></div></a>'
+                   document.getElementById("instagramicerik1").innerHTML += '<a  href="' + dats.data[i].permalink + '" target="_blank"><div class="card m-1 gonderiler"><img class="card-img-top " src="' + dats.data[i].media_url + '" alt="Card image cap"></div></a>'
                 } else {
-                    document.getElementById("instagramicerik1").innerHTML += '<a href="' + dats.data[i].permalink + '" target="_blank"><div class="card m-1 gonderiler"><video class="card-img-top" src="' + dats.data[i].media_url + '"></div></a>'
+                    document.getElementById("instagramicerik1").innerHTML += '<a  href="' + dats.data[i].permalink + '" target="_blank"><div class="card m-1 gonderiler"><video class="card-img-top" src="' + dats.data[i].media_url + '"></div></a>'
                 }
             }
         } else {

@@ -10486,24 +10486,8 @@ footer .iletisimbilgileri a:hover span {
           transition-duration: 2s;
 }
 
-footer .socialiconlardivi {
-  margin-top: 30px;
-}
-
 footer .socialiconlardivi .sosyalicon {
   font-size: 24px !important;
-}
-
-footer h3 {
-  color: #121C4D;
-}
-
-footer h3 span {
-  color: #00ADB5;
-}
-
-footer .backgrblue {
-  background: #00ADB5;
 }
 
 footer #instagramicerik1 .gonderiler:hover {
