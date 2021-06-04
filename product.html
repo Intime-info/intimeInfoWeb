@@ -3,8 +3,293 @@
 <head>
     <meta charset="UTF-8">
     <title>Ürünler | Intime Info Yazılım Çözümleri</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+          integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
 </head>
 <body>
+<header class="intimeInfo-header">
+    <div class="container navigation">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="index.html">
+                <figure class="mb-0">
+                    <img src="assets/img/intime-info-logo.svg" class="img-fluid">
+                </figure>
+            </a>
+            <div class="d-flex align-items-center justify-content-around">
 
+                <button class="navbar-toggler" id="nav-icon3" type="button" data-toggle="collapse" data-target="#main_menu"
+                        aria-controls="main_menu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse" id="main_menu">
+                <ul class="navbar-nav mr-auto d-flex align-items-start align-items-lg-center align-items-xl-center">
+                    <li class="nav-item active ml-2">
+                        <a class="nav-link" href="#">Anasayfa <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown ml-2">
+                        <a class="nav-link dropdown-toggle" href="about.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Kurumsal
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="about.html">Hakkımızda</a>
+                            <a class="dropdown-item" href="services.html">Hizmetler</a>
+
+                        </div>
+                    </li>
+                    <li class="nav-item ml-2">
+                        <a class="nav-link" href="product.html">Ürünler</a>
+                    </li>
+                    <li class="nav-item ml-2">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item ml-2">
+                        <a class="nav-link" href="career.html">Kariyer</a>
+                    </li>
+                    <li class="nav-item ml-2">
+                        <a class="nav-link" href="contact.html">İletişim</a>
+                    </li>
+                </ul>
+                <ul class="list-unstyled d-flex align-items-center flex-xl-row navbar-nav">
+                    <li class="ml-3 nav-item"><a href="#" class="text-decoration-none nav-link"><span class="intimeinfo intimeinfo-headphones"></span> </a> </li>
+                    <li class="ml-3 nav-item"><a href="#" class="text-decoration-none nav-link"><span class="intimeinfo intimeinfo-email"></span> </a> </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+<section id="slide" class="slide kvkk-slider background-withcolor">
+    <div class="content-bottom">
+        <div class="container h-100">
+            <div class="row align-items-center justify-content-center h-100">
+                <div class="page-banner-area kvkk-hero ">
+                    <div class="container">
+                        <div class="page-banner-content d-flex flex-column align-items-center justify-content-center">
+                            <h2>Ürünler</h2>
+                            <ul class="text-white d-flex list-unstyled">
+                                <li class="mr-2">
+                                    <a class="text-white" href="index.html">Anasayfa </a>
+                                </li>
+                                <li> - Ürünler</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- formModal Start -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="single-image form-block">
+                    <span>Intime PMP ailesinin tüm özelliklerini anında denemek için demo talebi oluşturabilir, gelişmiş özelliklerini siz de deneyimleyebilirsiniz.</span>
+
+                    <form action="#" method="post" name="feedback-form">
+
+                        <div class="fieldsets row">
+                            <div class="col-md-12"><input type="text" placeholder="Firma" name="companyName" required=""></div>
+                            <div class="col-md-12"><input type="text" placeholder="Ad Soyad" name="fullName" required=""></div>
+                            <div class="col-md-12"><input type="tel" placeholder="Telefon Numarası" name="phone" required="" minlength="11"></div>
+                            <div class="col-md-12"><input type="email" placeholder="Email Adresi" name="mail" required=""></div>
+                        </div>
+
+                        <div class="form-group kvkk-check d-flex flex-row align-items-baseline">
+                            <input type="checkbox" required="">
+                            <p class="mb-0 ml-2"> <a href="aydıntlatmaMetni.pdf" target="_blank">Gizlilik sözleşmesini ve aydınlatma metnini</a> okudum, onaylıyorum.</p>
+                        </div>
+
+                        <div class="fieldsets">
+                            <button type="submit" name="submit" class="lnk banner-btn pix-btn bg-btn" data-dismiss="modal">Gönder</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- formModal Finish-->
+<div class="container">
+    <div class="row mt-5">
+        <div class="col-xl-4 col-lg-6 col-md-6 col-12 p-3 product">
+            <div class="productInner">
+                <figure class="mb-0">
+                    <img class="img-fluid  w-100 w-100 mw-75 mh-75" src="assets/img/urunimg.png" alt="">
+                </figure>
+                <div class="icons">
+                    <a data-toggle="modal" data-target="#exampleModalCenter">
+                        <i class="fas fa-file-alt"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fas fa-link"></i>
+                    </a>
+                </div>
+            </div>
+            <p class="font-weight-light p-2 text-center">Morbi laoreet lectus ligula, sed ullamcorper nibh aliquet velu.</p>
+        </div>
+        <div class="col-xl-4 col-lg-6 col-md-6 col-12 p-3 product">
+            <div class="productInner">
+                <figure class="mb-0">
+                    <img class="img-fluid  w-100 w-100 mw-75 mh-75" src="assets/img/urunimg.png" alt="">
+                </figure>
+                <div class="icons">
+                    <a data-toggle="modal" data-target="#exampleModalCenter">
+                        <i class="far fa-file-alt"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fas fa-link"></i>
+                    </a>
+                </div>
+            </div>
+            <p class="font-weight-light p-2 text-center">Morbi laoreet lectus ligula, sed ullamcorper nibh aliquet velu.</p>
+        </div>
+        <div class="col-xl-4 col-lg-6 col-md-6 col-12 p-3 product">
+            <div class="productInner">
+                <figure class="mb-0">
+                    <img class="img-fluid  w-100 w-100 mw-75 mh-75" src="assets/img/urunimg.png" alt="">
+                </figure>
+                <div class="icons">
+                    <a data-toggle="modal" data-target="#exampleModalCenter">
+                        <i class="far fa-file-alt"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fas fa-link"></i>
+                    </a>
+                </div>
+            </div>
+            <p class="font-weight-light p-2 text-center">Morbi laoreet lectus ligula, sed ullamcorper nibh aliquet velu.</p>
+        </div>
+        <div class="col-xl-4 col-lg-6 col-md-6 col-12 p-3 product">
+            <div class="productInner">
+                <figure class="mb-0">
+                    <img class="img-fluid  w-100 w-100 mw-75 mh-75" src="assets/img/urunimg.png" alt="">
+                </figure>
+                <div class="icons">
+                    <a data-toggle="modal" data-target="#exampleModalCenter">
+                        <i class="far fa-file-alt"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fas fa-link"></i>
+                    </a>
+                </div>
+            </div>
+            <p class="font-weight-light p-2 text-center">Morbi laoreet lectus ligula, sed ullamcorper nibh aliquet velu.</p>
+        </div>
+        <div class="col-xl-4 col-lg-6 col-md-6 col-12 p-3 product">
+            <div class="productInner">
+                <figure class="mb-0">
+                    <img class="img-fluid  w-100 w-100 mw-75 mh-75" src="assets/img/urunimg.png" alt="">
+                </figure>
+                <div class="icons">
+                    <a data-toggle="modal" data-target="#exampleModalCenter">
+                        <i class="far fa-file-alt"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fas fa-link"></i>
+                    </a>
+                </div>
+            </div>
+            <p class="font-weight-light p-2 text-center">Morbi laoreet lectus ligula, sed ullamcorper nibh aliquet velu.</p>
+        </div>
+        <div class="col-xl-4 col-lg-6 col-md-6 col-12 p-3 product">
+            <div class="productInner">
+                <figure class="mb-0">
+                    <img class="img-fluid  w-100 w-100 mw-75 mh-75" src="assets/img/urunimg.png" alt="">
+                </figure>
+                <div class="icons">
+                    <a data-toggle="modal" data-target="#exampleModalCenter">
+                        <i class="far fa-file-alt"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fas fa-link"></i>
+                    </a>
+                </div>
+            </div>
+            <p class="font-weight-light p-2 text-center">Morbi laoreet lectus ligula, sed ullamcorper nibh aliquet velu.</p>
+        </div>
+        <div class="col-xl-4 col-lg-6 col-md-6 col-12 p-3 product">
+            <div class="productInner">
+                <figure class="mb-0">
+                    <img class="img-fluid  w-100 w-100 mw-75 mh-75" src="assets/img/urunimg.png" alt="">
+                </figure>
+                <div class="icons">
+                    <a data-toggle="modal" data-target="#exampleModalCenter">
+                        <i class="far fa-file-alt"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fas fa-link"></i>
+                    </a>
+                </div>
+            </div>
+            <p class="font-weight-light p-2 text-center">Morbi laoreet lectus ligula, sed ullamcorper nibh aliquet velu.</p>
+        </div>
+        <div class="col-xl-4 col-lg-6 col-md-6 col-12 p-3 product">
+            <div class="productInner">
+                <figure class="mb-0">
+                    <img class="img-fluid  w-100 w-100 mw-75 mh-75" src="assets/img/urunimg.png" alt="">
+                </figure>
+                <div class="icons">
+                    <a data-toggle="modal" data-target="#exampleModalCenter">
+                        <i class="far fa-file-alt"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fas fa-link"></i>
+                    </a>
+                </div>
+            </div>
+            <p class="font-weight-light p-2 text-center">Morbi laoreet lectus ligula, sed ullamcorper nibh aliquet velu.</p>
+        </div>
+        <div class="col-xl-4 col-lg-6 col-md-6 col-12 p-3 product">
+            <div class="productInner">
+                <figure class="mb-0">
+                    <img class="img-fluid  w-100 w-100 mw-75 mh-75" src="assets/img/urunimg.png" alt="">
+                </figure>
+                <div class="icons">
+                    <a data-toggle="modal" data-target="#exampleModalCenter">
+                        <i class="far fa-file-alt"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fas fa-link"></i>
+                    </a>
+                </div>
+            </div>
+            <p class="font-weight-light p-2 text-center">Morbi laoreet lectus ligula, sed ullamcorper nibh aliquet velu.</p>
+        </div>
+
+    </div>
+</div>
+<script src="assets/js/jquery-3.6.0.min.js"></script>
+<script src="assets/js/owl.carousel.min.js"></script>
+<script src="assets/js/owl.carousel.min.js"></script>
+<script src="assets/js/wow.min.js"></script>
+<script src="assets/js/particles.min.js"></script>
+<script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script>
+    new WOW().init();
+</script>
+<script src="assets/js/custom.js"></script>
+<script src="assets/js/part.js"></script>
 </body>
 </html>

@@ -1,3 +1,8 @@
+/*
+@media screen and (max-width: 1200px) and (min-width: 992px) {
+
+}
+*/
 @media screen and (max-width: 992px) {
   #customer_carousel {
     offset: unset;
@@ -26,6 +31,47 @@
   }
   .mainInformed-form .contact-form {
     background: none !important;
+  }
+  /*<-----------------Product Page Start----------------->*/
+  .productInner .icons {
+    opacity: 1;
+  }
+  .productInner .icons a {
+    padding: 8px;
+  }
+  .productInner .icons a:first-child {
+    opacity: 1;
+    bottom: 10px;
+    left: 35px;
+  }
+  .productInner .icons a:last-child {
+    opacity: 1;
+    bottom: 10px;
+    left: 35px;
+  }
+  .productInner img {
+    opacity: 1;
+    -webkit-transform: translate3d(40px, 0, 0) !important;
+            transform: translate3d(40px, 0, 0) !important;
+    -webkit-transition: .5s ease;
+    transition: .5s ease;
+  }
+  .mw-75 {
+    width: 75% !important;
+  }
+  .mh-75 {
+    height: 75% !important;
+  }
+  .slide .content-bottom img {
+    max-width: 400px;
+  }
+  /*<-----------------Product Page Finish----------------->*/
+}
+
+@media (max-width: 768px) {
+  .slide .content-bottom h2 {
+    font-size: 40px;
+    line-height: 1.2;
   }
 }
 
@@ -64,6 +110,18 @@
     width: 100px !important;
     height: 100px !important;
   }
+}
+
+@media (max-width: 375px) {
+  /*<-----------------Product Page Start----------------->*/
+  .slide:after {
+    border-right: 261vw solid #fff;
+    border-top: 241px solid transparent;
+  }
+  .content-bottom .col-md-6 {
+    margin-top: 50px;
+  }
+  /*<-----------------Product Page Finish----------------->*/
 }
 
 @media screen and (max-width: 320px) {
