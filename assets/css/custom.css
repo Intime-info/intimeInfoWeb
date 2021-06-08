@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
  * Bootstrap v4.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors
@@ -10670,6 +10671,13 @@ footer .sosyaliconlar .sosyalicon {
   height: 50vh;
 }
 
+.slide.career-slider {
+  background-image: url("../img/intime-info-backgr1.jpg");
+  height: 50vh;
+  background-size: contain !important;
+  margin-top: 10px;
+}
+
 .slide:before {
   content: "";
   width: 100%;
@@ -10808,4 +10816,479 @@ footer .sosyaliconlar .sosyalicon {
 }
 
 /*<-----------------Blog Page Finish----------------->*/
+/*  Career Page Start  */
+.career-container .card-height {
+  border: 2px solid #15234E !important;
+  height: 100% !important;
+}
+
+.career-container .card-height:hover {
+  -webkit-transform: scaleY(1.05);
+          transform: scaleY(1.05);
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  cursor: pointer;
+}
+
+.career-container h4 {
+  color: #00A0AF;
+}
+
+.career-container span {
+  color: #15234E;
+}
+
+.career-container button {
+  border: 1px solid #15234e;
+  color: #00a0af;
+  width: 90px;
+}
+
+.overflow-hidden-imp {
+  overflow: hidden !important;
+}
+
+.career-new-p {
+  font-size: 1.2rem;
+  letter-spacing: -.05em;
+}
+
+blockquote {
+  background: #fbef4a;
+  background: #fbef4a;
+  border-radius: 5px;
+  border: 0;
+  border-radius: 10px;
+  color: #666;
+  margin: 0;
+  padding: 2.5rem 4rem 2.5rem 4.5rem;
+  position: relative;
+  font-family: auto;
+}
+
+blockquote p {
+  color: #212529 !important;
+  font-family: 'Open Sans', 'Arial', 'sans-serif';
+  font-size: 1.2em;
+}
+
+blockquote:before {
+  left: 22px;
+  top: 21px;
+  color: #FFF;
+  content: "“";
+  font-size: 85px;
+  font-style: normal;
+  line-height: 1;
+  position: absolute;
+}
+
+#sidebar {
+  line-height: 60px;
+  min-width: 270px;
+  max-width: 270px;
+  color: #fff;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  position: relative;
+  z-index: 0;
+  border-right: 2px solid rgba(0, 0, 0, 0.05);
+}
+
+#sidebar.active {
+  margin-left: -270px;
+}
+
+#sidebar ul.components {
+  padding: 0;
+}
+
+#sidebar h5 {
+  color: black !important;
+  border-bottom: 1px solid black;
+}
+
+#sidebar ul li {
+  font-size: 14px;
+}
+
+#sidebar ul li > ul {
+  margin-left: 11px;
+}
+
+#sidebar ul li > ul li {
+  font-size: 13px;
+}
+
+#sidebar ul li > ul li a {
+  border-bottom: 1px solid transparent;
+}
+
+#sidebar ul li > ul li a span {
+  color: #000;
+}
+
+#sidebar ul li a {
+  padding: 10px 0;
+  display: block;
+  color: black;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+#sidebar ul li a span {
+  color: #fff;
+}
+
+#sidebar ul li.active > a {
+  background: transparent;
+  color: #007bff;
+}
+
+@media (max-width: 767.98px) {
+  #sidebar {
+    min-width: 100%;
+    max-width: 180px;
+    border-left: none;
+  }
+}
+
+#sidebar .custom-menu {
+  display: inline-block;
+  position: absolute;
+  top: 20px;
+  right: 0;
+  margin-right: -20px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  #sidebar .custom-menu {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+#sidebar .custom-menu .btn {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  position: relative;
+}
+
+#sidebar .custom-menu .btn i {
+  margin-right: -40px;
+  font-size: 14px;
+}
+
+#sidebar .custom-menu .btn.btn-primary {
+  background: transparent;
+  border-color: transparent;
+}
+
+#sidebar .custom-menu .btn.btn-primary:after {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: '';
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  background: #007bff;
+  border-radius: 10px;
+}
+
+#sidebar .custom-menu .btn.btn-primary:hover, #sidebar .custom-menu .btn.btn-primary:focus {
+  background: transparent !important;
+  border-color: transparent !important;
+}
+
+a[data-toggle="collapse"] {
+  position: relative;
+}
+
+.dropdown-toggle::after {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+#content {
+  width: 100%;
+  padding: 0;
+  min-height: 100vh;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.btn.btn-primary {
+  background: #007bff;
+  border-color: #007bff;
+}
+
+.btn.btn-primary:hover, .btn.btn-primary:focus {
+  background: #007bff !important;
+  border-color: #007bff !important;
+}
+
+.form-control {
+  height: 44px !important;
+  background: #fff;
+  color: #000 !important;
+  font-size: 13px;
+  border-radius: 4px;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  border: transparent;
+}
+
+.form-control:focus, .form-control:active {
+  border-color: #000;
+}
+
+.form-control::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.form-control::-moz-placeholder {
+  /* Firefox 19+ */
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.form-control:-ms-input-placeholder {
+  /* IE 10+ */
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.form-control:-moz-placeholder {
+  /* Firefox 18- */
+  color: rgba(0, 0, 0, 0.7);
+}
+
+#jobApplicationForm {
+  /* Firefox */
+}
+
+#jobApplicationForm :root {
+  --main: #F9C560;
+  --selected: #FDE4B3;
+  --light: #FAFAFA;
+  --grey: #414141;
+  --dark: #303030;
+}
+
+#jobApplicationForm a {
+  text-decoration: none;
+  color: #303030;
+}
+
+#jobApplicationForm h1, #jobApplicationForm h2, #jobApplicationForm nav li a {
+  color: #00a0af;
+  font-weight: 500;
+}
+
+#jobApplicationForm h3 {
+  font-weight: 300;
+}
+
+#jobApplicationForm p {
+  color: #303030;
+  text-align: center;
+  padding: 1em 0;
+  font-weight: 300;
+}
+
+#jobApplicationForm ul {
+  font-weight: 300;
+}
+
+#jobApplicationForm img {
+  max-width: 100%;
+}
+
+#jobApplicationForm form {
+  padding: 1em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#jobApplicationForm form h2 {
+  font-size: 1em;
+  padding: 1em 0;
+}
+
+#jobApplicationForm input, #jobApplicationForm textarea, #jobApplicationForm select {
+  width: 100%;
+  border-radius: 25px;
+  padding: 1.2em 1.5em .2em 1.5em;
+  margin: .2em 0;
+  color: #414141;
+  border: 1px solid #B7B5B5;
+  font-size: .85em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  resize: none;
+  vertical-align: bottom;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+#jobApplicationForm input::-webkit-outer-spin-button,
+#jobApplicationForm input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+#jobApplicationForm input[type=number] {
+  -moz-appearance: textfield;
+}
+
+#jobApplicationForm select {
+  padding: .8em 1.5em;
+  margin-bottom: 1.1em;
+  font-size: .8em;
+  background-image: linear-gradient(45deg, transparent 50%, #303030 50%), linear-gradient(135deg, #303030 50%, transparent 50%), linear-gradient(to right, #ccc, #ccc);
+  background-position: calc(100% - 20px) calc(1em + 3px), calc(100% - 15px) calc(1em + 3px), calc(100% - 2.5em) 0.7em;
+  background-size: 5px 5px, 5px 5px, 1px 1.5em;
+  background-repeat: no-repeat;
+}
+
+#jobApplicationForm select:focus {
+  background-size: 5px 5px, 5px 5px, 1px 1.5em;
+  background-repeat: no-repeat;
+}
+
+#jobApplicationForm input[type='submit'] {
+  display: block;
+  max-width: 25%;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: .5em;
+  margin: 2em auto 0 auto;
+  border-radius: 25px;
+  -webkit-transition: .2s;
+  transition: .2s;
+  border: none;
+  background: #F9C560;
+  color: #fff;
+}
+
+#jobApplicationForm input[type='submit']:hover {
+  background: #FDE4B3;
+}
+
+#jobApplicationForm input::-webkit-input-placeholder {
+  color: transparent;
+}
+
+#jobApplicationForm input:-ms-input-placeholder {
+  color: transparent;
+}
+
+#jobApplicationForm input::-ms-input-placeholder {
+  color: transparent;
+}
+
+#jobApplicationForm input::placeholder {
+  color: transparent;
+}
+
+#jobApplicationForm label {
+  color: #707070;
+  cursor: initial;
+  float: left;
+  font-size: .8em;
+  -webkit-transform: translate(1.5em, -2.3em);
+          transform: translate(1.5em, -2.3em);
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+#jobApplicationForm input:focus, #jobApplicationForm textarea:focus, #jobApplicationForm select:focus {
+  outline: none;
+  border-color: #00a0af;
+}
+
+#jobApplicationForm input:focus + label, #jobApplicationForm input:not(:placeholder-shown) + label {
+  -webkit-transform: translate(2.2em, -3.7em);
+          transform: translate(2.2em, -3.7em);
+  font-size: .6em;
+  color: #00a0af;
+}
+
+#jobApplicationForm textarea {
+  border-radius: 15px;
+  font-size: .8em;
+  height: 10em;
+  margin-bottom: 1em;
+}
+
+#jobApplicationForm textarea::-webkit-input-placeholder {
+  color: #707070;
+}
+
+#jobApplicationForm textarea:-ms-input-placeholder {
+  color: #707070;
+}
+
+#jobApplicationForm textarea::-ms-input-placeholder {
+  color: #707070;
+}
+
+#jobApplicationForm textarea::placeholder {
+  color: #707070;
+}
+
+#jobApplicationForm #foreignLanguage2, #jobApplicationForm #foreignLanguage3,
+#jobApplicationForm label[for="foreignLanguage2"], #jobApplicationForm label[for="foreignLanguage3"],
+#jobApplicationForm #foreignLanguageExperience2, #jobApplicationForm #foreignLanguageExperience3,
+#jobApplicationForm #armyStatusDate, #jobApplicationForm label[for="armyStatusDate"],
+#jobApplicationForm #lastWorking, #jobApplicationForm label[for="lastWorking"] {
+  display: none;
+}
+
+#jobApplicationForm #drop_file_zone {
+  background-color: #FAFAFA;
+  border: var(--dark) 2px dashed;
+  border-radius: 10px;
+  width: 100%;
+  height: 10em;
+  font-size: .8em;
+  margin: .5em 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+  cursor: pointer;
+  display: table;
+  overflow: hidden;
+}
+
+#jobApplicationForm #drag_upload_file {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#jobApplicationForm #drag_upload_file p {
+  color: #414141;
+}
+
+#jobApplicationForm #drag_upload_file img {
+  height: 3em;
+  opacity: .3;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+#jobApplicationForm #drop_file_zone #selectFile {
+  display: none;
+}
 /*# sourceMappingURL=custom.css.map */
