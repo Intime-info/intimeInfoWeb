@@ -1,15 +1,10 @@
-/*
-@media screen and (max-width: 1200px) and (min-width: 992px) {
-
-}
-*/
 @media screen and (max-width: 992px) {
   #customer_carousel {
     offset: unset;
     margin: 0 auto;
   }
   .navbar .navbar-collapse .navbar-nav .nav-item:not(:last-child) {
-    /* border-bottom: 1px solid #ccc;*/
+    border-bottom: 1px solid #ccc;
   }
   .navbar .navbar-collapse .navbar-nav .nav-item {
     width: 100%;
@@ -136,7 +131,6 @@
 }
 
 @media (max-width: 375px) {
-  /*<-----------------Product Page Start----------------->*/
   .slide:after {
     border-right: 261vw solid #fff;
     border-top: 241px solid transparent;

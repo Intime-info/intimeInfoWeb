@@ -77,6 +77,7 @@ var partners_carousel= function () {
             margin:10,
             nav:false,
             dots: true,
+            autoplay: true,
             responsive:{
                 0:{
                     items:1,
@@ -102,7 +103,7 @@ var blog_carousel= function () {
     {
         $('#blog_carousel').owlCarousel({
             loop: true,
-            autoPlay : true,
+            autoplay : true,
             stopOnHover : true,
             margin: 10,
 
@@ -190,7 +191,7 @@ var customer_carousel= function () {
     {
         $('#customer_carousel').owlCarousel({
             loop: true,
-            autoPlay : true,
+            autoplay : true,
             stopOnHover : true,
             margin: 20,
             nav: true,

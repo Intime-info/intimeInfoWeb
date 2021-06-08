@@ -1287,12 +1287,12 @@ margin-bottom: 15px;
   margin-bottom: 10px;
 }
 .contact-info-text {
-  a {
+  a,span {
     color: #999999;
-  font-size: 16px;
-  font-weight: 500;
-  display: inline-block;
-  width: 100%;
+    font-size: 16px;
+    font-weight: 500;
+    display: inline-block;
+    width: 100%;
   }
 }
 
