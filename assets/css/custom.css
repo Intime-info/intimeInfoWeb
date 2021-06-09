@@ -9538,6 +9538,14 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+.btn-intime {
+  background: #00a0af;
+}
+
+.text-intime {
+  color: #00a0af;
+}
+
 .font-shadow {
   text-shadow: 2px 2px #bcdae1;
 }
@@ -10855,7 +10863,7 @@ footer .sosyaliconlar .sosyalicon {
 
 blockquote {
   background: #fbef4a;
-  background: #fbef4a;
+  background: #00a0af;
   border-radius: 5px;
   border: 0;
   border-radius: 10px;
@@ -10867,7 +10875,7 @@ blockquote {
 }
 
 blockquote p {
-  color: #212529 !important;
+  color: white !important;
   font-family: 'Open Sans', 'Arial', 'sans-serif';
   font-size: 1.2em;
 }
@@ -11290,5 +11298,47 @@ a[data-toggle="collapse"] {
 
 #jobApplicationForm #drop_file_zone #selectFile {
   display: none;
+}
+
+#cvGonderForm .form-group label h6 {
+  color: #00a0af;
+}
+
+#cvGonderForm .form-group input {
+  border-top: 1px solid grey;
+  border-bottom: 1px solid black;
+}
+
+#cvGonderForm .form-group input:focus, #cvGonderForm .form-group input:active {
+  background-color: snow;
+  border-top: 0px;
+  border-bottom: 0px;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+#cvGonderForm .tooltips {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+  /* If you want dots under the hoverable text */
+}
+
+#cvGonderForm .tooltips .tooltiptext {
+  visibility: hidden;
+  width: 150px;
+  background-color: #948d8d;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  top: 0px;
+  left: 40%;
+}
+
+#cvGonderForm .tooltips:hover .tooltiptext {
+  visibility: visible;
 }
 /*# sourceMappingURL=custom.css.map */
