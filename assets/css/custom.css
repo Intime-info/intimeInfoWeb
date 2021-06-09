@@ -10811,7 +10811,6 @@ footer .sosyaliconlar .sosyalicon {
 .contact-info {
   display: inline-block;
   width: 100%;
-  text-align: center;
   margin-bottom: 10px;
 }
 
@@ -10821,18 +10820,13 @@ footer .sosyaliconlar .sosyalicon {
 
 .contact-info-item {
   background: #071c34;
-  padding: 30px 0px;
+  padding: 20px 15px;
 }
 
 .contact-page-sec .contact-page-form h2 {
   color: #071c34;
-  text-transform: capitalize;
   font-size: 22px;
   font-weight: 700;
-}
-
-.contact-page-form .col-md-6.col-sm-6.col-xs-12 {
-  padding-left: 0;
 }
 
 .contact-page-form.contact-form input {
@@ -10850,7 +10844,7 @@ footer .sosyaliconlar .sosyalicon {
 }
 
 .contact-info-icon i {
-  font-size: 48px;
+  font-size: 1.5rem;
   color: #fda40b;
 }
 
@@ -10860,9 +10854,8 @@ footer .sosyaliconlar .sosyalicon {
 
 .contact-info-text h2 {
   color: #fff;
-  font-size: 22px;
-  text-transform: capitalize;
-  font-weight: 600;
+  font-size: 1rem;
+  font-weight: 300;
   margin-bottom: 10px;
 }
 
@@ -10915,6 +10908,7 @@ footer .sosyaliconlar .sosyalicon {
   -webkit-transition: all 0.4s ease-in-out 0s;
   transition: all 0.4s ease-in-out 0s;
   border-color: #071c34;
+  cursor: pointer;
 }
 
 .single-input-field h4 {
@@ -10926,11 +10920,6 @@ footer .sosyaliconlar .sosyalicon {
 .contact-page-form {
   display: inline-block;
   width: 100%;
-  margin-top: 30px;
-}
-
-.contact-page-map {
-  margin-top: 36px;
 }
 
 .contact-page-form form {

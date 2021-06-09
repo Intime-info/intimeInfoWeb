@@ -1,5 +1,5 @@
 "use strict";
-new WOW().init();
+// new WOW().init();
 
 var sticky_navbar= function (){
     var $window = $(window);
