@@ -12,6 +12,192 @@
     <link rel="stylesheet" href="assets/css/custom.css">
 </head>
 <body>
+<header class="intimeInfo-header">
+    <div class="container navigation">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="index.html">
+                <figure class="mb-0">
+                    <img src="assets/img/intime-info-logo.svg" alt="intimelogo" class="img-fluid">
+                </figure>
+            </a>
+            <div class="d-flex align-items-center justify-content-around">
+
+                <button class="navbar-toggler" id="nav-icon3" type="button" data-toggle="collapse"
+                        data-target="#main_menu"
+                        aria-controls="main_menu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse" id="main_menu">
+                <ul class="navbar-nav d-flex align-items-center align-items-lg-center align-items-xl-center">
+                    <li class="nav-item active ml-2">
+                        <a class="nav-link" href="#">Anasayfa <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown ml-2">
+                        <a class="nav-link dropdown-toggle" href="about.html" id="navbarDropdown" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Kurumsal
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="about.html">Hakkımızda</a>
+                            <a class="dropdown-item" href="services.html">Hizmetler</a>
+
+                        </div>
+                    </li>
+                    <li class="nav-item ml-2">
+                        <a class="nav-link" href="product.html">Ürünler</a>
+                    </li>
+                    <li class="nav-item ml-2">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item ml-2">
+                        <a class="nav-link" href="career.html">Kariyer</a>
+                    </li>
+                    <li class="nav-item ml-2">
+                        <a class="nav-link" href="contact.html">İletişim</a>
+                    </li>
+                </ul>
+                <ul class="list-unstyled d-flex align-items-center flex-xl-row navbar-nav">
+                    <li class="ml-3 nav-item"><a href="#" class="text-decoration-none nav-link"><span
+                            class="intimeinfo intimeinfo-headphones"></span> </a></li>
+                    <li class="ml-3 nav-item"><a href="#" class="text-decoration-none nav-link"><span
+                            class="intimeinfo intimeinfo-email"></span> </a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+
+    <section id="slide" class="slide kvkk-slider background-withcolor">
+      <div class="content-bottom">
+        <div class="container h-100">
+          <div class="row align-items-center justify-content-center h-100">
+            <div class="page-banner-area kvkk-hero">
+              <div class="container">
+                <div
+                  class="
+                    page-banner-content
+                    d-flex
+                    flex-column
+                    align-items-center
+                    justify-content-center
+                  "
+                >
+                  <h2>İletişim</h2>
+                  <ul class="text-white d-flex list-unstyled">
+                    <li class="mr-2">
+                      <a class="text-white" href="index.html">Anasayfa </a>
+                    </li>
+                    <li>- İletişim</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-page-sec">
+    <div class="container">
+      <div class="row align-items-start">
+        <div class="col-md-6">
+          <div class="contact-info">
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <i class="fas fa-map-marked"></i>
+              </div>
+              <div class="contact-info-text">
+                <h2>adres</h2>
+                <span>Acıbadem Mahallesi Çeçen Sokak Akasya 
+                    Acıbadem Evleri Kent Etabı 25A Blok A3 Giriş 
+                    K7 Ofis:8 
+                </span> 
+                <span>Üsküdar/İstanbul</span> 
+              </div>
+            </div>            
+          </div>          
+        </div>          
+        <div class="col-md-3">
+          <div class="contact-info">
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="contact-info-text">
+                <h2>E-mail</h2>
+                <a href="mailto:info@intimeinfo.com.tr">info@intimeinfo.com.tr</a>
+              </div>
+            </div>            
+          </div>      
+        </div>             
+        <div class="col-md-3">    
+            <div class="contact-info">
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="contact-info-text">
+                <h2>Telefon</h2>
+                <a href="tel:0850 535 0 535">0850 535 0 535</a>
+              </div>
+            </div>            
+          </div>       
+        </div>         
+         
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="contact-page-form" method="post">
+            <h2>İletişime Geç</h2> 
+            <form action="contact-mail.php" method="post">
+              <div class="row">
+              <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="single-input-field">
+                  <input type="text" placeholder="İsim" name="name"/>
+                </div>
+              </div>  
+              <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="single-input-field">
+                  <input type="email" placeholder="E-mail" name="email" required/>
+                </div>
+              </div>                              
+              <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="single-input-field">
+                  <input type="text" placeholder="Telefon" name="phone"/>
+                </div>
+              </div>  
+              <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="single-input-field">
+                  <input type="text" placeholder="Konu" name="subject"/>
+                </div>
+              </div>                
+              <div class="col-md-12 message-input">
+                <div class="single-input-field">
+                  <textarea  placeholder="Mesajınız" name="message"></textarea>
+                </div>
+              </div>                                                
+              <div class="single-input-fieldsbtn">
+                <input type="submit" value="Gönder"/>
+              </div>                          
+            </div>
+            </form>   
+          </div>      
+        </div>
+        <div class="col-md-12">        
+          <div class="contact-page-map">
+            <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3011.0283844855812!2d29.052813615661805!3d41.00275192771323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cac7f0882bb5db%3A0x8f002035885528db!2sAkasya%20AVM!5e0!3m2!1str!2str!4v1622807128939!5m2!1str!2str" width="100%" height="450" style="border:0;" allowfullscreen loading="lazy"></iframe>
+          </div>          
+        </div>        
+      </div>
+    </div>
+    </section>
+
+    <script src="./assets/js/custom.js"></script>
 
 </body>
 </html>
