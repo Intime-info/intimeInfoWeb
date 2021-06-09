@@ -4,11 +4,6 @@
     <enabled-global>
       <option value="SCSS" />
       <option value="SCSS-min" />
-      <option value="SCSS Min" />
-<<<<<<< HEAD
-      <option value="Sass" />
-=======
->>>>>>> abdulkerim
     </enabled-global>
   </component>
 </project>
