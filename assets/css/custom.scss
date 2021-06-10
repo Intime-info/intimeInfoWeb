@@ -1359,7 +1359,7 @@ margin-bottom: 15px;
 }
 .single-input-field  {
   h4 {
-  color: #464646;
+  color: #464646; 
   text-transform: capitalize;
   font-size: 14px;
   }
@@ -1374,3 +1374,46 @@ margin-bottom: 15px;
 }
 
 // Contact Page Finish
+
+// Services Page Start
+.services-page-sec {
+    padding: 60px 0;
+    min-height: 100vh;
+
+    .nav-tabs {
+      border: none;
+    }
+
+    .nav-item {
+      text-align: center;
+    }
+
+    .nav-link {
+      width: 100%;
+      background-color: #1f90da6b;
+      color: #fff;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      display:inline-block;
+      cursor:pointer;
+      padding:16px 31px;
+      outline: none;
+
+      &.active {
+        color: #ffff;
+        background-color: $corporateDarkBlue;
+      }
+    }
+
+    .tab-content {
+      img {
+        border-radius: 1rem;
+      }
+
+      p {
+        letter-spacing: 1px;
+        line-height: 2rem;
+      }
+    }
+}
+// Services Page Finish

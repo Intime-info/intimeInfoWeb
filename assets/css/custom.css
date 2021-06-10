@@ -10925,4 +10925,43 @@ footer .sosyaliconlar .sosyalicon {
 .contact-page-form form {
   padding: 20px 15px 0;
 }
+
+.services-page-sec {
+  padding: 60px 0;
+  min-height: 100vh;
+}
+
+.services-page-sec .nav-tabs {
+  border: none;
+}
+
+.services-page-sec .nav-item {
+  text-align: center;
+}
+
+.services-page-sec .nav-link {
+  width: 100%;
+  background-color: #1f90da6b;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  display: inline-block;
+  cursor: pointer;
+  padding: 16px 31px;
+  outline: none;
+}
+
+.services-page-sec .nav-link.active {
+  color: #ffff;
+  background-color: #021D49;
+}
+
+.services-page-sec .tab-content img {
+  border-radius: 1rem;
+}
+
+.services-page-sec .tab-content p {
+  letter-spacing: 1px;
+  line-height: 2rem;
+}
 /*# sourceMappingURL=custom.css.map */

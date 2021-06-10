@@ -44,6 +44,10 @@
   .mainInformed-form .contact-form {
     background: none !important;
   }
+  .services-page-sec .nav-item {
+    width: 100%;
+    margin: 0 !important;
+  }
 }
 
 .productInner .icons {
