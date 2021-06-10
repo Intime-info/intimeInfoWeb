@@ -23,7 +23,12 @@ $corporateDarkBlue: #021D49;
 body {
   font-family: 'Montserrat', sans-serif;
 }
-
+.btn-intime{
+  background: #00a0af;
+}
+.text-intime{
+  color: #00a0af;
+}
 .font-shadow {
   text-shadow: 2px 2px #bcdae1;
 }
@@ -32,7 +37,7 @@ body {
   font-family: 'Nunito', sans-serif;
   font-weight: 900;
   font-size: 35px;
-  color: #484b59;
+  color: #15234e;
 }
 
 button, input, textarea, select {
@@ -1101,6 +1106,12 @@ footer {
     background-image: url("../img/productSlide.jpg");
     height: 50vh;
   }
+  &.career-slider{
+    background-image: url("../img/intime-info-backgr1.jpg");
+    height: 50vh;
+    background-size:contain !important;
+    margin-top: 10px;
+  }
 
   &:before {
     content: "";
@@ -1417,3 +1428,479 @@ margin-bottom: 15px;
     }
 }
 // Services Page Finish
+/*<-----------------Blog Page Finish----------------->*/
+
+
+/*  Career Page Start  */
+.career-container{
+ 
+  .card-height{
+    border: 2px solid #15234E !important;
+    height: 100%!important;
+    &:hover{
+      transform: scaleY(1.05);
+      transition-duration: 1s;
+      cursor: pointer;
+      
+    }
+  }
+  h4{
+    color: #00A0AF;
+  }
+  span{
+    color: #15234E;
+  }
+  button{
+    border: 1px solid #15234e;
+    color: #00a0af;
+    width: 90px;
+  }
+}
+
+.overflow-hidden-imp{
+  overflow: hidden!important;
+}
+.career-new-p{
+  font-size: 1.2rem;
+  letter-spacing: -.05em;
+}
+blockquote{
+  background: #fbef4a; background: #00a0af;
+  border-radius: 5px;
+  border: 0;
+  border-radius: 10px;
+  color: #666;
+  margin: 0;
+  padding: 2.5rem 4rem 2.5rem 4.5rem;
+  position: relative;     font-family: auto;
+  p{
+    color:white !important; 
+    font-family:'Open Sans', 'Arial', 'sans-serif'; 
+    font-size: 1.2em;
+  }
+}
+blockquote:before {
+  left: 22px;
+  top: 21px;
+  color: #FFF;
+  content: "“";
+  font-size: 85px;
+  font-style: normal;
+  line-height: 1;
+  position: absolute;
+
+
+}
+
+
+#sidebar {
+  line-height: 60px;
+  min-width: 270px;
+  max-width: 270px;
+  // background: $primary;
+  color: #fff;
+  transition: all 0.3s;
+  position: relative;
+  z-index: 0;
+  border-right: 2px solid rgba(0,0,0,.05);
+ 
+  &.active{
+  	margin-left: -270px;
+  }
+  ul.components{
+  	padding: 0;
+  }
+  h5{
+    color: black!important;
+    border-bottom: 1px solid black;
+    
+  }
+  ul{
+    li{
+    	font-size: 14px;
+    	>ul{
+    		margin-left: 11px;
+    		li{
+    			font-size: 13px;
+    			a{
+    				border-bottom: 1px solid transparent;
+    				span{
+    					color: $black;
+    				}
+    			}
+    		}
+    	}
+    	a{
+    		padding: 10px 0;
+		    display: block;
+		    color: rgba(0,0,0,1);
+		    border-bottom: 1px solid rgba(0,0,0,.05);
+		    span{
+		    	color: $white;
+		    }
+    	}
+    	&.active{
+    		> a{
+    			background: transparent;
+    			color: $primary;
+    		}
+    	}
+    }
+  }
+  @include media-breakpoint-down(sm){
+    min-width: 100%;
+	  max-width: 180px;
+	  border-left: none;
+  }
+
+  .custom-menu{
+		display: inline-block;
+		position: absolute;
+		top: 20px;
+		right: 0;
+		margin-right: -20px;
+		@include transition(.3s);
+		.btn{
+			width: 60px;
+			height: 60px;
+			border-radius: 50%;
+			position: relative;
+			i{
+				margin-right: -40px;
+				font-size: 14px;
+			}
+			&.btn-primary{
+				background: transparent;
+				border-color: transparent;
+				&:after{
+					z-index: -1;
+					position: absolute;
+					top: 0;
+					left: 0;
+					right: 0;
+					bottom: 0;
+					content: '';
+				  transform: rotate(45deg);
+				  background: $primary;
+				  border-radius: 10px;
+				}
+				&:hover, &:focus{
+					background: transparent !important;
+					border-color: transparent !important;
+				}
+			}
+		}
+  }
+}
+
+
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+
+#content {
+  width: 100%;
+  padding: 0;
+  min-height: 100vh;
+  transition: all 0.3s;
+}
+
+
+.btn{
+	&.btn-primary{
+		background: $primary;
+		border-color: $primary;
+		&:hover, &:focus{
+			background: $primary !important;
+			border-color: $primary !important;
+		}
+	}
+}
+
+
+.form-control {
+	height: 44px!important;
+	background: $white;
+	color: $black !important;
+	font-size: 13px;
+	border-radius: 4px;
+	box-shadow: none !important;
+	border: transparent;
+	&:focus, &:active {
+		border-color: $black;
+	}
+	&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	  color: rgba(0,0,0,.7);
+	}
+	&::-moz-placeholder { /* Firefox 19+ */
+	  color: rgba(0,0,0,.7);
+	}
+	&:-ms-input-placeholder { /* IE 10+ */
+	  color: rgba(0,0,0,.7);
+	}
+	&:-moz-placeholder { /* Firefox 18- */
+	  color: rgba(0,0,0,.7);
+	}
+}
+
+
+
+//BASVURU SAYFASI BAŞLANGICIIIIIIIIIIIIIIIIIIII
+#jobApplicationForm{
+    
+:root {
+  --main: #F9C560;
+  --selected: #FDE4B3;
+  --light: #FAFAFA;
+  --grey: #414141;
+  --dark: #303030;
+}
+
+a {
+  text-decoration: none;
+  color: #303030;
+}
+
+h1, h2, nav li a {
+  color: #00a0af;
+  font-weight: 500;
+}
+
+h3 {
+  font-weight: 300;
+}
+
+p {
+  color: #303030;
+  text-align: center;
+  padding: 1em 0;
+  font-weight: 300;
+}
+
+ul {
+  font-weight: 300;
+}
+
+img {
+  max-width: 100%;
+}
+
+form {
+  padding: 1em;
+  box-sizing: border-box;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+form h2 {
+  font-size: 1em;
+  padding: 1em 0;
+}
+
+input, textarea, select {
+  width: 100%;
+  border-radius: 25px;
+  padding: 1.2em 1.5em .2em 1.5em;
+  margin: .2em 0;
+  color: #414141;
+  border: 1px solid #B7B5B5;
+  font-size: .85em;
+  box-sizing: border-box;
+  resize: none;
+  vertical-align: bottom;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+select {
+  padding: .8em 1.5em;
+  margin-bottom: 1.1em;
+  font-size: .8em;
+  background-image: linear-gradient(45deg, transparent 50%, #303030 50%),
+  linear-gradient(135deg, #303030 50%, transparent 50%),
+  linear-gradient(to right, #ccc, #ccc);
+  background-position: calc(100% - 20px) calc(1em + 3px), calc(100% - 15px) calc(1em + 3px), calc(100% - 2.5em) .7em;
+  background-size: 5px 5px, 5px 5px, 1px 1.5em;
+  background-repeat: no-repeat;
+}
+
+select:focus {
+ 
+
+
+ 
+  background-size: 5px 5px, 5px 5px, 1px 1.5em;
+  background-repeat: no-repeat;
+
+}
+
+input[type='submit'] {
+  display: block;
+  max-width: 25%;
+  text-align: center;
+  box-sizing: border-box;
+  padding: .5em;
+  margin: 2em auto 0 auto;
+  border-radius: 25px;
+  transition: .2s;
+  border: none;
+  background:#F9C560;
+  color: #fff;
+}
+
+input[type='submit']:hover {
+  background: #FDE4B3; 
+}
+
+input::placeholder {
+  color: transparent;
+}
+
+label {
+  color: #707070;
+  cursor: initial;
+  float: left;
+  font-size: .8em;
+  transform: translate(1.5em, -2.3em);
+  transition: all .3s;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color:  #00a0af; ;
+}
+
+input:focus + label, input:not(:placeholder-shown) + label {
+  transform: translate(2.2em, -3.7em);
+  font-size: .6em;
+  color: #00a0af; 
+}
+
+textarea {
+  border-radius: 15px;
+  font-size: .8em;
+  height: 10em;
+  margin-bottom: 1em;
+}
+
+textarea::placeholder {
+  color: #707070;
+}
+
+#foreignLanguage2, #foreignLanguage3,
+label[for="foreignLanguage2"], label[for="foreignLanguage3"],
+#foreignLanguageExperience2, #foreignLanguageExperience3,
+#armyStatusDate, label[for="armyStatusDate"],
+#lastWorking, label[for="lastWorking"] {
+  display: none;
+}
+
+
+#drop_file_zone {
+  background-color: #FAFAFA; ;
+  border: var(--dark)  2px dashed;
+  border-radius: 10px;
+  width: 100%;
+  height: 10em;
+  font-size: .8em;
+  margin: .5em 0;
+  box-sizing: border-box;
+  text-align: center;
+  cursor: pointer;
+  display: table;
+  overflow: hidden;
+}
+
+#drag_upload_file {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#drag_upload_file p {
+  color: #414141;
+}
+
+#drag_upload_file img {
+  height: 3em;
+  opacity: .3;
+  transition: .3s;
+}
+
+#drop_file_zone #selectFile {
+  display: none;
+}
+
+}
+
+//BASVURU SAYFASI bitişiiiii
+
+//CV GÖNDER SAYFASI BAŞLANGICI
+
+#cvGonderForm{
+  .form-group{
+    label{
+      h6{
+        color: #00a0af;
+      }
+    }
+    input{
+      border-top: 1px solid grey; 
+      border-bottom: 1px solid black;
+      &:focus,&:active{
+        background-color: rgb(255, 250, 250);
+        border-top: 0px;
+        border-bottom: 0px ;
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+      }
+
+    }
+   
+  }
+  .tooltips {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+  }
+  
+   .tooltips .tooltiptext {
+    visibility: hidden;
+    width: 150px;
+    background-color: rgb(148, 141, 141);
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+     position: absolute;
+    z-index: 1;
+    top: 0px;
+    left: 40%;
+  }
+  
+   .tooltips:hover .tooltiptext {
+    visibility: visible;
+  }
+
+}
