@@ -9758,18 +9758,20 @@ footer .sosyaliconlar .sosyalicon {
 .blogCard .blogExplanation a:hover {
   color: #00A0AF;
 }
-.blogCard .BlogTitle {
+.blogCard .blogTitle {
   font-size: 2rem;
   color: #000000;
   transition: color 0.5s ease;
 }
-.blogCard .BlogTitle:hover {
+.blogCard .blogTitle:hover {
   color: #00A0AF;
   transition: color 0.5s ease;
 }
-.blogCard .BlogContent {
+.blogCard .blogContent {
   color: #adadad;
-  margin-top: 1rem;
+  margin: 2rem 0;
+}
+.blogCard .blogLineClamp {
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
@@ -9808,7 +9810,7 @@ footer .sosyaliconlar .sosyalicon {
   color: transparent;
 }
 .blogSearch label .searchButton {
-  background: aqua;
+  background: #00A0AF;
   position: absolute;
   height: 50px;
   width: 50px;
@@ -9818,7 +9820,7 @@ footer .sosyaliconlar .sosyalicon {
   color: white;
 }
 .blogSearch label .searchButton:hover {
-  background-color: red;
+  background-color: #021D49;
   transition: background-color 0.3s ease;
 }
 
@@ -9878,5 +9880,16 @@ footer .sosyaliconlar .sosyalicon {
 }
 
 /*<-----------------Blog Page Finish----------------->*/
+/*<-----------------Blog Detail Page Start----------------->*/
+.blogQuotation {
+  border-left: 1px solid #00A0AF;
+  padding: 2rem 2rem 2rem 2rem;
+  color: #adadad;
+}
+.blogQuotation p {
+  margin-bottom: 2rem;
+}
+
+/*<-----------------Blog Detail Page Finish----------------->*/
 
 /*# sourceMappingURL=custom.css.map */
