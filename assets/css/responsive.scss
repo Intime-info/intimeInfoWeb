@@ -9,11 +9,7 @@ $corporateDarkBlue: #021d49;
 
 }
 
-/*
-@media screen and (max-width: 1200px) and (min-width: 992px) {
 
-}
-*/
 
 @media screen and (max-width: 1199px) {
 
@@ -36,7 +32,7 @@ $corporateDarkBlue: #021d49;
     .navbar-collapse{
       .navbar-nav{
         .nav-item:not(:last-child){
-         /* border-bottom: 1px solid #ccc;*/
+         border-bottom: 1px solid #ccc;
         }
         .nav-item{
           width: 100%;
@@ -128,37 +124,53 @@ $corporateDarkBlue: #021d49;
 
       a {
         padding: 8px;
+  .services-page-sec {
+    .nav-item {
+      width: 100%;
+      margin: 0!important;
+    }
+  }
 
-        &:first-child {
-          opacity: 1;
-          bottom: 10px;
-          left: 35px;
-        }
 
-        &:last-child {
-          opacity: 1;
-          bottom: 10px;
-          left: 35px;
-        }
+}
+/*<-----------------Product Page Start----------------->*/
+.productInner {
+  .icons {
+    opacity: 1;
+
+    a {
+      padding: 8px;
+
+      &:first-child {
+        opacity: 1;
+        bottom: 10px;
+        left: 35px;
+      }
+
+      &:last-child {
+        opacity: 1;
+        bottom: 10px;
+        left: 35px;
       }
     }
+  }
 
-    img {
-      opacity: 1;
-      transform: translate3d(40px, 0, 0)!important;;
-      transition: .5s ease;
-    }
+  img {
+    opacity: 1;
+    transform: translate3d(40px, 0, 0)!important;;
+    transition: .5s ease;
   }
-  .mw-75 {
-    width: 75%!important;
-  }
-  .mh-75 {
-    height: 75%!important;
-  }
-  .slide .content-bottom img {
-    max-width: 400px;
-  }
-  
+}
+.mw-75 {
+  width: 75%!important;
+}
+.mh-75 {
+  height: 75%!important;
+}
+.slide .content-bottom img {
+  max-width: 400px;
+}
+/*<-----------------Product Page Finish----------------->*/
 
 
 @media screen and (max-width: 991px) and (min-width: 768px) {
@@ -241,7 +253,7 @@ $corporateDarkBlue: #021d49;
 }
 
 @media (max-width: 375px) {
-  /*<-----------------Product Page Start----------------->*/
+  // /*<-----------------Product Page Start----------------->*/
   .slide {
     &:after {
       border-right: 261vw solid #fff;
@@ -255,8 +267,8 @@ $corporateDarkBlue: #021d49;
       margin-top: 50px;
     }
   }
+  /*<-----------------Product Page Finish----------------->*/
 }
-
 @media screen and (max-width: 320px) {
   .customerBody {
     .customerTitle {

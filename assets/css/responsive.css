@@ -1,8 +1,3 @@
-/*
-@media screen and (max-width: 1200px) and (min-width: 992px) {
-
-}
-*/
 @media screen and (max-width: 992px) {
   #customer_carousel {
     offset: unset;
@@ -10,7 +5,7 @@
   }
 
   .navbar .navbar-collapse .navbar-nav .nav-item:not(:last-child) {
-    /* border-bottom: 1px solid #ccc;*/
+    border-bottom: 1px solid #ccc;
   }
   .navbar .navbar-collapse .navbar-nav .nav-item {
     width: 100%;
@@ -47,6 +42,7 @@
   .mainInformed-form .contact-form {
     background: none !important;
   }
+<<<<<<< HEAD
 
   .mainProduct .product-box {
     margin-bottom: 300px;
@@ -74,6 +70,15 @@
     font-size: 40px;
   }
 }
+=======
+  .services-page-sec .nav-item {
+    width: 100%;
+    margin: 0 !important;
+  }
+}
+
+/*<-----------------Product Page Start----------------->*/
+>>>>>>> 0061d8a1b14d75563177e24647eef5b84b431665
 .productInner .icons {
   opacity: 1;
 }
@@ -108,6 +113,7 @@
   max-width: 400px;
 }
 
+/*<-----------------Product Page Finish----------------->*/
 @media (max-width: 768px) {
   .slide .content-bottom h2 {
     font-size: 40px;
@@ -149,7 +155,6 @@
   }
 }
 @media (max-width: 375px) {
-  /*<-----------------Product Page Start----------------->*/
   .slide:after {
     border-right: 261vw solid #fff;
     border-top: 241px solid transparent;
@@ -158,6 +163,7 @@
   .content-bottom .col-md-6 {
     margin-top: 50px;
   }
+  /*<-----------------Product Page Finish----------------->*/
 }
 @media screen and (max-width: 320px) {
   .customerBody .customerTitle {
