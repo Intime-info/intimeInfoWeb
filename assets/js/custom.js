@@ -25,11 +25,14 @@ var sticky_navbar = function () {
 };
 
 var contactMap = function () {
+
+
+    
     if ($("#map").length > 0) {
         var map;
         var markers = [];
 
-        function initMap(lat = null, lng = null, zoom = 6) {
+        function initMap(lat = null, lng = null, zoom = 7) {
 
             if (lat == null) {
                 lat = $(".changeMap.active").data("lat");
@@ -62,7 +65,55 @@ var contactMap = function () {
                 icon: "./assets/img/location.svg",
             });
 
+            var airports = [
+                { 
+                    title: 'Ankara', 
+                    position: { 
+                        lat: 53.3588026, 
+                        lng: -2.274919 }, 
+                    icon: 'parking',	
+                    content: '<div id="content"><div id="siteNotice"></div><h1 id="firstHeading" class="firstHeading">Manchester Airport - from £30</h1><div id="bodyContent"><p><b>Manchester Airport</b> - 3 terminal airport offering flights to Europe and around the world with national rail connections.</p> <p><a href="https://www.google.co.uk">BOOK</a></p></div></div>'
+                },
+                { 
+                    title: 'pendik', 
+                    position: { 
+                        lat: 53.8679434, 
+                        lng: -1.6637193 }, 
+                    icon: 'parking',	
+                    content: '<div id="content"><div id="siteNotice"></div><h1 id="firstHeading" class="firstHeading">Leeds Airport - from £30</h1><div id="bodyContent"><p><b>Leeds Airport</b> - 3 terminal airport offering flights to Europe and around the world with national rail connections.</p> <p><a href="https://www.google.co.uk">BOOK</a></p></div></div>'
+                },
+                { 
+                    title: 'Belfast Airport', 
+                    position: { 
+                        lat: 54.661781, 
+                        lng: -6.2184331 }, 
+                    icon: 'parking',	
+                    content: '<div id="content"><div id="siteNotice"></div><h1 id="firstHeading" class="firstHeading">Belfast Airport - from £30</h1><div id="bodyContent"><p><b>Belfast Airport</b> - 3 terminal airport offering flights to Europe and around the world with national rail connections.</p> <p><a href="https://www.google.co.uk">BOOK</a></p></div></div>'
+                },
+                { 
+                    title: 'kadıköy', 
+                    position: { 
+                        lat: 54.661781, 
+                        lng: -6.2184331 }, 
+                    icon: 'parking',	
+                    content: '<div id="content"><div id="siteNotice"></div><h1 id="firstHeading" class="firstHeading">Belfast Airport - from £30</h1><div id="bodyContent"><p><b>Belfast Airport</b> - 3 terminal airport offering flights to Europe and around the world with national rail connections.</p> <p><a href="https://www.google.co.uk">BOOK</a></p></div></div>'
+                }
+            ];
+
             markers.push(marker);
+            
+
+            var InfoWindows = new google.maps.InfoWindow({});
+            
+            airports.forEach( airport => {	
+                console.log(airport.title)
+                marker.addListener('mouseover', function() {
+                    
+                    InfoWindows.open(map, this);
+                    InfoWindows.setContent(airport.title);
+                });
+	        }); 
+
         }
 
         function clearArray(arr) {
@@ -74,6 +125,10 @@ var contactMap = function () {
         createMarkerNew(41.00279453984937, 29.055000355378148);
         createMarkerNew(39.91421032132179, 32.8088894045927);
         createMarkerNew(40.92033506644141, 29.31415561581492);
+
+
+
+
     }
 };
 var partners_carousel = function () {
