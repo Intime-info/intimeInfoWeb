@@ -1107,7 +1107,7 @@ footer {
     height: 50vh;
   }
   &.career-slider{
-    background-image: url("../img/intime-info-backgr1.jpg");
+    background-image: url("../img/careerslidertiny.jpg");
     height: 50vh;
     background-size:contain !important;
     margin-top: 10px;
@@ -1422,8 +1422,11 @@ blockquote:before {
   position: absolute;
 }
 blockquote:after {
-  right:60px;
-  top: 21px;
+  right: 30px;
+  top: 83px;
+  transform: rotateY(
+180deg
+);
   color: #FFF;
   content: "“";
   font-size: 85px;
@@ -1842,4 +1845,10 @@ label[for="foreignLanguage2"], label[for="foreignLanguage3"],
     visibility: visible;
   }
 
+}
+//FRONTEND BAŞVURU SAYFASI 
+
+.list-item-disc{
+  display:list-item;
+  list-style: disc;
 }

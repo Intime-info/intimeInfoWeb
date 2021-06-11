@@ -10678,7 +10678,7 @@ footer .sosyaliconlar .sosyalicon {
 }
 
 .slide.career-slider {
-  background-image: url("../img/intime-info-backgr1.jpg");
+  background-image: url("../img/careerslidertiny.jpg");
   height: 50vh;
   background-size: contain !important;
   margin-top: 10px;
@@ -11022,8 +11022,10 @@ blockquote:before {
 }
 
 blockquote:after {
-  right: 60px;
-  top: 21px;
+  right: 30px;
+  top: 83px;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
   color: #FFF;
   content: "“";
   font-size: 85px;
@@ -11481,5 +11483,10 @@ a[data-toggle="collapse"] {
 
 #cvGonderForm .tooltips:hover .tooltiptext {
   visibility: visible;
+}
+
+.list-item-disc {
+  display: list-item;
+  list-style: disc;
 }
 /*# sourceMappingURL=custom.css.map */
