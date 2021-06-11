@@ -75,14 +75,14 @@ var partners_carousel= function () {
         $('#partners_carousel').owlCarousel({
             loop:true,
             margin:10,
-            nav:false,
+            nav:true,
             dots: true,
             responsive:{
                 0:{
-                    items:1,
+                    items:2,
                 },
                 500:{
-                    items:1,
+                    items:2,
                 },
                 600:{
                     items:2,

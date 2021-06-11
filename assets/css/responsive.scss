@@ -84,11 +84,44 @@ $corporateDarkBlue: #021d49;
       }
     }
   }
+
+  .mainProduct{
+   .product-box{
+     margin-bottom: 300px;
+     .card-flip{
+       &.card {
+         &:first-child {
+           top: 0;
+         }
+
+         &:nth-child(2) {
+           top: 100px;
+         }
+
+         &:nth-child(3) {
+           top: 200px;
+         }
+
+         &:nth-child(4) {
+           top: 300px;
+         }
+       }
+     }
+   }
+  }
+  .mainPartner{
+    .owl-nav{
+      text-align: center;
+      button{
+        margin-right: 10px;
+        span{
+          font-size: 40px;
+        }
+      }
+    }
+  }
 }
 
-
-
- 
   .productInner {
     .icons {
       opacity: 1;
