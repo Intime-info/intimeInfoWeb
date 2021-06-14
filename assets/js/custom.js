@@ -100,11 +100,17 @@ var contactMap = function () {
                 }
             ];
 
+            const newMarkers = airports.map(airport => {
+                return new google.maps.Marker({
+                    icon: "./assets/img/location.svg",
+                })
+            });
+
             markers.push(marker);
             
 
             var InfoWindows = new google.maps.InfoWindow({});
-            
+       
             airports.forEach( airport => {	
                 console.log(airport.title)
                 marker.addListener('mouseover', function() {
@@ -308,7 +314,7 @@ $(document).ready(function () {
     istek.onload = function () {
         if (this.readyState == 4 && this.status == 200) {
             let dats = JSON.parse(this.responseText);
-            for (let i = 0; i < 4; i++) {
+            for (let i = 0; i < 6; i++) {
                 let mediaUrl = dats.data[i].media_url;
 
                 let isValue = mediaUrl.includes("video");

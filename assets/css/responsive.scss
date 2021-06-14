@@ -87,30 +87,29 @@ $corporateDarkBlue: #021d49;
       width: 100%;
       margin: 0!important;
     }
+
+
   }
+
+
 
   #instagramicerik1 {
     width: 100%!important;
   }
 
-}
-
-
-
- 
   .productInner {
     .icons {
       opacity: 1;
-
+  
       a {
         padding: 8px;
-
+  
         &:first-child {
           opacity: 1;
           bottom: 10px;
           left: 35px;
         }
-
+  
         &:last-child {
           opacity: 1;
           bottom: 10px;
@@ -118,7 +117,7 @@ $corporateDarkBlue: #021d49;
         }
       }
     }
-
+  
     img {
       opacity: 1;
       transform: translate3d(40px, 0, 0)!important;;
@@ -134,6 +133,11 @@ $corporateDarkBlue: #021d49;
   .slide .content-bottom img {
     max-width: 400px;
   }
+}
+
+
+
+ 
   
 
 
