@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ProjectTasksOptions">
     <enabled-global>
-      <option value="SCSS" />
-      <option value="SCSS-min" />
       <option value="SCSS Min" />
-<<<<<<< HEAD
-      <option value="Sass" />
-=======
->>>>>>> abdulkerim
+      <option value="SCSS" />
     </enabled-global>
   </component>
 </project>

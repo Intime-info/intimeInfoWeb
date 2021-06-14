@@ -140,17 +140,17 @@ var contactMap = function () {
 var partners_carousel = function () {
     if ($('#partners_carousel').length > 0) {
         $('#partners_carousel').owlCarousel({
-            loop: true,
-            margin: 10,
-            nav: false,
+            loop:true,
+            margin:10,
+            nav:true,
             dots: true,
             autoplay: true,
             responsive:{
                 0:{
-                    items:1,
+                    items:2,
                 },
-                500: {
-                    items: 1,
+                500:{
+                    items:2,
                 },
                 600: {
                     items: 2,
@@ -301,35 +301,33 @@ var databg_color = function () {
 
 $(document).ready(function () {
     contactMap();
-
     partners_carousel();
     blog_carousel();
     customer_carousel();
     sticky_navbar();
     databg_color();
-    $('#nav-icon3').click(function () {
+
+    $('#nav-icon3').click(function(){
         $(this).toggleClass('open');
     });
+
     let istek = new XMLHttpRequest();
     istek.onload = function () {
         if (this.readyState == 4 && this.status == 200) {
             let dats = JSON.parse(this.responseText);
             for (let i = 0; i < 6; i++) {
                 let mediaUrl = dats.data[i].media_url;
-
                 let isValue = mediaUrl.includes("video");
-
                 if (isValue === false) {
-                    document.getElementById("instagramicerik1").innerHTML += '<a  href="' + dats.data[i].permalink + '" target="_blank"><div class="card m-1  gonderiler"><img class="card-img-top " src="' + dats.data[i].media_url + '" alt="Card image cap"></div></a>'
+                    document.getElementById("instagramicerik1").innerHTML += '<a href="' + dats.data[i].permalink + '" target="_blank"><div class="card m-1 gonderiler"><img class="card-img-top " src="' + dats.data[i].media_url + '" alt="Card image cap"></div></a>'
                 } else {
-                    document.getElementById("instagramicerik1").innerHTML += '<a  href="' + dats.data[i].permalink + '" target="_blank"><div class="card m-1  gonderiler"><video class="card-img-top" src="' + dats.data[i].media_url + '"></div></a>'
+                    document.getElementById("instagramicerik1").innerHTML += '<a href="' + dats.data[i].permalink + '" target="_blank"><div class="card m-1 gonderiler"><video class="card-img-top" src="' + dats.data[i].media_url + '"></div></a>'
                 }
             }
         } else {
             console.log("Postlara ulaşılamıyor");
         }
     }
-
     istek.open("GET", "insta.json", true);
     istek.send()
 

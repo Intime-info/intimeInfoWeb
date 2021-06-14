@@ -44,15 +44,69 @@
   .mainInformed-form .contact-form {
     background: none !important;
   }
-  .services-page-sec .nav-item {
-    width: 100%;
-    margin: 0 !important;
+  .mainProduct .product-box {
+    margin-bottom: 300px;
+  }
+  .mainProduct .product-box .card-flip.card:first-child {
+    top: 0;
+  }
+  .mainProduct .product-box .card-flip.card:nth-child(2) {
+    top: 100px;
+  }
+  .mainProduct .product-box .card-flip.card:nth-child(3) {
+    top: 200px;
+  }
+  .mainProduct .product-box .card-flip.card:nth-child(4) {
+    top: 300px;
+  }
+  .mainPartner .owl-nav {
+    text-align: center;
+  }
+  .mainPartner .owl-nav button {
+    margin-right: 10px;
+  }
+  .mainPartner .owl-nav button span {
+    font-size: 40px;
   }
   #instagramicerik1 {
     width: 100% !important;
   }
 }
 
+.productInner .icons {
+  opacity: 1;
+}
+
+.productInner .icons a {
+  padding: 8px;
+}
+
+.productInner .icons a:first-child {
+  opacity: 1;
+  bottom: 10px;
+  left: 35px;
+}
+
+.productInner .icons a:last-child {
+  opacity: 1;
+  bottom: 10px;
+  left: 35px;
+}
+
+.productInner img {
+  opacity: 1;
+  -webkit-transform: translate3d(40px, 0, 0) !important;
+          transform: translate3d(40px, 0, 0) !important;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.productInner .services-page-sec .nav-item {
+  width: 100%;
+  margin: 0 !important;
+}
+
+/*<-----------------Product Page Start----------------->*/
 .productInner .icons {
   opacity: 1;
 }
@@ -93,6 +147,7 @@
   max-width: 400px;
 }
 
+/*<-----------------Product Page Finish----------------->*/
 @media (max-width: 768px) {
   .slide .content-bottom h2 {
     font-size: 40px;
@@ -145,6 +200,7 @@
   .content-bottom .col-md-6 {
     margin-top: 50px;
   }
+  /*<-----------------Product Page Finish----------------->*/
 }
 
 @media screen and (max-width: 320px) {

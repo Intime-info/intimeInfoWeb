@@ -9518,11 +9518,11 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .intimeColor {
-  color: #021D49;
+  color: #021d49;
 }
 
 .infoColor {
-  color: #00A0AF;
+  color: #00a0af;
 }
 
 * {
@@ -9535,7 +9535,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .btn-intime {
@@ -9551,13 +9551,16 @@ body {
 }
 
 .section-title {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-weight: 900;
   font-size: 35px;
   color: #15234e;
 }
 
-button:focus, input:focus, textarea:focus, select:focus {
+button:focus,
+input:focus,
+textarea:focus,
+select:focus {
   outline: 0 !important;
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
@@ -9613,20 +9616,20 @@ button:focus, input:focus, textarea:focus, select:focus {
 }
 
 .intimeInfo-header .navbar .navbar-nav .nav-item > .nav-link {
-  color: #00A0AF;
+  color: #00a0af;
   font-weight: 500;
   position: relative;
   padding: 20px;
 }
 
 .intimeInfo-header .navbar .navbar-nav .nav-item > .nav-link:before {
-  content: '';
+  content: "";
   position: absolute;
   left: 50%;
   bottom: 0;
   width: 0%;
   height: 3px;
-  background-color: #021D49;
+  background-color: #021d49;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   -webkit-transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
@@ -9668,7 +9671,7 @@ button:focus, input:focus, textarea:focus, select:focus {
 }
 
 .mainProduct {
-  font-family: 'Montserrat', sans-serif !important;
+  font-family: "Montserrat", sans-serif !important;
 }
 
 .mainProduct .container .row {
@@ -9718,8 +9721,8 @@ button:focus, input:focus, textarea:focus, select:focus {
 
 .mainProduct .product-box .card {
   border: 0;
-  -webkit-box-shadow: 10px 10px 12px 12px #EEEEEE;
-          box-shadow: 10px 10px 12px 12px #EEEEEE;
+  -webkit-box-shadow: 10px 10px 12px 12px #eeeeee;
+          box-shadow: 10px 10px 12px 12px #eeeeee;
 }
 
 .mainProduct .product-box .card .card-body {
@@ -9800,8 +9803,8 @@ button:focus, input:focus, textarea:focus, select:focus {
 }
 
 .mainProduct .btn-2 {
-  background-color: #021D49;
-  color: #FFF8FF;
+  background-color: #021d49;
+  color: #fff8ff;
   letter-spacing: 0;
 }
 
@@ -9870,13 +9873,13 @@ button:focus, input:focus, textarea:focus, select:focus {
 .mainSlider h1 {
   font-weight: 800;
   font-size: 50px;
-  color: #121C4D;
+  color: #121c4d;
   margin: 0;
   padding: 0;
 }
 
 .mainSlider h2 a {
-  color: #00ADB5;
+  color: #00adb5;
   font-weight: bold;
 }
 
@@ -9905,8 +9908,8 @@ button:focus, input:focus, textarea:focus, select:focus {
 }
 
 .mainAbout-photo img {
-  -webkit-transition: .5s all;
-  transition: .5s all;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
 }
 
 .mainAbout-photo img:hover {
@@ -9947,7 +9950,8 @@ button:focus, input:focus, textarea:focus, select:focus {
 }
 
 @-webkit-keyframes sliderShape {
-  0%, 100% {
+  0%,
+  100% {
     border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
     -webkit-transform: translate3d(0, 0, 0) rotateZ(0.01deg);
             transform: translate3d(0, 0, 0) rotateZ(0.01deg);
@@ -9973,7 +9977,8 @@ button:focus, input:focus, textarea:focus, select:focus {
 }
 
 @keyframes sliderShape {
-  0%, 100% {
+  0%,
+  100% {
     border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
     -webkit-transform: translate3d(0, 0, 0) rotateZ(0.01deg);
             transform: translate3d(0, 0, 0) rotateZ(0.01deg);
@@ -10020,7 +10025,7 @@ button:focus, input:focus, textarea:focus, select:focus {
   margin-bottom: 30px;
   -webkit-transition: 0.6s;
   transition: 0.6s;
-  border: 1px solid #E6EDF6;
+  border: 1px solid #e6edf6;
   padding: 35px 22px;
   position: relative;
   z-index: 1;
@@ -10029,7 +10034,10 @@ button:focus, input:focus, textarea:focus, select:focus {
   height: 475px;
 }
 
-.mainServices-box:hover h3, .mainServices-box:hover h4, .mainServices-box:hover a, .mainServices-box:hover p {
+.mainServices-box:hover h3,
+.mainServices-box:hover h4,
+.mainServices-box:hover a,
+.mainServices-box:hover p {
   color: white;
 }
 
@@ -10044,8 +10052,8 @@ button:focus, input:focus, textarea:focus, select:focus {
   top: 0;
   width: 100%;
   height: 0;
-  background: -webkit-gradient(linear, left top, right top, from(#021D49), to(#00A0AF));
-  background: linear-gradient(to right, #021D49 0%, #00A0AF 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#021d49), to(#00a0af));
+  background: linear-gradient(to right, #021d49 0%, #00a0af 100%);
   z-index: -1;
   -webkit-transition: 0.6s;
   transition: 0.6s;
@@ -10065,7 +10073,7 @@ button:focus, input:focus, textarea:focus, select:focus {
   content: "";
   width: 100%;
   height: 100%;
-  background: #00A0AF;
+  background: #00a0af;
 }
 
 .mainCustomer .customerBody {
@@ -10167,16 +10175,16 @@ button:focus, input:focus, textarea:focus, select:focus {
 }
 
 .mainBlog .item {
-  -webkit-box-shadow: -10px 10px #EEEEEE;
-          box-shadow: -10px 10px #EEEEEE;
+  -webkit-box-shadow: -10px 10px #eeeeee;
+          box-shadow: -10px 10px #eeeeee;
   -webkit-transition: 0.3s linear;
   transition: 0.3s linear;
   border: transparent;
 }
 
 .mainBlog .item:hover {
-  -webkit-box-shadow: 10px 10px 12px 12px #EEEEEE;
-          box-shadow: 10px 10px 12px 12px #EEEEEE;
+  -webkit-box-shadow: 10px 10px 12px 12px #eeeeee;
+          box-shadow: 10px 10px 12px 12px #eeeeee;
   -webkit-transform: scale(0.99);
           transform: scale(0.99);
 }
@@ -10195,7 +10203,7 @@ button:focus, input:focus, textarea:focus, select:focus {
 .mainBlog .item figure:hover h5 {
   -webkit-transition: 0.3s linear;
   transition: 0.3s linear;
-  color: #00A0AF;
+  color: #00a0af;
 }
 
 .mainBlog .item .card-header {
@@ -10279,8 +10287,8 @@ button:focus, input:focus, textarea:focus, select:focus {
   left: 0;
   width: 0;
   background-color: #021423;
-  -webkit-transition: width .5s ease-in-out;
-  transition: width .5s ease-in-out;
+  -webkit-transition: width 0.5s ease-in-out;
+  transition: width 0.5s ease-in-out;
 }
 
 .mainBlog .next-btn:hover {
@@ -10299,7 +10307,8 @@ button:focus, input:focus, textarea:focus, select:focus {
   top: 0px;
 }
 
-#nav-icon3 span:nth-child(2), #nav-icon3 span:nth-child(3) {
+#nav-icon3 span:nth-child(2),
+#nav-icon3 span:nth-child(3) {
   top: 10px;
 }
 
@@ -10335,8 +10344,8 @@ button:focus, input:focus, textarea:focus, select:focus {
   position: relative;
   -webkit-transform: rotate(0deg);
   transform: rotate(0deg);
-  -webkit-transition: .5s ease-in-out;
-  transition: .5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
   cursor: pointer;
 }
 
@@ -10345,14 +10354,14 @@ button:focus, input:focus, textarea:focus, select:focus {
   position: absolute;
   height: 5px;
   width: 35px;
-  background: #00A0AF;
+  background: #00a0af;
   border-radius: 9px;
   opacity: 1;
   left: 0;
   -webkit-transform: rotate(0deg);
   transform: rotate(0deg);
-  -webkit-transition: .25s ease-in-out;
-  transition: .25s ease-in-out;
+  -webkit-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
 }
 
 .mainPartner #partners_carousel .item figure {
@@ -10433,7 +10442,7 @@ button:focus, input:focus, textarea:focus, select:focus {
 .mainInformed-form .contact-form .register {
   padding: 10px 20px;
   border-radius: 5rem;
-  background-color: #021D49;
+  background-color: #021d49;
   color: #fff;
   font-weight: bold;
   letter-spacing: 1.5px;
@@ -10452,7 +10461,7 @@ button:focus, input:focus, textarea:focus, select:focus {
 }
 
 footer {
-  background: #00ADB5;
+  background: #00adb5;
 }
 
 footer a {
@@ -10506,7 +10515,7 @@ footer .iletisimbilgileri a:hover p {
 }
 
 footer .iletisimbilgileri a:hover span {
-  color: #121C4D !important;
+  color: #121c4d !important;
   -webkit-transition-duration: 2s;
           transition-duration: 2s;
 }
@@ -10528,7 +10537,7 @@ footer .gonderiler {
 }
 
 footer .followbutton:hover {
-  background: #121C4D !important;
+  background: #121c4d !important;
   border: 1px solid black;
   -webkit-transition-duration: 1.5s;
           transition-duration: 1.5s;
@@ -10536,16 +10545,151 @@ footer .followbutton:hover {
 }
 
 footer .sosyaliconlar .sosyalicon {
-  color: #121C4D;
+  color: #121c4d;
 }
 
 .copyright {
-  background-color: #00ADB5;
+  background-color: #00adb5;
   padding: 4px;
   color: white;
   border-top: 0.5px solid;
 }
 
+.contact-page-sec {
+  padding: 60px 0;
+  min-height: 100vh;
+}
+
+.contact-info {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.contact-info-icon {
+  margin-bottom: 15px;
+}
+
+.contact-info-item {
+  background: #071c34;
+  padding: 30px 0px;
+}
+
+.contact-page-sec .contact-page-form h2 {
+  color: #071c34;
+  text-transform: capitalize;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.contact-page-form .col-md-6.col-sm-6.col-xs-12 {
+  padding-left: 0;
+}
+
+.contact-page-form.contact-form input {
+  margin-bottom: 5px;
+}
+
+.contact-page-form.contact-form textarea {
+  height: 110px;
+}
+
+.contact-page-form.contact-form input[type="submit"] {
+  background: #071c34;
+  width: 150px;
+  border-color: #071c34;
+}
+
+.contact-info-icon i {
+  font-size: 48px;
+  color: #fda40b;
+}
+
+.contact-info-text p {
+  margin-bottom: 0px;
+}
+
+.contact-info-text h2 {
+  color: #fff;
+  font-size: 22px;
+  text-transform: capitalize;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.contact-info-text a {
+  color: #999999;
+  font-size: 16px;
+  font-weight: 500;
+  display: inline-block;
+  width: 100%;
+}
+
+.contact-page-form input {
+  background: #f9f9f9 none repeat scroll 0 0;
+  border: 1px solid #f9f9f9;
+  margin-bottom: 20px;
+  padding: 12px 16px;
+  width: 100%;
+  border-radius: 4px;
+}
+
+.contact-page-form .message-input {
+  display: inline-block;
+  width: 100%;
+  padding-left: 0;
+}
+
+.single-input-field textarea {
+  background: #f9f9f9 none repeat scroll 0 0;
+  border: 1px solid #f9f9f9;
+  width: 100%;
+  height: 120px;
+  padding: 12px 16px;
+  border-radius: 4px;
+}
+
+.single-input-fieldsbtn input[type="submit"] {
+  background: #fda40b none repeat scroll 0 0;
+  color: #fff;
+  display: inline-block;
+  font-weight: 600;
+  padding: 10px 0;
+  text-transform: capitalize;
+  width: 150px;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.single-input-fieldsbtn input[type="submit"]:hover {
+  background: #071c34;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+  border-color: #071c34;
+}
+
+.single-input-field h4 {
+  color: #464646;
+  text-transform: capitalize;
+  font-size: 14px;
+}
+
+.contact-page-form {
+  display: inline-block;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.contact-page-map {
+  margin-top: 36px;
+}
+
+.contact-page-form form {
+  padding: 20px 15px 0;
+}
+
+/*<-------------------- Product Page Start------------------------>*/
 .product {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10599,7 +10743,7 @@ footer .sosyaliconlar .sosyalicon {
       -ms-flex-align: center;
           align-items: center;
   padding: 10px;
-  background: #021D49;
+  background: #021d49;
   color: white;
 }
 
@@ -10613,7 +10757,7 @@ footer .sosyaliconlar .sosyalicon {
 
 .productInner .icons a:first-child:hover {
   cursor: pointer;
-  background: #00A0AF;
+  background: #00a0af;
   color: #fff;
 }
 
@@ -10627,7 +10771,7 @@ footer .sosyaliconlar .sosyalicon {
 
 .productInner .icons a:last-child:hover {
   cursor: pointer;
-  background: #00A0AF;
+  background: #00a0af;
   color: #fff;
 }
 
@@ -10811,16 +10955,38 @@ footer .sosyaliconlar .sosyalicon {
   transition: all 0.5s;
 }
 
-.card {
-  border-radius: 1em;
+/*<-----------------Product Page Finish----------------->*/
+/*<-----------------Blog Page Start----------------->*/
+.blogCard {
+  position: relative;
+  margin-bottom: 10rem;
 }
 
-.card img {
-  border-radius: 1em 1em 0 0;
+.blogCard img {
+  margin-bottom: 2.5rem;
 }
 
-.card .card-body .card-title {
-  font-size: 1.8em;
+.blogCard a {
+  margin-right: 3px;
+  margin-bottom: 15px;
+}
+
+.blogCard:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  margin: 4rem 0;
+  height: 1px;
+  background: #ccc;
+}
+
+.blogCard .blogExplanation {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+.blogCard .blogExplanation a {
+  color: #ccc;
 }
 
 .contact-page-sec {
@@ -10833,10 +10999,129 @@ footer .sosyaliconlar .sosyalicon {
   height: 500px;
 }
 
-.contact-info {
-  display: inline-block;
+.contact-page-sec #map:hover {
+  color: #00a0af;
+}
+
+.contact-page-sec .blogTitle {
+  font-size: 2rem;
+  color: #000000;
+  -webkit-transition: color 0.5s ease;
+  transition: color 0.5s ease;
+}
+
+.contact-page-sec .blogTitle:hover {
+  color: #00a0af;
+  -webkit-transition: color 0.5s ease;
+  transition: color 0.5s ease;
+}
+
+.contact-page-sec .blogContent {
+  color: #adadad;
+  margin: 2rem 0;
+}
+
+.contact-page-sec .blogLineClamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.blogSearch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100px;
   width: 100%;
+  background: #f1f1f1;
+}
+
+.blogSearch {
   margin-bottom: 10px;
+}
+
+.blogSearch label {
+  position: relative;
+}
+
+.blogSearch label .blogSearchInput {
+  border: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  padding: 13px;
+  border-radius: 5px 30px 30px 5px;
+  width: 250px;
+  outline: none;
+  position: relative;
+}
+
+.blogSearch label .blogSearchInput::-webkit-input-placeholder {
+  color: #222;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+.blogSearch label .blogSearchInput:-ms-input-placeholder {
+  color: #222;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+.blogSearch label .blogSearchInput::-ms-input-placeholder {
+  color: #222;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+.blogSearch label .blogSearchInput::placeholder {
+  color: #222;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+.blogSearch label .blogSearchInput:focus {
+  border: 1px solid #00a0af;
+}
+
+.blogSearch label .blogSearchInput:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.blogSearch label .blogSearchInput:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+.blogSearch label .blogSearchInput:focus::-ms-input-placeholder {
+  color: transparent;
+}
+
+.blogSearch label .blogSearchInput:focus::placeholder {
+  color: transparent;
+}
+
+.blogSearch label .searchButton {
+  background: #00a0af;
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  right: 0;
+  border-radius: 30px;
+  border: none;
+  color: white;
+}
+
+.blogSearch label .searchButton:hover {
+  background-color: #021d49;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
 }
 
 .contact-info-icon {
@@ -10884,7 +11169,8 @@ footer .sosyaliconlar .sosyalicon {
   margin-bottom: 10px;
 }
 
-.contact-info-text a, .contact-info-text span {
+.contact-info-text a,
+.contact-info-text span {
   color: #999999;
   font-size: 16px;
   font-weight: 500;
@@ -10892,6 +11178,95 @@ footer .sosyaliconlar .sosyalicon {
   width: 100%;
 }
 
+.blogTopics {
+  background: #f1f1f1;
+  width: 100%;
+  margin-top: 30px;
+  padding: 40px 50px;
+}
+
+.blogTopics p {
+  font-size: 1.5rem;
+}
+
+.blogTopics ul a {
+  color: #000000;
+}
+
+.blogTopics ul a:hover {
+  color: #00a0af;
+}
+
+.blogTopics ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px 0;
+}
+
+.blogPopular {
+  margin-top: 30px;
+  padding: 40px 40px;
+  width: 100%;
+  background: #f1f1f1;
+}
+
+.blogPopular p {
+  font-size: 1.5rem;
+}
+
+.blogPopular figure {
+  margin-right: 10px;
+}
+
+.blogPopular figure img {
+  height: 90px;
+  width: 90px;
+}
+
+.blogPopular ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.blogPopular ul li p {
+  font-size: 0.9rem;
+  margin-bottom: 0;
+}
+
+.blogPopular ul li span {
+  font-size: 0.7rem;
+}
+
+.blogPopular ul li a {
+  color: #000000;
+}
+
+.blogPopular ul li a:hover {
+  color: #00a0af;
+}
+
+/*<-----------------Blog Page Finish----------------->*/
+/*<-----------------Blog Detail Page Start----------------->*/
+.blogQuotation {
+  border-left: 1px solid #00a0af;
+  padding: 2rem 2rem 2rem 2rem;
+  color: #adadad;
+}
+
+.blogQuotation p {
+  margin-bottom: 2rem;
+}
+
+/*<-----------------Blog Detail Page Finish----------------->*/
 .contact-page-form input {
   background: #f9f9f9 none repeat scroll 0 0;
   border: 1px solid #f9f9f9;
@@ -10978,7 +11353,7 @@ footer .sosyaliconlar .sosyalicon {
 
 .services-page-sec .nav-link.active {
   color: #ffff;
-  background-color: #021D49;
+  background-color: #021d49;
 }
 
 .services-page-sec .tab-content img {
@@ -10990,10 +11365,9 @@ footer .sosyaliconlar .sosyalicon {
   line-height: 2rem;
 }
 
-/*<-----------------Blog Page Finish----------------->*/
 /*  Career Page Start  */
 .career-container .card-height {
-  border: 2px solid #15234E !important;
+  border: 2px solid #15234e !important;
   height: 100% !important;
 }
 
@@ -11006,11 +11380,11 @@ footer .sosyaliconlar .sosyalicon {
 }
 
 .career-container h4 {
-  color: #00A0AF;
+  color: #00a0af;
 }
 
 .career-container span {
-  color: #15234E;
+  color: #15234e;
 }
 
 .career-container button {
@@ -11019,13 +11393,29 @@ footer .sosyaliconlar .sosyalicon {
   width: 90px;
 }
 
+/*
+.owl-prev, .owl-next {
+  width: 15px;
+  height: 100px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block !important;
+  border:0px solid black;
+  span{
+    font-size: 40px;
+  }
+}
+.owl-prev { left: -20px; }
+.owl-next { right: -20px; }
+.owl-prev i, .owl-next i {transform : scale(2,5); color: #ccc;}*/
 .overflow-hidden-imp {
   overflow: hidden !important;
 }
 
 .career-new-p {
   font-size: 1.2rem;
-  letter-spacing: -.05em;
+  letter-spacing: -0.05em;
 }
 
 blockquote {
@@ -11043,14 +11433,14 @@ blockquote {
 
 blockquote p {
   color: white !important;
-  font-family: 'Open Sans', 'Arial', 'sans-serif';
+  font-family: "Open Sans", "Arial", "sans-serif";
   font-size: 1.2em;
 }
 
 blockquote:before {
   left: 22px;
   top: 21px;
-  color: #FFF;
+  color: #fff;
   content: "“";
   font-size: 85px;
   font-style: normal;
@@ -11168,7 +11558,7 @@ blockquote:before {
   left: 0;
   right: 0;
   bottom: 0;
-  content: '';
+  content: "";
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   background: #007bff;
@@ -11251,9 +11641,9 @@ a[data-toggle="collapse"] {
 }
 
 #jobApplicationForm :root {
-  --main: #F9C560;
-  --selected: #FDE4B3;
-  --light: #FAFAFA;
+  --main: #f9c560;
+  --selected: #fde4b3;
+  --light: #fafafa;
   --grey: #414141;
   --dark: #303030;
 }
@@ -11263,7 +11653,9 @@ a[data-toggle="collapse"] {
   color: #303030;
 }
 
-#jobApplicationForm h1, #jobApplicationForm h2, #jobApplicationForm nav li a {
+#jobApplicationForm h1,
+#jobApplicationForm h2,
+#jobApplicationForm nav li a {
   color: #00a0af;
   font-weight: 500;
 }
@@ -11300,14 +11692,16 @@ a[data-toggle="collapse"] {
   padding: 1em 0;
 }
 
-#jobApplicationForm input, #jobApplicationForm textarea, #jobApplicationForm select {
+#jobApplicationForm input,
+#jobApplicationForm textarea,
+#jobApplicationForm select {
   width: 100%;
   border-radius: 25px;
-  padding: 1.2em 1.5em .2em 1.5em;
-  margin: .2em 0;
+  padding: 1.2em 1.5em 0.2em 1.5em;
+  margin: 0.2em 0;
   color: #414141;
-  border: 1px solid #B7B5B5;
-  font-size: .85em;
+  border: 1px solid #b7b5b5;
+  font-size: 0.85em;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   resize: none;
@@ -11322,14 +11716,14 @@ a[data-toggle="collapse"] {
   -webkit-appearance: none;
 }
 
-#jobApplicationForm input[type=number] {
+#jobApplicationForm input[type="number"] {
   -moz-appearance: textfield;
 }
 
 #jobApplicationForm select {
-  padding: .8em 1.5em;
+  padding: 0.8em 1.5em;
   margin-bottom: 1.1em;
-  font-size: .8em;
+  font-size: 0.8em;
   background-image: linear-gradient(45deg, transparent 50%, #303030 50%), linear-gradient(135deg, #303030 50%, transparent 50%), linear-gradient(to right, #ccc, #ccc);
   background-position: calc(100% - 20px) calc(1em + 3px), calc(100% - 15px) calc(1em + 3px), calc(100% - 2.5em) 0.7em;
   background-size: 5px 5px, 5px 5px, 1px 1.5em;
@@ -11341,24 +11735,24 @@ a[data-toggle="collapse"] {
   background-repeat: no-repeat;
 }
 
-#jobApplicationForm input[type='submit'] {
+#jobApplicationForm input[type="submit"] {
   display: block;
   max-width: 25%;
   text-align: center;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: .5em;
+  padding: 0.5em;
   margin: 2em auto 0 auto;
   border-radius: 25px;
-  -webkit-transition: .2s;
-  transition: .2s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
   border: none;
-  background: #F9C560;
+  background: #f9c560;
   color: #fff;
 }
 
-#jobApplicationForm input[type='submit']:hover {
-  background: #FDE4B3;
+#jobApplicationForm input[type="submit"]:hover {
+  background: #fde4b3;
 }
 
 #jobApplicationForm input::-webkit-input-placeholder {
@@ -11381,28 +11775,31 @@ a[data-toggle="collapse"] {
   color: #707070;
   cursor: initial;
   float: left;
-  font-size: .8em;
+  font-size: 0.8em;
   -webkit-transform: translate(1.5em, -2.3em);
           transform: translate(1.5em, -2.3em);
-  -webkit-transition: all .3s;
-  transition: all .3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
-#jobApplicationForm input:focus, #jobApplicationForm textarea:focus, #jobApplicationForm select:focus {
+#jobApplicationForm input:focus,
+#jobApplicationForm textarea:focus,
+#jobApplicationForm select:focus {
   outline: none;
   border-color: #00a0af;
 }
 
-#jobApplicationForm input:focus + label, #jobApplicationForm input:not(:placeholder-shown) + label {
+#jobApplicationForm input:focus + label,
+#jobApplicationForm input:not(:placeholder-shown) + label {
   -webkit-transform: translate(2.2em, -3.7em);
           transform: translate(2.2em, -3.7em);
-  font-size: .6em;
+  font-size: 0.6em;
   color: #00a0af;
 }
 
 #jobApplicationForm textarea {
   border-radius: 15px;
-  font-size: .8em;
+  font-size: 0.8em;
   height: 10em;
   margin-bottom: 1em;
 }
@@ -11423,22 +11820,27 @@ a[data-toggle="collapse"] {
   color: #707070;
 }
 
-#jobApplicationForm #foreignLanguage2, #jobApplicationForm #foreignLanguage3,
-#jobApplicationForm label[for="foreignLanguage2"], #jobApplicationForm label[for="foreignLanguage3"],
-#jobApplicationForm #foreignLanguageExperience2, #jobApplicationForm #foreignLanguageExperience3,
-#jobApplicationForm #armyStatusDate, #jobApplicationForm label[for="armyStatusDate"],
-#jobApplicationForm #lastWorking, #jobApplicationForm label[for="lastWorking"] {
+#jobApplicationForm #foreignLanguage2,
+#jobApplicationForm #foreignLanguage3,
+#jobApplicationForm label[for="foreignLanguage2"],
+#jobApplicationForm label[for="foreignLanguage3"],
+#jobApplicationForm #foreignLanguageExperience2,
+#jobApplicationForm #foreignLanguageExperience3,
+#jobApplicationForm #armyStatusDate,
+#jobApplicationForm label[for="armyStatusDate"],
+#jobApplicationForm #lastWorking,
+#jobApplicationForm label[for="lastWorking"] {
   display: none;
 }
 
 #jobApplicationForm #drop_file_zone {
-  background-color: #FAFAFA;
+  background-color: #fafafa;
   border: var(--dark) 2px dashed;
   border-radius: 10px;
   width: 100%;
   height: 10em;
-  font-size: .8em;
-  margin: .5em 0;
+  font-size: 0.8em;
+  margin: 0.5em 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   text-align: center;
@@ -11458,9 +11860,9 @@ a[data-toggle="collapse"] {
 
 #jobApplicationForm #drag_upload_file img {
   height: 3em;
-  opacity: .3;
-  -webkit-transition: .3s;
-  transition: .3s;
+  opacity: 0.3;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 #jobApplicationForm #drop_file_zone #selectFile {

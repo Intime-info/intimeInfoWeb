@@ -81,11 +81,39 @@ $corporateDarkBlue: #021d49;
     }
   }
 
+  .mainProduct{
+   .product-box{
+     margin-bottom: 300px;
+     .card-flip{
+       &.card {
+         &:first-child {
+           top: 0;
+         }
 
-  .services-page-sec {
-    .nav-item {
-      width: 100%;
-      margin: 0!important;
+         &:nth-child(2) {
+           top: 100px;
+         }
+
+         &:nth-child(3) {
+           top: 200px;
+         }
+
+         &:nth-child(4) {
+           top: 300px;
+         }
+       }
+     }
+   }
+  }
+  .mainPartner{
+    .owl-nav{
+      text-align: center;
+      button{
+        margin-right: 10px;
+        span{
+          font-size: 40px;
+        }
+      }
     }
 
 
@@ -96,6 +124,9 @@ $corporateDarkBlue: #021d49;
   #instagramicerik1 {
     width: 100%!important;
   }
+
+  
+}
 
   .productInner {
     .icons {
@@ -123,22 +154,53 @@ $corporateDarkBlue: #021d49;
       transform: translate3d(40px, 0, 0)!important;;
       transition: .5s ease;
     }
+  .services-page-sec {
+    .nav-item {
+      width: 100%;
+      margin: 0!important;
+    }
   }
-  .mw-75 {
-    width: 75%!important;
+
+
+}
+/*<-----------------Product Page Start----------------->*/
+.productInner {
+  .icons {
+    opacity: 1;
+
+    a {
+      padding: 8px;
+
+      &:first-child {
+        opacity: 1;
+        bottom: 10px;
+        left: 35px;
+      }
+
+      &:last-child {
+        opacity: 1;
+        bottom: 10px;
+        left: 35px;
+      }
+    }
   }
-  .mh-75 {
-    height: 75%!important;
-  }
-  .slide .content-bottom img {
-    max-width: 400px;
+
+  img {
+    opacity: 1;
+    transform: translate3d(40px, 0, 0)!important;;
+    transition: .5s ease;
   }
 }
-
-
-
- 
-  
+.mw-75 {
+  width: 75%!important;
+}
+.mh-75 {
+  height: 75%!important;
+}
+.slide .content-bottom img {
+  max-width: 400px;
+}
+/*<-----------------Product Page Finish----------------->*/
 
 
 @media screen and (max-width: 991px) and (min-width: 768px) {
@@ -235,8 +297,8 @@ $corporateDarkBlue: #021d49;
       margin-top: 50px;
     }
   }
+  /*<-----------------Product Page Finish----------------->*/
 }
-
 @media screen and (max-width: 320px) {
   .customerBody {
     .customerTitle {
