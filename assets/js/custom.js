@@ -1,5 +1,5 @@
 "use strict";
-new WOW().init();
+// new WOW().init();
 
 var sticky_navbar = function () {
     var $window = $(window);
@@ -25,11 +25,14 @@ var sticky_navbar = function () {
 };
 
 var contactMap = function () {
+
+
+
     if ($("#map").length > 0) {
         var map;
         var markers = [];
 
-        function initMap(lat = null, lng = null, zoom = 6) {
+        function initMap(lat = null, lng = null, zoom = 7) {
 
             if (lat == null) {
                 lat = $(".changeMap.active").data("lat");
@@ -62,7 +65,64 @@ var contactMap = function () {
                 icon: "./assets/img/location.svg",
             });
 
+            var airports = [{
+                    title: 'Ankara',
+                    position: {
+                        lat: 53.3588026,
+                        lng: -2.274919
+                    },
+                    icon: 'parking',
+                    content: '<div id="content"><div id="siteNotice"></div><h1 id="firstHeading" class="firstHeading">Manchester Airport - from £30</h1><div id="bodyContent"><p><b>Manchester Airport</b> - 3 terminal airport offering flights to Europe and around the world with national rail connections.</p> <p><a href="https://www.google.co.uk">BOOK</a></p></div></div>'
+                },
+                {
+                    title: 'pendik',
+                    position: {
+                        lat: 53.8679434,
+                        lng: -1.6637193
+                    },
+                    icon: 'parking',
+                    content: '<div id="content"><div id="siteNotice"></div><h1 id="firstHeading" class="firstHeading">Leeds Airport - from £30</h1><div id="bodyContent"><p><b>Leeds Airport</b> - 3 terminal airport offering flights to Europe and around the world with national rail connections.</p> <p><a href="https://www.google.co.uk">BOOK</a></p></div></div>'
+                },
+                {
+                    title: 'Belfast Airport',
+                    position: {
+                        lat: 54.661781,
+                        lng: -6.2184331
+                    },
+                    icon: 'parking',
+                    content: '<div id="content"><div id="siteNotice"></div><h1 id="firstHeading" class="firstHeading">Belfast Airport - from £30</h1><div id="bodyContent"><p><b>Belfast Airport</b> - 3 terminal airport offering flights to Europe and around the world with national rail connections.</p> <p><a href="https://www.google.co.uk">BOOK</a></p></div></div>'
+                },
+                {
+                    title: 'kadıköy',
+                    position: {
+                        lat: 54.661781,
+                        lng: -6.2184331
+                    },
+                    icon: 'parking',
+                    content: '<div id="content"><div id="siteNotice"></div><h1 id="firstHeading" class="firstHeading">Belfast Airport - from £30</h1><div id="bodyContent"><p><b>Belfast Airport</b> - 3 terminal airport offering flights to Europe and around the world with national rail connections.</p> <p><a href="https://www.google.co.uk">BOOK</a></p></div></div>'
+                }
+            ];
+
+            const newMarkers = airports.map(airport => {
+                return new google.maps.Marker({
+                    icon: "./assets/img/location.svg",
+                })
+            });
+
             markers.push(marker);
+
+
+            var InfoWindows = new google.maps.InfoWindow({});
+
+            airports.forEach(airport => {
+                console.log(airport.title)
+                marker.addListener('mouseover', function () {
+
+                    InfoWindows.open(map, this);
+                    InfoWindows.setContent(airport.title);
+                });
+            });
+
         }
 
         function clearArray(arr) {
@@ -74,6 +134,10 @@ var contactMap = function () {
         createMarkerNew(41.00279453984937, 29.055000355378148);
         createMarkerNew(39.91421032132179, 32.8088894045927);
         createMarkerNew(40.92033506644141, 29.31415561581492);
+
+
+
+
     }
 };
 var partners_carousel = function () {
@@ -81,14 +145,15 @@ var partners_carousel = function () {
         $('#partners_carousel').owlCarousel({
             loop: true,
             margin: 10,
-            nav: false,
+            nav: true,
             dots: true,
+            autoplay: true,
             responsive: {
                 0: {
-                    items: 1,
+                    items: 2,
                 },
                 500: {
-                    items: 1,
+                    items: 2,
                 },
                 600: {
                     items: 2,
@@ -107,7 +172,7 @@ var blog_carousel = function () {
     if ($("#blog_carousel").length > 0) {
         $('#blog_carousel').owlCarousel({
             loop: true,
-            autoPlay: true,
+            autoplay: true,
             stopOnHover: true,
             margin: 10,
 
@@ -196,7 +261,7 @@ var customer_carousel = function () {
     if ($("#customer_carousel").length > 0) {
         $('#customer_carousel').owlCarousel({
             loop: true,
-            autoPlay: true,
+            autoplay: true,
             stopOnHover: true,
             margin: 20,
             nav: true,
@@ -239,37 +304,35 @@ var databg_color = function () {
 
 $(document).ready(function () {
     contactMap();
-
     partners_carousel();
     blog_carousel();
     customer_carousel();
     sticky_navbar();
     databg_color();
+
     $('#nav-icon3').click(function () {
         $(this).toggleClass('open');
     });
+
     let istek = new XMLHttpRequest();
     istek.onload = function () {
         if (this.readyState == 4 && this.status == 200) {
             let dats = JSON.parse(this.responseText);
             for (let i = 0; i < 6; i++) {
                 let mediaUrl = dats.data[i].media_url;
-
                 let isValue = mediaUrl.includes("video");
-
                 if (isValue === false) {
-                    document.getElementById("instagramicerik1").innerHTML += '<a  href="' + dats.data[i].permalink + '" target="_blank"><div class="card m-1  gonderiler"><img class="card-img-top " src="' + dats.data[i].media_url + '" alt="Card image cap"></div></a>'
+                    document.getElementById("instagramicerik1").innerHTML += '<a href="' + dats.data[i].permalink + '" target="_blank"><div class="card m-1 gonderiler"><img class="card-img-top " src="' + dats.data[i].media_url + '" alt="Card image cap"></div></a>'
                 } else {
-                    document.getElementById("instagramicerik1").innerHTML += '<a  href="' + dats.data[i].permalink + '" target="_blank"><div class="card m-1  gonderiler"><video class="card-img-top" src="' + dats.data[i].media_url + '"></div></a>'
+                    document.getElementById("instagramicerik1").innerHTML += '<a href="' + dats.data[i].permalink + '" target="_blank"><div class="card m-1 gonderiler"><video class="card-img-top" src="' + dats.data[i].media_url + '"></div></a>'
                 }
             }
         } else {
             console.log("Postlara ulaşılamıyor");
         }
     }
-
     istek.open("GET", "insta.json", true);
-    istek.send()
+    istek.send();
 
 
 
