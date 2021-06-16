@@ -10832,6 +10832,13 @@ footer .sosyaliconlar .sosyalicon {
   margin-top: 10px;
 }
 
+.slide.about-slider {
+  background-image: url("../img/careerslidertiny.jpg");
+  height: 46vh;
+  background-size: cover !important;
+  margin-top: 10px;
+}
+
 .slide:before {
   content: "";
   width: 100%;
@@ -11372,11 +11379,12 @@ footer .sosyaliconlar .sosyalicon {
 }
 
 .career-container .card-height:hover {
-  -webkit-transform: scaleY(1.05);
-          transform: scaleY(1.05);
+  -webkit-transform: scaleY(1.03);
+          transform: scaleY(1.03);
   -webkit-transition-duration: 1s;
           transition-duration: 1s;
   cursor: pointer;
+  border: 3px solid #00a0af !important;
 }
 
 .career-container h4 {

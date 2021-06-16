@@ -1253,6 +1253,12 @@ background-image: url("../img/services.jpg");
     background-size: cover !important;
     margin-top: 10px;
   }
+  &.about-slider{
+    background-image: url("../img/careerslidertiny.jpg");
+    height: 46vh;
+    background-size: cover !important;
+    margin-top: 10px;
+  }
 
   &:before {
     content: "";
@@ -1742,10 +1748,11 @@ background-image: url("../img/services.jpg");
   .card-height {
     border: 2px solid #15234e !important;
     height: 100% !important;
-    &:hover {
-      transform: scaleY(1.05);
+    &:hover{
+      transform: scaleY(1.03);
       transition-duration: 1s;
       cursor: pointer;
+      border: 3px solid #00a0af !important;
     }
   }
   h4 {
