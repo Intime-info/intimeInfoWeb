@@ -10,7 +10,10 @@ $corporateDarkBlue: #021d49;
 .infoColor {
   color: $corporateBlue;
 }
-
+.w60-h50{
+    width: 60px;
+    height: 50px;
+}
 * {
   padding: 0;
   margin: 0;
@@ -2250,4 +2253,12 @@ a[data-toggle="collapse"] {
 .list-item-disc{
   display:list-item;
   list-style: disc;
+}
+.w170-br50{
+  width: 170px;
+  border-radius: 50%;
+}
+.w140-br50{
+  width: 140px;
+  border-radius: 50%;
 }
